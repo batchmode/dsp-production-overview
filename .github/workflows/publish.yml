@@ -2,9 +2,9 @@ name: publish
 on:
   push:
     branches: [publish]
+env:
+  VITE_COMMIT_SHA: ${{github.sha}}
 jobs:
-  env:
-    VITE_COMMIT_SHA: ${{github.sha}}
   build:
     runs-on: ubuntu-latest
     steps:
