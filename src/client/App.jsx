@@ -12,6 +12,7 @@ import Search from "./Search.jsx";
 import ImportExport from "./ImportExport.jsx";
 import Version from "./Version.jsx";
 import HandleError from "./HandleError.jsx";
+import Attributions from "./Attributions.jsx";
 
 
 function App() {
@@ -30,20 +31,29 @@ function App() {
 
     const toolbar = (
         <div className="flex gap-4 items-center">
-            <Version/>
             <ImportExport updateModel={updateModel}/>
         </div>
     )
 
     return (
         <HandleError>
-            <TabPane toolbar={toolbar}>
-                <Tab label="Overview" toolbar={planetsToolbar}>
-                    <Planets model={model} updateModel={updateModel} filter={planetFilter}/>
-                </Tab>
-                <Tab label="Products" toolbar={productsToolbar}><Products model={model} filter={productFilter}/></Tab>
-                <Tab label="Recipes" toolbar={recipesToolbar}><Recipes model={model} filter={recipeFilter}/></Tab>
-            </TabPane>
+            <div className="w-full h-full p-0 m-0 flex flex-col">
+                <div className="min-h-0 flex flex-col">
+                    <TabPane toolbar={toolbar}>
+                        <Tab label="Overview" toolbar={planetsToolbar}>
+                            <Planets model={model} updateModel={updateModel} filter={planetFilter}/>
+                        </Tab>
+                        <Tab label="Products" toolbar={productsToolbar}><Products model={model}
+                                                                                  filter={productFilter}/></Tab>
+                        <Tab label="Recipes" toolbar={recipesToolbar}><Recipes model={model}
+                                                                               filter={recipeFilter}/></Tab>
+                    </TabPane>
+                </div>
+                <div className="w-full flex pl-6 pr-8 m-0 pt-0 pb-2 justify-between">
+                    <div className="justify-self-start"><Attributions/></div>
+                    <Version/>
+                </div>
+            </div>
         </HandleError>
     )
 }
