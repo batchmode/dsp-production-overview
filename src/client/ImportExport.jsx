@@ -1,6 +1,11 @@
 import storageClient from "./storageClient.js";
+import {useState} from "react";
 
 const ImportExport = ({updateModel}) => {
+
+    const [error, setError] = useState(null)
+
+    if(error) throw error
 
     const handleImport = () => {
         const input = document.createElement("input");
@@ -18,11 +23,7 @@ const ImportExport = ({updateModel}) => {
                             storageClient.import(json)
                             updateModel({type: 'reload'})
                         } catch (error) {
-                            alert(
-                                `Invalid import file: ${
-                                    error instanceof Error ? error.message : "Uknown error"
-                                }`,
-                            );
+                            setError(error)
                         }
                     }
                 });

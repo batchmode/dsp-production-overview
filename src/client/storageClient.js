@@ -1,10 +1,17 @@
+import {dump, parse} from "./migration.js";
+
 const StorageClient = class {
 
     systems(system) {
         if (system) {
-            window.localStorage.setItem("systems", JSON.stringify(system))
+            window.localStorage.setItem("model", JSON.stringify(dump(system)))
         } else {
-            return JSON.parse(window.localStorage.getItem("systems")) || []
+            const json =  JSON.parse(window.localStorage.getItem("model"))
+            if(json) {
+                return parse(json)
+            } else {
+                return []
+            }
         }
     }
 
@@ -57,11 +64,11 @@ const StorageClient = class {
     }
 
     export() {
-        return this.systems()
+        return dump(this.systems())
     }
 
-    import(systems) {
-        this.systems(systems)
+    import(json) {
+        this.systems(parse(json))
     }
 
 }
