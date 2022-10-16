@@ -20,6 +20,15 @@ const Planets = ({model, updateModel, filter}) => {
         return (<div>Loading...</div>)
     }
 
+    if(model.systems.length === 0) {
+        return (
+            <div className="flex flex-col gap-2">
+                <div className="p-2 text-xl italic font-serif">"So much emptiness in space...."</div>
+                <div>Start adding some systems using "Add System" button above.</div>
+            </div>
+        )
+    }
+
     const filtered = p => {
         if (!filter) {
             return true
