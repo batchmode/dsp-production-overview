@@ -38,7 +38,7 @@ function App() {
     return (
         <HandleError>
             <div className="w-full h-full p-0 m-0 flex flex-col">
-                <div className="min-h-0 flex flex-col">
+                <div className="min-h-0 flex flex-col mb-[1.5em]">
                     <TabPane toolbar={toolbar}>
                         <Tab label="Overview" toolbar={planetsToolbar}>
                             <Planets model={model} updateModel={updateModel} filter={planetFilter}/>
@@ -49,7 +49,7 @@ function App() {
                                                                                filter={recipeFilter}/></Tab>
                     </TabPane>
                 </div>
-                <div className="w-full flex pl-6 pr-8 m-0 pt-0 pb-2 justify-between">
+                <div className="absolute bottom-0 left-0 right-0 flex pl-6 pr-8 m-0 pt-0 pb-2 justify-between">
                     <div className="justify-self-start"><Attributions/></div>
                     <Version/>
                 </div>
