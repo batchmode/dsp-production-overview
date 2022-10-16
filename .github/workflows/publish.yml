@@ -3,6 +3,8 @@ on:
   push:
     branches: [publish]
 jobs:
+  env:
+    VITE_COMMIT_SHA: ${{github.sha}}
   build:
     runs-on: ubuntu-latest
     steps:

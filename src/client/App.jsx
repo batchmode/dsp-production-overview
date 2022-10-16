@@ -10,6 +10,7 @@ import AddSystem from "./AddSystem.jsx";
 import Recipes from "./Recipes.jsx";
 import Search from "./Search.jsx";
 import ImportExport from "./ImportExport.jsx";
+import Version from "./Version.jsx";
 
 
 function App() {
@@ -26,7 +27,12 @@ function App() {
     const productsToolbar = (<Search value={productFilter} onChange={setProductFilter}/>)
     const recipesToolbar = (<Search value={recipeFilter} onChange={setRecipeFilter}/>)
 
-    const toolbar = (<ImportExport updateModel={updateModel}/>)
+    const toolbar = (
+        <div className="flex gap-4 items-center">
+            <Version/>
+            <ImportExport updateModel={updateModel}/>
+        </div>
+    )
 
     return (
         <TabPane toolbar={toolbar}>
