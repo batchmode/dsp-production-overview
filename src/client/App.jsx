@@ -11,6 +11,7 @@ import Recipes from "./Recipes.jsx";
 import Search from "./Search.jsx";
 import ImportExport from "./ImportExport.jsx";
 import Version from "./Version.jsx";
+import HandleError from "./HandleError.jsx";
 
 
 function App() {
@@ -35,14 +36,15 @@ function App() {
     )
 
     return (
-        <TabPane toolbar={toolbar}>
-            <Tab label="Overview" toolbar={planetsToolbar}>
-                <Planets model={model} updateModel={updateModel} filter={planetFilter}/>
-            </Tab>
-            <Tab label="Products" toolbar={productsToolbar}><Products model={model} filter={productFilter}/></Tab>
-            <Tab label="Recipes" toolbar={recipesToolbar}><Recipes model={model} filter={recipeFilter}/></Tab>
-        </TabPane>
-
+        <HandleError>
+            <TabPane toolbar={toolbar}>
+                <Tab label="Overview" toolbar={planetsToolbar}>
+                    <Planets model={model} updateModel={updateModel} filter={planetFilter}/>
+                </Tab>
+                <Tab label="Products" toolbar={productsToolbar}><Products model={model} filter={productFilter}/></Tab>
+                <Tab label="Recipes" toolbar={recipesToolbar}><Recipes model={model} filter={recipeFilter}/></Tab>
+            </TabPane>
+        </HandleError>
     )
 }
 
