@@ -13,7 +13,7 @@ const Attributions = () => {
             <NoWrap>inspired by</NoWrap>
             <a href="https://factoriolab.github.io/next" target="_blank">FactorioLab</a>
             <Bullet/>
-            <NoWrap>built using</NoWrap>
+            <NoWrap>built with</NoWrap>
             <a href="https://reactjs.org" target="_blank">React</a>
             <NoWrap>and</NoWrap>
             <a href="https://vitejs.dev" target="_blank">Vite</a>
