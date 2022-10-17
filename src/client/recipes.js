@@ -74,7 +74,6 @@ const recipes = [
             7
         ]
     },
-
     {
         "id": "stone-brick",
         "name": "Stone brick",
@@ -264,7 +263,6 @@ const recipes = [
             6
         ]
     },
-
     {
         "id": "sulphuric-acid-vein",
         "name": "Sulphuric acid ocean",
@@ -466,7 +464,6 @@ const recipes = [
             3
         ]
     },
-
     {
         "id": "photon-capacitor-full",
         "name": "Ray receiver photon generation",
@@ -1280,7 +1277,6 @@ const recipes = [
             6
         ]
     },
-
     {
         "id": "bamboo-vein",
         "name": "Spiniform stalagmite crystal vein",
@@ -2051,8 +2047,6 @@ const recipes = [
             10
         ]
     },
-
-
     {
         "id": "sulphuric-acid",
         "name": "Sulfuric acid",
@@ -2124,8 +2118,56 @@ const recipes = [
             12,
             1
         ]
+    },
+    {
+        "id": "logistic-bots",
+        "name": "Logistic Bots",
+        "inputs": [
+            "iron-ingot",
+            "electromagnetic-turbine",
+            "processor"
+        ],
+        "outputs": [
+            "logistic-bots"
+        ],
+        "iconPosition": [
+            0,
+            2
+        ]
+    },
+    {
+        "id": "logistic-distributor",
+        "name": "Logistic Distributor",
+        "inputs": [
+            "iron-ingot",
+            "plasma-exciter",
+            "processor"
+        ],
+        "outputs": [
+            "logistic-distributor"
+        ],
+        "iconPosition": [
+            1,
+            2
+        ]
+    },
+    {
+        "id": "chemical-plant-v2",
+        "name": "Quantum Chemical Plant",
+        "inputs": [
+            "chemical-plant",
+            "titanium-glass",
+            "strange-matter",
+            "quantum-chip"
+        ],
+        "outputs": [
+            "chemical-plant-v2"
+        ],
+        "iconPosition": [
+            5,
+            1
+        ]
     }
-
 ]
 
 export default recipes

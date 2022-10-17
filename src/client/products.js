@@ -161,8 +161,6 @@ const products = [
             1
         ]
     },
-
-
     {
         "id": "deuteron-fuel-rod",
         "name": "Deuteron fuel rod",
@@ -343,8 +341,6 @@ const products = [
             9
         ]
     },
-
-
     {
         "id": "plasma-exciter",
         "name": "Plasma exciter",
@@ -525,7 +521,6 @@ const products = [
             1
         ]
     },
-
     {
         "id": "critical-photon",
         "name": "Critical photon",
@@ -913,7 +908,6 @@ const products = [
             2
         ]
     },
-
     {
         "id": "wind-turbine",
         "name": "Wind turbine",
@@ -1137,6 +1131,33 @@ const products = [
         "iconPosition": [
             8,
             8
+        ]
+    },
+    {
+        "id": "logistic-bots",
+        "name": "Logistic Bots",
+        "isBuilding": false,
+        "iconPosition": [
+            0,
+            2
+        ]
+    },
+    {
+        "id": "logistic-distributor",
+        "name": "Logistic Distributor",
+        "isBuilding": true,
+        "iconPosition": [
+            1,
+            2
+        ]
+    },
+    {
+        "id": "chemical-plant-v2",
+        "name": "Quantum Chemical Plant",
+        "isBuilding": true,
+        "iconPosition": [
+            5,
+            1
         ]
     }
 ]
