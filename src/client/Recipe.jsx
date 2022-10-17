@@ -15,7 +15,7 @@ const Recipe = ({recipe}) => {
         <></>
     )
 
-    return (<div className="flex gap-1 items-center">
+    return (<div className="flex gap-1 items-center text-sm">
         <Icon x={recipe.iconPosition[0]} y={recipe.iconPosition[1]}/>
         <div>{recipe.name}</div>
         <div className="ml-4 flex">{inputItems}</div>

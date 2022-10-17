@@ -78,18 +78,18 @@ const ConfigureRecipes = ({system, planet, model, updateModel, onClose, initialF
 
 
     return (
-        <div className="bg-white border border-2 border-gray-500 shadow-md flex flex-col items-start">
-            <div className="flex flex-row">
+        <div className="bg-white border border-1 border-gray-500 rounded-md shadow-md flex flex-col items-start">
+            <div className="flex flex-row text-sm">
                 <div className="flex flex-col gap-2">
-                    <div className="p-2 bg-gray-300">Available Recipes</div>
+                    <div className="p-2 bg-gray-200 rounded-tl-md">Available Recipes</div>
                     <div className="h-[70vh] overflow-auto">
-                        <div className="flex flex-col flex-1 p-1 gap-2 border-r-2 border-gray-200">{availableRecipeItems}</div>
+                        <div className="h-full flex flex-col flex-1 p-1 gap-2">{availableRecipeItems}</div>
                     </div>
                 </div>
                 <div className="flex flex-col gap-2">
-                    <div className="p-2 bg-gray-300">Enabled Recipes</div>
+                    <div className="p-2 bg-gray-200 rounded-tr-md">Enabled Recipes</div>
                     <div className="h-[70vh] overflow-auto">
-                        <div className="flex flex-col p-1 gap-2">{selectedRecipeItems}</div>
+                        <div className="h-full flex flex-col p-1 gap-2 border-l-2 border-gray-200">{selectedRecipeItems}</div>
                     </div>
                 </div>
             </div>

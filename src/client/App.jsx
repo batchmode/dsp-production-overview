@@ -23,8 +23,9 @@ function App() {
     const [recipeFilter, setRecipeFilter] = useState("")
 
     const planetsToolbar = (
-        <div className="flex flex-row gap-2"><AddSystem updateModel={updateModel}/><Search value={planetFilter}
-                                                                                           onChange={setPlanetFilter}/>
+        <div className="flex flex-row gap-2">
+            <AddSystem updateModel={updateModel}/>
+            <Search value={planetFilter} onChange={setPlanetFilter}/>
         </div>)
     const productsToolbar = (<Search value={productFilter} onChange={setProductFilter}/>)
     const recipesToolbar = (<Search value={recipeFilter} onChange={setRecipeFilter}/>)
