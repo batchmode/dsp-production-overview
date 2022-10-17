@@ -1,7 +1,7 @@
 import Planet from "./Planet.jsx";
 import AddPlanet from "./AddPlanet.jsx";
 import DeleteSystem from "./DeleteSystem.jsx";
-import {useEffect, useState} from "react";
+import {useEffect, useMemo, useState} from "react";
 import ProductionOverview from "./ProductionOverview.jsx";
 import Overlay from "./Overlay.jsx";
 
@@ -17,11 +17,35 @@ const Planets = ({model, updateModel, filter}) => {
         }
     }, [model])
 
+    const filterableSystems = useMemo(() => {
+        if (!model) {
+            return []
+        }
+
+        const productById = id => {
+            return model.products.find(p => p.id === id)
+        }
+
+
+        return model.systems.map(s => {
+            return {
+                system: s,
+                filterBy: s.name.toLowerCase() + " " + s.planets.map(p => p.name.toLowerCase()).join(" "),
+                planetsFilterBy: s.planets.map(p => {
+                    return {
+                        id: p.id,
+                        filterBy: p.name.toLowerCase() + "" + p.imports.map(productById).flatMap(i => i.name.toLowerCase()).join(" ") + " " + p.exports.map(productById).flatMap(e => e.name.toLowerCase()).join(" ")
+                    }
+                })
+            }
+        })
+    }, [model])
+
     if (!model) {
         return (<div>Loading...</div>)
     }
 
-    if(model.systems.length === 0) {
+    if (model.systems.length === 0) {
         return (
             <div className="flex flex-col gap-2">
                 <div className="p-2 text-xl italic font-serif">"So much emptiness in space...."</div>
@@ -30,17 +54,26 @@ const Planets = ({model, updateModel, filter}) => {
         )
     }
 
-    const filtered = p => {
-        if (!filter) {
+
+    const filteredSystem = s => {
+        if (!filter || filter.length === 0) {
             return true
         }
 
-        return p.name.toLowerCase().includes(filter.toLowerCase())
+        return s.filterBy.includes(filter.toLowerCase()) || s.planetsFilterBy.find(f => f.filterBy.includes(filter.toLowerCase()))
     }
 
-    const items = model.systems.filter(filtered).map(s => {
+    const filteredPlanet = (fS, p) => {
+        if (!filter || filter.length === 0) {
+            return true
+        }
 
-        const planetItems = s.planets.map(p => (
+        return fS.planetsFilterBy.find(pF => pF.filterBy.includes(filter.toLowerCase()) && pF.id === p.id)
+    }
+
+    const items = filterableSystems.filter(filteredSystem).map(fS => {
+        const s = fS.system
+        const planetItems = s.planets.filter(p => filteredPlanet(fS, p)).map(p => (
             <Planet key={p.id} system={s} planet={p} model={model} updateModel={updateModel} onShowProductionChain={_ => setShowChainForPlanet({system: s, planet: p})}/>
         ))
 
