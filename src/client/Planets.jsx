@@ -45,7 +45,7 @@ const Planets = ({model, updateModel, filter}) => {
         ))
 
         return (<li key={s.id} className="p-1 flex gap-2 text-sm flex flex-col border border-1 border-gray-200 rounded">
-            <div className="bg-gray-50 p-1 rounded border-b-2 flex gap-2 items-center group">
+            <div className="bg-gray-50 pl-2 rounded border-b-2 flex gap-2 items-center group">
                 <div className="hover:text-blue-400 transition duration-75 ease-in-out">{s.name} System</div>
                 <div className="invisible group-hover:visible"><DeleteSystem system={s} updateModel={updateModel}/></div>
                 <div className="invisible group-hover:visible"><AddPlanet system={s} updateModel={updateModel}/></div>
