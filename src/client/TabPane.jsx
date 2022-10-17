@@ -22,7 +22,7 @@ const TabPane = ({children, toolbar}) => {
     const toolbarItem = selectedPane.props.toolbar ? selectedPane.props.toolbar : (<></>)
 
     return (
-        <div className="flex flex-col gap-2 pl-4 pr-4 pt-0 pb-2 min-h-0">
+        <div className="flex flex-col gap-2 pl-2 pr-2 pt-0 pb-2 min-h-0">
             <div className="bg-white pl-2 pt-2 flex items-center gap-2">
                 {buttons}
                 <div className="pl-4">{toolbarItem}</div>
