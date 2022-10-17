@@ -4,7 +4,7 @@ import Popup from "./Popup.jsx";
 import ConfigureRecipes from "./ConfigureRecipes.jsx";
 import useProductionChains from "./useProductionChains.jsx";
 
-const ProductionOverview = ({planet, model, updateModel}) => {
+const ProductionOverview = ({planet, model, updateModel, onClose}) => {
 
     const [showConfigureRecipes, setShowConfigureRecipes] = useState({show: false})
     const productionChains = useProductionChains(planet, model)
@@ -13,6 +13,10 @@ const ProductionOverview = ({planet, model, updateModel}) => {
 
     const handleClickProduct = (product) => {
         setShowConfigureRecipes({show: true, filter: product.name})
+    }
+
+    const handleClickClose = _ => {
+        onClose && onClose()
     }
 
     const productionItems = productionChains.map(chain => {
@@ -42,6 +46,11 @@ const ProductionOverview = ({planet, model, updateModel}) => {
         <div className="flex flex-col h-full w-full pb-2">
             <div className="p-2 mb-2 font-semibold text-lg bg-gray-200 flex-none flex justify-between items-center">
                 <div className="flex gap-1 items-center">
+                    <button className="capitalize text-xs hover:text-blue-400 p-1 transition duration-75 ease-in-out" onClick={handleClickClose}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </button>
                     <div>{planet.name}</div>
                     {warningIcon}
                 </div>
@@ -52,7 +61,7 @@ const ProductionOverview = ({planet, model, updateModel}) => {
                 </button>
             </div>
             <div className="overflow-auto">
-                <div className="p-2 flex flex-col gap-1 divide-y-2 divide-gray-100">
+                <div className="p-2 flex flex-col gap-1 divide-y-2 divide-gray-100 items-center">
                     {productionItems}
                 </div>
             </div>

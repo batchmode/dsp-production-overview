@@ -2,8 +2,8 @@ import Planet from "./Planet.jsx";
 import AddPlanet from "./AddPlanet.jsx";
 import DeleteSystem from "./DeleteSystem.jsx";
 import {useEffect, useState} from "react";
-import Sidebar from "./Sidebar.jsx";
 import ProductionOverview from "./ProductionOverview.jsx";
+import Overlay from "./Overlay.jsx";
 
 const Planets = ({model, updateModel, filter}) => {
 
@@ -53,11 +53,13 @@ const Planets = ({model, updateModel, filter}) => {
         </li>)
     })
 
+    const overlayItem = showChainForPlanet
+        ? (<Overlay><ProductionOverview planet={showChainForPlanet} model={model} updateModel={updateModel} onClose={_ => setShowChainForPlanet(false)}/></Overlay>)
+        : (<></>)
+
     return (<div className="p-2">
         <ul className="flex gap-2 flex-col">{items}</ul>
-        <Sidebar open={showChainForPlanet != null} onClose={_ => setShowChainForPlanet(null)}>
-            <ProductionOverview planet={showChainForPlanet} model={model} updateModel={updateModel}/>
-        </Sidebar>
+        {overlayItem}
     </div>)
 }
 
