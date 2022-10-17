@@ -11,8 +11,9 @@ const Planets = ({model, updateModel, filter}) => {
 
     useEffect(() => {
         if (showChainForPlanet) {
-            const planetFromModel = model.systems.map(s => s.planets).flatMap(p => p).find(p => p.id === showChainForPlanet.id)
-            setShowChainForPlanet(planetFromModel)
+            const systemFromModel = model.systems.find(s => s.id === showChainForPlanet.system.id)
+            const planetFromModel = systemFromModel.planets.find(p => p.id === showChainForPlanet.planet.id)
+            setShowChainForPlanet({system: systemFromModel, planet: planetFromModel})
         }
     }, [model])
 
@@ -40,7 +41,7 @@ const Planets = ({model, updateModel, filter}) => {
     const items = model.systems.filter(filtered).map(s => {
 
         const planetItems = s.planets.map(p => (
-            <Planet key={p.id} planet={p} model={model} updateModel={updateModel} onShowProductionChain={_ => setShowChainForPlanet(p)}/>
+            <Planet key={p.id} system={s} planet={p} model={model} updateModel={updateModel} onShowProductionChain={_ => setShowChainForPlanet({system: s, planet: p})}/>
         ))
 
         return (<li key={s.id} className="p-1 flex gap-2 text-sm flex flex-col border border-1 border-gray-200 rounded">
@@ -54,7 +55,11 @@ const Planets = ({model, updateModel, filter}) => {
     })
 
     const overlayItem = showChainForPlanet
-        ? (<Overlay><ProductionOverview planet={showChainForPlanet} model={model} updateModel={updateModel} onClose={_ => setShowChainForPlanet(false)}/></Overlay>)
+        ? (
+            <Overlay>
+                <ProductionOverview system={showChainForPlanet.system} planet={showChainForPlanet.planet} model={model} updateModel={updateModel} onClose={_ => setShowChainForPlanet(null)}/>
+            </Overlay>
+        )
         : (<></>)
 
     return (<div className="p-2">

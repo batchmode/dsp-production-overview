@@ -24,14 +24,14 @@ const addPlanet = (model, name, systemId) => {
     return {systems: storage.systems(), products, recipes}
 }
 
-const deletePlanet = (model, id) => {
-    const system = model.systems.find(s => s.planets.find(p => p.id === id)) //TODO add system to signature
+const deletePlanet = (model, systemId, id) => {
+    const system = model.systems.find(s => s.id === systemId)
     storage.deletePlanet(system.id, id)
     return {systems: storage.systems(), products, recipes}
 }
 
-const updatePlanet = (model, planetId, importIds, exportIds) => {
-    const system = model.systems.find(s => s.planets.find(p => p.id === planetId)) //TODO add system to signature
+const updatePlanet = (model, systemId, planetId, importIds, exportIds) => {
+    const system = model.systems.find(s => s.id === systemId)
     const planet = system.planets.find(p => p.id === planetId)
     planet.imports = importIds
     planet.exports = exportIds
@@ -39,8 +39,8 @@ const updatePlanet = (model, planetId, importIds, exportIds) => {
     return {systems: storage.systems(), products, recipes}
 }
 
-const updatePlanetRecipes = async (model, planet, recipes) => {
-    const system = model.systems.find(s => s.planets.find(p => p.id === planet.id))
+const updatePlanetRecipes = async (model, systemId, planet, recipes) => {
+    const system = model.systems.find(s => s.id === systemId)
     const planetToUpdate = system.planets.find(p => p.id === planet.id)
     planetToUpdate.enabledRecipes = recipes
     storage.updatePlanet(system.id, planetToUpdate)
@@ -85,17 +85,17 @@ const useModel = () => {
                 break
             }
             case 'deletePlanet': {
-                const newModel = await deletePlanet(model, action.payload.id)
+                const newModel = await deletePlanet(model, action.payload.systemId, action.payload.id)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'updatePlanet': {
-                const newModel = await updatePlanet(model, action.payload.id, action.payload.importIds, action.payload.exportIds)
+                const newModel = await updatePlanet(model, action.payload.systemId, action.payload.id, action.payload.importIds, action.payload.exportIds)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'updatePlanetRecipes': {
-                const newModel = await updatePlanetRecipes(model, action.payload.planet, action.payload.recipes)
+                const newModel = await updatePlanetRecipes(model, action.payload.systemId, action.payload.planet, action.payload.recipes)
                 dispatch({type: 'load', payload: newModel})
                 break
             }

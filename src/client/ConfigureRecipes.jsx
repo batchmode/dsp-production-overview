@@ -2,7 +2,7 @@ import {useMemo, useState} from "react";
 import Recipe from "./Recipe.jsx";
 import Search from "./Search.jsx";
 
-const ConfigureRecipes = ({planet, model, updateModel, onClose, initialFilter}) => {
+const ConfigureRecipes = ({system, planet, model, updateModel, onClose, initialFilter}) => {
 
     const [selectedRecipes, setSelectedRecipes] = useState(planet.enabledRecipes)
     const [filter, setFilter] = useState(initialFilter)
@@ -21,7 +21,7 @@ const ConfigureRecipes = ({planet, model, updateModel, onClose, initialFilter}) 
     }
 
     const handleSave = () => {
-        updateModel({type: "updatePlanetRecipes", payload: {planet: planet, recipes: selectedRecipes}})
+        updateModel({type: "updatePlanetRecipes", payload: {planet: planet, systemId: system.id, recipes: selectedRecipes}})
         onClose && onClose()
     }
 

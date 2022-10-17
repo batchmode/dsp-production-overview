@@ -4,7 +4,7 @@ import {useState} from "react";
 import SelectProducts from "./SelectProducts.jsx";
 import Popup from "./Popup.jsx";
 
-const Planet = ({planet, model, updateModel, onShowProductionChain}) => {
+const Planet = ({system, planet, model, updateModel, onShowProductionChain}) => {
 
     const [showImportSelection, setShowImportSelection] = useState(false)
     const [showExportSelection, setShowExportSelection] = useState(false)
@@ -23,6 +23,7 @@ const Planet = ({planet, model, updateModel, onShowProductionChain}) => {
         updateModel({
             type: 'updatePlanet', payload: {
                 id: planet.id,
+                systemId: system.id,
                 importIds: products.map(p => p.id),
                 exportIds: planet.exports
             }
@@ -34,6 +35,7 @@ const Planet = ({planet, model, updateModel, onShowProductionChain}) => {
         updateModel({
             type: 'updatePlanet', payload: {
                 id: planet.id,
+                systemId: system.id,
                 importIds: planet.imports,
                 exportIds: products.map(p => p.id)
             }
@@ -81,7 +83,7 @@ const Planet = ({planet, model, updateModel, onShowProductionChain}) => {
              className="ml-2 mt-1 mb-2 flex items-center gap-2 group">
             <div className="cursor-pointer hover:text-blue-400 transition duration-75 ease-in-out" onClick={_ => onShowProductionChain()}>{planet.name}</div>
             <div className="invisible group-hover:visible">
-                <DeletePlanet planet={planet} updateModel={updateModel}/>
+                <DeletePlanet system={system} planet={planet} updateModel={updateModel}/>
             </div>
         </div>
         <div className="flex flex-col gap-2 items-stretch">

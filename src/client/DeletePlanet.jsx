@@ -2,7 +2,7 @@ import {useState} from "react";
 import Popup from "./Popup.jsx";
 import Confirm from "./Confirm.jsx";
 
-const DeletePlanet = ({planet, updateModel}) => {
+const DeletePlanet = ({system, planet, updateModel}) => {
 
     const [showConfirm, setShowFomfirm] = useState(false)
 
@@ -11,7 +11,7 @@ const DeletePlanet = ({planet, updateModel}) => {
     }
 
     const handleYes = () => {
-        updateModel({type: 'deletePlanet', payload: {id: planet.id}})
+        updateModel({type: 'deletePlanet', payload: {id: planet.id, systemId: system.id}})
         setShowFomfirm(false)
     }
 

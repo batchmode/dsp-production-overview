@@ -4,7 +4,7 @@ import Popup from "./Popup.jsx";
 import ConfigureRecipes from "./ConfigureRecipes.jsx";
 import useProductionChains from "./useProductionChains.jsx";
 
-const ProductionOverview = ({planet, model, updateModel, onClose}) => {
+const ProductionOverview = ({system, planet, model, updateModel, onClose}) => {
 
     const [showConfigureRecipes, setShowConfigureRecipes] = useState({show: false})
     const productionChains = useProductionChains(planet, model)
@@ -29,7 +29,7 @@ const ProductionOverview = ({planet, model, updateModel, onClose}) => {
 
     const popup = showConfigureRecipes.show ? (
         <Popup>
-            <ConfigureRecipes planet={planet} model={model} updateModel={updateModel}
+            <ConfigureRecipes system={system} planet={planet} model={model} updateModel={updateModel}
                               onClose={_ => setShowConfigureRecipes({show: false})}
                               initialFilter={showConfigureRecipes.filter}/>
         </Popup>
