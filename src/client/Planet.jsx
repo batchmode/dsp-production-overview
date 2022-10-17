@@ -61,7 +61,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain}) => 
     if (showImportSelection) {
         importSelection = (
             <Popup>
-                <SelectProducts planet={planet} title="imports" products={planet.imports.map(productById)} allProducts={model.products} onSave={onImportSave}
+                <SelectProducts planet={planet} title="Imports" products={planet.imports.map(productById)} allProducts={model.products} onSave={onImportSave}
                                 onCancel={onCancel}/>
             </Popup>
         )
@@ -72,7 +72,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain}) => 
     if (showExportSelection) {
         exportSelection = (
             <Popup>
-                <SelectProducts planet={planet} title="exports" products={planet.exports.map(productById)} allProducts={model.products} onSave={onExportSave}
+                <SelectProducts planet={planet} title="Exports" products={planet.exports.map(productById)} allProducts={model.products} onSave={onExportSave}
                                 onCancel={onCancel}/>
             </Popup>
         )

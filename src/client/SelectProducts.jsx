@@ -84,7 +84,7 @@ const SelectProducts = ({planet, title, products, allProducts, onSave, onCancel}
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                 </button>
-                <div>{planet.name} {title}</div>
+                <div>{planet.name} - {title}</div>
             </div>
             <div
                 className="mt-2 ml-2 mr-2 p-2 pt-2 pb-1 flex flex-wrap gap-1 min-h-[46px] min-w-[52px]">
