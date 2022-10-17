@@ -6,8 +6,8 @@ const StorageClient = class {
         if (system) {
             window.localStorage.setItem("model", JSON.stringify(dump(system)))
         } else {
-            const json =  JSON.parse(window.localStorage.getItem("model"))
-            if(json) {
+            const json = JSON.parse(window.localStorage.getItem("model"))
+            if (json) {
                 return parse(json)
             } else {
                 return []
@@ -37,7 +37,9 @@ const StorageClient = class {
         const system = this.systems().find(s => s.id === systemId)
         if (!system) return
 
-        if (system.planets.find(p => p.name === name)) return
+        if (this.systems().flatMap(s => s.planets).find(p => p.name === name)) {
+            return
+        }
 
         system.planets.push({
             id: name,
