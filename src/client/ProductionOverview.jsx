@@ -43,8 +43,8 @@ const ProductionOverview = ({system, planet, model, updateModel, onClose}) => {
         : (<></>)
 
     return (
-        <div className="flex flex-col h-full w-full pb-2">
-            <div className="p-2 mb-2 font-semibold text-lg bg-gray-200 flex-none flex justify-between items-center">
+        <div className="flex flex-col h-full w-full pb-2 rounded-md">
+            <div className="p-2 mb-2 font-semibold text-lg bg-gray-200 flex-none flex justify-between items-center rounded-t-md">
                 <div className="flex gap-1 items-center">
                     <button className="capitalize text-xs hover:text-blue-400 p-1 transition duration-75 ease-in-out" onClick={handleClickClose}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
