@@ -35,16 +35,28 @@ Using this feature you also can share your configuration.
 Run the DSP Overview locally in `dev` mode.
 Install the dependencies with
 
-`npm install`
+```
+npm install
+```
 
 And then start the client with
 
-`npm run dev`
+```
+npm run dev
+```
 
 ## Run as Docker container
 
-`./build.sh` to build the container
+Build the container
+
+```
+./build.sh
+``` 
 
 Start the container with
 
-`docker run batchmode/dsp-overview:latest -p 8080:8080`
+```
+docker run -e BASE_URL=/dsp-production-overview -p 8080:8080 batchmode/dsp-overview:latest
+```
+
+Open http://localhost:8080/dsp-production-overview/
