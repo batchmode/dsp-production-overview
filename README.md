@@ -2,10 +2,10 @@
 
 ![publish](https://github.com/batchmode/dsp-production-overview/actions/workflows/publish.yml/badge.svg)
 
-Ever being tired on writing down notes about which factories you build on which planet?
+Ever being tired of writing down notes about which factories you build on which planet?
 Or which planet provides which products or what are the needs of a planet?
 
-Me too! So I started to write a little online page where you can keep track about your systems and planets.
+Me too! So I started to write a little [online page](https://batchmode.github.io/dsp-production-overview/) where you can keep track about your systems and planets.
 
 ![overview](doc/images/overview.png?raw=true "Overview")
 
@@ -15,11 +15,13 @@ You can configure import products and export products for each planet.
 ![exports](doc/images/select_exports.png?raw_true "Exports")
 
 
-There is also a feature to visualize the production lines for a planet in a tree layout.
+There is also a feature to visualize the production lines for a planet in a tree layout based upon which products you are exporting.
 
 ![chain](doc/images/production_chain.png?raw=true "Production Chain")
 
 For this you can enable the recipes for each planet to use in the case that there are multiple ways to create a product.
+If there are more recipes available for a product you have to enable at least one of them.
+If not, a little warning icon with an exclamation mark will be displayed.
 
 ![recipes](doc/images/enable_recipes.png?raw=true "Enable Recipes")
 
