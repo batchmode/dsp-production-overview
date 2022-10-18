@@ -2,6 +2,8 @@
 
 ![publish](https://github.com/batchmode/dsp-production-overview/actions/workflows/publish.yml/badge.svg)
 
+## Online Production Overview for [Dyson Sphere Program](https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/) players.
+
 Ever being tired of writing down notes about which factories you build on which planet?
 Or which planet provides which products or what are the needs of a planet?
 

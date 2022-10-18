@@ -23,6 +23,8 @@ const Attributions = () => {
             <a href="https://heroicons.com" target="_blank">Heroicons</a>
             <Bullet/>
             <a href="https://fontawesome.com" target="_blank">Fontawesome</a>
+            <Bullet/>
+            <NoWrap>visit <a href="https://store.steampowered.com/app/1366540/Dyson_Sphere_Program/" target="_blank">Dyson Sphere Program on Steam!</a></NoWrap>
         </div>
     )
 }
