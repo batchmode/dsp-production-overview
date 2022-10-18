@@ -11,25 +11,30 @@ Me too! So I started to write a little [online page](https://batchmode.github.io
 
 ![overview](doc/images/overview.png?raw=true "Overview")
 
-
-You can configure import products and export products for each planet.
+You will have an overview of all your systems and planets. What they need and what they provide.
+You can search for systems, planets and products.
 
 ![exports](doc/images/select_exports.png?raw_true "Exports")
 
+You can configure import products and export products for each planet.
+
+![chain](doc/images/production_chain.png?raw=true "Production Chain")
 
 There is also a feature to visualize the production lines for a planet in a tree layout based upon which products you are exporting.
 
-![chain](doc/images/production_chain.png?raw=true "Production Chain")
+![recipes](doc/images/enable_recipes.png?raw=true "Enable Recipes")
 
 For this you can enable the recipes for each planet to use in the case that there are multiple ways to create a product.
 If there are more recipes available for a product you have to enable at least one of them.
 If not, a little warning icon with an exclamation mark will be displayed.
 
-![recipes](doc/images/enable_recipes.png?raw=true "Enable Recipes")
+## Where is the Data?
 
 Your configuration will be stored locally in the `localstorage` of your browser.
 The `localstorage` is usually not being deleted so easily as it is with cookies. 
 You can close the browser and shutdown your PC. The data will be kept on your computer.
+
+![your_data](doc/images/import_export_data.png?raw=true "Your Data")
 
 However it is possible to save and restore you configuration to and from a file using import and export.
 Using this feature you also can share your configuration.
