@@ -28,7 +28,7 @@ For this you can enable the recipes for each planet to use in the case that ther
 If there are more recipes available for a product you have to enable at least one of them.
 If not, a little warning icon with an exclamation mark will be displayed.
 
-## Where is the Data?
+## Where is my Data?
 
 Your configuration will be stored locally in the `localstorage` of your browser.
 The `localstorage` is usually not being deleted so easily as it is with cookies. 
@@ -39,7 +39,14 @@ You can close the browser and shutdown your PC. The data will be kept on your co
 However it is possible to save and restore you configuration to and from a file using import and export.
 Using this feature you also can share your configuration.
 
-## Start Client in Dev mode
+## What else out there?
+
+Have a look at [FacorioLab](https://factoriolab.github.io/next/list?p=iron-ore*60&s=dsp&v=4). They have a calculator included for Dyson Sphere Program.
+Their source code [repo](https://github.com/factoriolab/factoriolab) on Github helped me a lot while developing this tool. 
+
+## For Developers
+
+### Start Client in Dev mode
 
 Run the DSP Overview locally in `dev` mode.
 Install the dependencies with
@@ -54,7 +61,7 @@ And then start the client with
 npm run dev
 ```
 
-## Run as Docker container
+### Run as Docker container
 
 Build the container
 
