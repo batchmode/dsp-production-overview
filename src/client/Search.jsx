@@ -1,4 +1,5 @@
 import {createRef, useEffect} from "react";
+import Input from "./Input.jsx";
 
 const Search = ({value, onChange, focus}) => {
 
@@ -8,10 +9,7 @@ const Search = ({value, onChange, focus}) => {
         if(focus && inputRef && inputRef.current) inputRef.current.focus()
     }, [focus, inputRef])
 
-    return (<label className="flex gap-1 text-sm">
-        <input ref={inputRef} type="text" className="border border-1 border-gray-400 focus:outline-none focus:border-2 placeholder:italic placeholder:text-xs pl-2 placeholder-blue-400"
-               value={value} onChange={e => onChange(e.target.value)} placeholder="SEARCH"/>
-    </label>)
+    return (<Input value={value} onChange={onChange} focus={focus} placeholder="SEARCH"/>)
 }
 
 export default Search
