@@ -7,7 +7,7 @@
 Ever being tired of writing down notes about which factories you build on which planet?
 Or which planet provides which products or what are the needs of a planet?
 
-Me too! So I started to write a little [online page](https://batchmode.github.io/dsp-production-overview/) where you can keep track about your systems and planets.
+Me too! So I started to develop a little [online page](https://batchmode.github.io/dsp-production-overview/) where you can keep track about your systems and planets.
 
 ![overview](doc/images/overview.png?raw=true "Overview")
 
