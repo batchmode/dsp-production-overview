@@ -36,7 +36,7 @@ You can close the browser and shutdown your PC. The data will be kept on your co
 
 ![your_data](doc/images/import_export_data.png?raw=true "Your Data")
 
-However it is possible to save and restore you configuration to and from a file using import and export.
+However it is possible to save and restore your configuration to and from a file using import and export.
 Using this feature you also can share your configuration.
 
 ## What else out there?
