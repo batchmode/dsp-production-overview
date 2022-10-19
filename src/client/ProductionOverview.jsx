@@ -49,7 +49,9 @@ const ProductionOverview = ({system, planet, model, updateModel, onClose}) => {
     const productionRatePopup = showSetProductionRate.show
         ? (
             <Popup>
-                <ProductionRate planet={planet} product={showSetProductionRate.product} onClose={_ => setShowSetProductionRate({show: false})}/>
+                <ProductionRate system={system} planet={planet} product={showSetProductionRate.product}
+                                onClose={_ => setShowSetProductionRate({show: false})}
+                                updateModel={updateModel}/>
             </Popup>
         )
         : (<></>)

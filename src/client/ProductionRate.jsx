@@ -2,15 +2,21 @@ import {useState} from "react";
 import Input from "./Input.jsx";
 import Product from "./Product.jsx";
 
-const ProductionRate = ({planet, product, onClose}) => {
-    const [rate, setRate] = useState("")
+const ProductionRate = ({system, planet, product, onClose, updateModel}) => {
+    const [rate, setRate] = useState(planet.productionRates.find(r => r.product === product.id))
 
     const handleSet = () => {
+        updateModel({
+            type: "updateProductionRate", payload: {
+                systemId: system.id, planetId: planet.id, productId: product.id, rate
+            }
+        })
         onClose && onClose()
 
     }
 
     const handleCancel = () => {
+        setRate(planet.productionRates.find(r => r.product === product.id))
         onClose && onClose()
     }
 

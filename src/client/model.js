@@ -47,6 +47,22 @@ const updatePlanetRecipes = (model, systemId, planet, recipes) => {
     return {systems: storage.systems(), products, recipes: model.recipes}
 }
 
+const updateProductionRate = (model, systemId, planetId, productId, rate) => {
+    const system = model.systems.find(s => s.id === systemId)
+    const planetToUpdate = system.planets.find(p => p.id === planetId)
+    const rateToUpdate = planetToUpdate.productionRates.find(r => r.product === productId)
+    if(rateToUpdate) {
+        rateToUpdate.rate = rate
+    } else {
+        planetToUpdate.productionRates.push({
+            product: productId,
+            rate: rate
+        })
+    }
+    storage.updatePlanet(system.id, planetToUpdate)
+    return {systems: storage.systems(), products, recipes: model.recipes}
+}
+
 const reload = () => {
     return {systems: storage.systems(), products, recipes}
 }
@@ -96,6 +112,12 @@ const useModel = () => {
             }
             case 'updatePlanetRecipes': {
                 const newModel = updatePlanetRecipes(model, action.payload.systemId, action.payload.planet, action.payload.recipes)
+                dispatch({type: 'load', payload: newModel})
+                break
+            }
+            case 'updateProductionRate': {
+                const payload = action.payload
+                const newModel = updateProductionRate(model, payload.systemId, payload.planetId, payload.productId, payload.rate)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
