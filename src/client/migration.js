@@ -1,12 +1,12 @@
 const MODEL_VERSION = 2
 
 
-const missing = item => {
-    return new Error("bad input, missing element: " + item)
+const missing = (object, prop) => {
+    return new Error("bad input, missing element: " + prop + " in " + JSON.stringify(object))
 }
 
 const checkProp = (object, prop) => {
-    if (!object[prop]) throw missing(prop)
+    if (object[prop] === null) throw missing(object, prop)
 }
 
 const checkProps = (object, props) => {
@@ -38,7 +38,7 @@ const validateV1 = json => {
 
 const validateV2 = json => {
     const validateProductionRate = pr => {
-        checkProps(pr, "product", "rate")
+        checkProps(pr, ["product", "rate"])
     }
 
     const validatePlanet = planet => {
@@ -51,13 +51,12 @@ const validateV2 = json => {
         system.planets.forEach(validatePlanet)
     }
 
-    console.log(json)
     checkProps(json, ["systems"])
     json.systems.forEach(validateSystem)
     return json.systems
 }
 
-const migrateToV2 = jsonV1 => {
+const migrateToV2 = systemsV1 => {
     const migratePlanet = p => {
         return {
             id: p.id,
@@ -79,7 +78,7 @@ const migrateToV2 = jsonV1 => {
 
     return {
         version: 2,
-        systems: jsonV1.systems.map(migrateSysem)
+        systems: systemsV1.map(migrateSysem)
     }
 }
 
