@@ -3,7 +3,7 @@ import storage from "./storageClient.js"
 import products from "./products.js";
 import recipes from "./recipes.js";
 
-const load = async () => {
+const load = () => {
     const systems = storage.systems()
 
     return {systems: systems, products, recipes}
@@ -39,10 +39,26 @@ const updatePlanet = (model, systemId, planetId, importIds, exportIds) => {
     return {systems: storage.systems(), products, recipes}
 }
 
-const updatePlanetRecipes = async (model, systemId, planet, recipes) => {
+const updatePlanetRecipes = (model, systemId, planet, recipes) => {
     const system = model.systems.find(s => s.id === systemId)
     const planetToUpdate = system.planets.find(p => p.id === planet.id)
     planetToUpdate.enabledRecipes = recipes
+    storage.updatePlanet(system.id, planetToUpdate)
+    return {systems: storage.systems(), products, recipes: model.recipes}
+}
+
+const updateProductionRate = (model, systemId, planetId, productId, rate) => {
+    const system = model.systems.find(s => s.id === systemId)
+    const planetToUpdate = system.planets.find(p => p.id === planetId)
+    const rateToUpdate = planetToUpdate.productionRates.find(r => r.product === productId)
+    if(rateToUpdate) {
+        rateToUpdate.rate = rate
+    } else {
+        planetToUpdate.productionRates.push({
+            product: productId,
+            rate: rate
+        })
+    }
     storage.updatePlanet(system.id, planetToUpdate)
     return {systems: storage.systems(), products, recipes: model.recipes}
 }
@@ -70,32 +86,38 @@ const useModel = () => {
 
         switch (action.type) {
             case 'addSystem': {
-                const newModel = await addSystem(model, action.payload.name)
+                const newModel = addSystem(model, action.payload.name)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'deleteSystem': {
-                const newModel = await deleteSystem(model, action.payload.id)
+                const newModel = deleteSystem(model, action.payload.id)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'addPlanet': {
-                const newModel = await addPlanet(model, action.payload.name, action.payload.systemId)
+                const newModel = addPlanet(model, action.payload.name, action.payload.systemId)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'deletePlanet': {
-                const newModel = await deletePlanet(model, action.payload.systemId, action.payload.id)
+                const newModel = deletePlanet(model, action.payload.systemId, action.payload.id)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'updatePlanet': {
-                const newModel = await updatePlanet(model, action.payload.systemId, action.payload.id, action.payload.importIds, action.payload.exportIds)
+                const newModel = updatePlanet(model, action.payload.systemId, action.payload.id, action.payload.importIds, action.payload.exportIds)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'updatePlanetRecipes': {
-                const newModel = await updatePlanetRecipes(model, action.payload.systemId, action.payload.planet, action.payload.recipes)
+                const newModel = updatePlanetRecipes(model, action.payload.systemId, action.payload.planet, action.payload.recipes)
+                dispatch({type: 'load', payload: newModel})
+                break
+            }
+            case 'updateProductionRate': {
+                const payload = action.payload
+                const newModel = updateProductionRate(model, payload.systemId, payload.planetId, payload.productId, payload.rate)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
@@ -109,7 +131,7 @@ const useModel = () => {
 
 
     useEffect(() => {
-        load().then(result => dispatch({type: 'load', payload: result}))
+        dispatch({type: 'load', payload: load()})
     }, [])
 
     return [model, asyncDispatch]
