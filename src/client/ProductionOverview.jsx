@@ -13,15 +13,8 @@ const ProductionOverview = ({system, planet, model, updateModel, onClose}) => {
 
     if (!planet) return (<></>)
 
-    const handleClickProduct = (product, action) => {
-        switch (action) {
-            case "showRecipes":
-                setShowConfigureRecipes({show: true, filter: product.name})
-                break
-            case "setProductionRate":
-                setShowSetProductionRate({show: true, product})
-                break
-        }
+    const handleClickProduct = (product) => {
+        setShowConfigureRecipes({show: true, filter: product.name})
     }
 
     const handleClickClose = _ => {
