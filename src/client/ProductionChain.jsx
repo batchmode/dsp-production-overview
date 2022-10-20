@@ -2,7 +2,7 @@ import * as d3 from 'd3'
 import {useEffect, useRef, useState} from "react";
 import icons from '../assets/icons.png'
 
-const Chart = ({root, onClickProduct, productionRate}) => {
+const Chart = ({root, onClickProduct}) => {
 
     const [svgExtent, setSvgExtent] = useState({width: 100, height: 100})
     const ref = useRef()
@@ -38,14 +38,9 @@ const Chart = ({root, onClickProduct, productionRate}) => {
         svg.selectAll("defs").remove()
 
         const handleClicked = (event, d) => {
-            if (d.data.recipe.id === "missing") {
-                onClickProduct && onClickProduct(d.data.product, "showRecipes")
-            } else {
-                if(!d.parent) {
-                    onClickProduct && onClickProduct(d.data.product, "setProductionRate")
-                }
+            if(d.data.recipe.id === "missing") {
+                onClickProduct && onClickProduct(d.data.product)
             }
-
         }
 
         const idFor = position => {
@@ -55,8 +50,8 @@ const Chart = ({root, onClickProduct, productionRate}) => {
         const x = d => d.data.product.iconPosition[0] * 84
         const y = d => d.data.product.iconPosition[1] * 84
 
-        const defs = svg.append("defs")
-        defs.selectAll("clipPath")
+        svg.append("defs")
+            .selectAll("clipPath")
             .data(root.descendants())
             .join("clipPath")
             .attr("id", d => idFor(d.data.product.iconPosition))
@@ -65,25 +60,6 @@ const Chart = ({root, onClickProduct, productionRate}) => {
             .attr("height", 80)
             .attr("x", x)
             .attr("y", y)
-
-        const defsFilter = defs.append("filter")
-            .attr("x", 0)
-            .attr("y", 0)
-            .attr("width", 1)
-            .attr("height", 1)
-            .attr("id", "solid")
-
-        defsFilter.append("feFlood")
-            .attr("flood-color", "white")
-            .attr("result", "bg")
-
-        const feMerge = defsFilter.append("feMerge")
-
-        feMerge.append("feMergeNode")
-            .attr("in", "bg")
-
-        feMerge.append("feMergeNode")
-            .attr("in", "SourceGraphic")
 
 
         const g = svg.append("g")
@@ -134,22 +110,7 @@ const Chart = ({root, onClickProduct, productionRate}) => {
             .attr("stroke-linejoin", "round")
             .attr("d", "M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z")
 
-        g.append("g")
-            .selectAll("g")
-            .data([root].filter(d => d.data.recipe.id !== "missing"), d => d.data.product.id + "/" + d.data.recipe.id)
-            .join("g")
-            .attr("transform", d => "translate(" + (d.x + 8) + ", " + (d.y + 18) + ")")
-            .append("text")
-            .attr("fill", "white")
-            .attr("stroke-width", 1)
-            .attr("stroke", "black")
-            .attr("font-size", "0.7em")
-            .text("100/min")
-            .on("click", handleClicked)
-            .attr("filter", "url(#solid)")
-
-
-    }, [root, productionRate, onClickProduct])
+    }, [root])
 
 
     return (<svg ref={ref} style={{width: (svgExtent.width + 64) + "px", height: (svgExtent.height + 64) + "px"}}/>)
