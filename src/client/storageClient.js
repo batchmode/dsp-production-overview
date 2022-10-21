@@ -1,12 +1,14 @@
 import {dump, parse} from "./migration.js";
 
+const modelKey = import.meta.env.VITE_MODEL_KEY
+
 const StorageClient = class {
 
     systems(system) {
         if (system) {
-            window.localStorage.setItem("model", JSON.stringify(dump(system)))
+            window.localStorage.setItem(modelKey, JSON.stringify(dump(system)))
         } else {
-            const json = JSON.parse(window.localStorage.getItem("model"))
+            const json = JSON.parse(window.localStorage.getItem(modelKey))
             if (json) {
                 return parse(json)
             } else {
