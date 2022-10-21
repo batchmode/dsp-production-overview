@@ -1,4 +1,5 @@
 import React from "react";
+import DevTools from "./DevTools.jsx";
 
 class HandleError extends React.Component {
     constructor(props) {
@@ -28,6 +29,7 @@ class HandleError extends React.Component {
                         </svg>
                         <div>Reload Page</div>
                     </button>
+                    <DevTools/>
                 </div>
             );
         }

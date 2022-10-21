@@ -13,6 +13,7 @@ import ImportExport from "./ImportExport.jsx";
 import Version from "./Version.jsx";
 import Attributions from "./Attributions.jsx";
 import Readme from "./Readme.jsx";
+import DevTools from "./DevTools.jsx";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
 
     const toolbar = (
         <div className="flex gap-4 items-center">
+            <DevTools/>
             <Readme/>
             <ImportExport updateModel={updateModel}/>
         </div>
