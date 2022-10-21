@@ -13,7 +13,7 @@ import ImportExport from "./ImportExport.jsx";
 import Version from "./Version.jsx";
 import Attributions from "./Attributions.jsx";
 import Readme from "./Readme.jsx";
-import DevTools from "./DevTools.jsx";
+import DevTools from "./dev/DevTools.jsx";
 
 
 function App() {

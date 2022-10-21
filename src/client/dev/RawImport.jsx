@@ -1,5 +1,5 @@
-import {useFileImport} from "./io/useFile.js";
-import storageClient from "./storageClient.js";
+import {useFileImport} from "../io/useFile.js";
+import storageClient from "../storageClient.js";
 import {useState} from "react";
 
 const RawImport = () => {

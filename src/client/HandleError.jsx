@@ -1,5 +1,5 @@
 import React from "react";
-import DevTools from "./DevTools.jsx";
+import DevTools from "./dev/DevTools.jsx";
 
 class HandleError extends React.Component {
     constructor(props) {

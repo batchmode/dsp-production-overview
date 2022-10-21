@@ -1,7 +1,8 @@
 import {useState} from "react";
-import Popup from "./Popup.jsx";
+import Popup from "../Popup.jsx";
 import Purge from "./Purge.jsx";
 import RawImport from "./RawImport.jsx";
+import ShowModel from "./ShowModel.jsx";
 
 const DevTools = () => {
     const [showDevTools, setShowDevTools] = useState(false)
@@ -15,6 +16,7 @@ const DevTools = () => {
             <div className="bg-white p-2 gap-2 flex flex-col border-2 rounded-md">
                 <Purge/>
                 <RawImport/>
+                <ShowModel/>
                 <button className="text-xs cursor-pointer" onClick={_ => setShowDevTools(false)}>close</button>
             </div>
         </Popup>)

@@ -12,6 +12,10 @@ const StorageClient = class {
         window.localStorage.setItem(modelKey, JSON.stringify(json))
     }
 
+    rawExport() {
+        return window.localStorage.getItem(modelKey)
+    }
+
     systems(system) {
         if (system) {
             window.localStorage.setItem(modelKey, JSON.stringify(dump(system)))
