@@ -20,12 +20,7 @@ const StorageClient = class {
         if (system) {
             window.localStorage.setItem(modelKey, JSON.stringify(dump(system)))
         } else {
-            const json = JSON.parse(window.localStorage.getItem(modelKey))
-            if (json) {
-                return parse(json)
-            } else {
-                return []
-            }
+            return parse(JSON.parse(window.localStorage.getItem(modelKey)))
         }
     }
 
