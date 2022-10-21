@@ -83,6 +83,8 @@ const migrateToV2 = systemsV1 => {
 }
 
 const parse = (json) => {
+    if(!json) return []
+
     const version = versionOf(json)
 
     switch (version) {

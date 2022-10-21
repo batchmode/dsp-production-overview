@@ -4,16 +4,23 @@ const modelKey = import.meta.env.VITE_MODEL_KEY
 
 const StorageClient = class {
 
+    purge() {
+        window.localStorage.removeItem(modelKey)
+    }
+
+    rawImport(json) {
+        window.localStorage.setItem(modelKey, JSON.stringify(json))
+    }
+
+    rawExport() {
+        return window.localStorage.getItem(modelKey)
+    }
+
     systems(system) {
         if (system) {
             window.localStorage.setItem(modelKey, JSON.stringify(dump(system)))
         } else {
-            const json = JSON.parse(window.localStorage.getItem(modelKey))
-            if (json) {
-                return parse(json)
-            } else {
-                return []
-            }
+            return parse(JSON.parse(window.localStorage.getItem(modelKey)))
         }
     }
 
