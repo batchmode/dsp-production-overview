@@ -55,7 +55,8 @@ const StorageClient = class {
             name: name,
             imports: [],
             exports: [],
-            enabledRecipes: []
+            enabledRecipes: [],
+            productionRates: []
         })
         this.updateSystem(system)
     }
