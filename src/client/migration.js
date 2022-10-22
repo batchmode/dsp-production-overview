@@ -6,7 +6,7 @@ const missing = (object, prop) => {
 }
 
 const checkProp = (object, prop) => {
-    if (object[prop] === null) throw missing(object, prop)
+    if (object[prop] === undefined || object[prop] === null) throw missing(object, prop)
 }
 
 const checkProps = (object, props) => {
@@ -83,7 +83,7 @@ const migrateToV2 = systemsV1 => {
 }
 
 const parse = (json) => {
-    if(!json) return []
+    if (!json) return []
 
     const version = versionOf(json)
 
