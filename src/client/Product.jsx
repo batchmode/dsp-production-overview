@@ -14,7 +14,7 @@ const Product = ({product, name, tooltip, productionRate}) => {
 
     const badgeItem = productionRate
         ? (
-            <div className="z-10 text-xs absolute left-[15px] whitespace-nowrap bottom-[-8px] pl-1 pr-1 bg-blue-200 outline outline-white outline-2 rounded-full">
+            <div className="z-10 text-xs absolute left-[15px] whitespace-nowrap bottom-[-8px] pl-1 pr-1 bg-orange-600 text-white outline outline-white outline-2 rounded-full">
                 {cutOff(productionRate)}
             </div>
         )
