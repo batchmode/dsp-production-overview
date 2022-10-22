@@ -1,6 +1,6 @@
 import {useState} from "react";
-import Popup from "./Popup.jsx";
-import Confirm from "./Confirm.jsx";
+import Popup from "./ui/Popup.jsx";
+import Confirm from "./ui/Confirm.jsx";
 
 const DeletePlanet = ({system, planet, updateModel}) => {
 

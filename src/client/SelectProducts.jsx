@@ -1,5 +1,5 @@
 import Product from "./Product.jsx";
-import {Tab, TabPane} from "./TabPane";
+import {Tab, TabPane} from "./ui/TabPane.jsx";
 import {useState} from "react";
 import Search from "./Search.jsx";
 

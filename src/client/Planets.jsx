@@ -3,7 +3,7 @@ import AddPlanet from "./AddPlanet.jsx";
 import DeleteSystem from "./DeleteSystem.jsx";
 import {useEffect, useMemo, useState} from "react";
 import ProductionOverview from "./ProductionOverview.jsx";
-import Overlay from "./Overlay.jsx";
+import Overlay from "./ui/Overlay.jsx";
 
 const Planets = ({model, updateModel, filter, showProductionRates}) => {
 

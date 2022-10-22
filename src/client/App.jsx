@@ -1,8 +1,8 @@
-import './model.js'
-import {useModel} from "./model.js";
+import './io/model.js'
+import {useModel} from "./io/model.js";
 
 import './App.css'
-import {Tab, TabPane} from "./TabPane";
+import {Tab, TabPane} from "./ui/TabPane.jsx";
 import {useState} from "react";
 import Products from "./Products.jsx";
 import Planets from "./Planets.jsx";

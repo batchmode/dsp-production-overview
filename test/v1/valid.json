@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "systems": [
+    {
+      "id": "Mabsuthat",
+      "name": "Mabsuthat",
+      "planets": [
+        {
+          "id": "Mabsuthat I",
+          "name": "Mabsuthat I",
+          "imports": [
+            "iron-ingot",
+            "hydrogen",
+            "titanium-alloy",
+            "electromagnetic-turbine",
+            "high-purity-silicon"
+          ],
+          "exports": [
+            "stone",
+            "super-magnetic-ring",
+            "steel",
+            "processor",
+            "titanium-ingot",
+            "deuteron-fuel-rod"
+          ],
+          "enabledRecipes": [
+            "casimir-crystal",
+            "casimir-crystal-lv2",
+            "graphite"
+          ]
+        },
+        {
+          "id": "Mabsuthat II",
+          "name": "Mabsuthat II",
+          "imports": [
+            "graphene",
+            "stone",
+            "crystal-silicon",
+            "iron-ingot",
+            "electromagnetic-matrix",
+            "graviton-lens",
+            "antimatter-fuel-rod"
+          ],
+          "exports": [
+            "solar-sail",
+            "hydrogen",
+            "glass",
+            "copper-ingot",
+            "antimatter"
+          ],
+          "enabledRecipes": [
+            "photon-formula",
+            "photo-shifter"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Zibel",
+      "name": "Zibel",
+      "planets": [
+        {
+          "id": "Zibel I",
+          "name": "Zibel I",
+          "imports": [
+            "carbon-nanotube",
+            "titanium-ingot"
+          ],
+          "exports": [
+            "spiniform-stalagmite-crystal",
+            "proliferator-mk-iii",
+            "titanium-crystal"
+          ],
+          "enabledRecipes": [
+            "diamond",
+            "crysrub-vein",
+            "graphite"
+          ]
+        },
+        {
+          "id": "Zibel II",
+          "name": "Zibel II",
+          "imports": [
+            "fire-ice",
+            "spiniform-stalagmite-crystal",
+            "graviton-lens"
+          ],
+          "exports": [
+            "antimatter",
+            "hydrogen",
+            "deuterium",
+            "magnet",
+            "titanium-ingot",
+            "carbon-nanotube",
+            "graphene",
+            "high-purity-silicon"
+          ],
+          "enabledRecipes": [
+            "nanotube",
+            "nanotube-lv2",
+            "graphene-lv2",
+            "deuterium"
+          ]
+        }
+      ]
+    }
+  ]
+}

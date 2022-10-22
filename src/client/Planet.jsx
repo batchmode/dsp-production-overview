@@ -2,7 +2,7 @@ import Product from "./Product.jsx";
 import DeletePlanet from "./DeletePlanet.jsx";
 import {useState} from "react";
 import SelectProducts from "./SelectProducts.jsx";
-import Popup from "./Popup.jsx";
+import Popup from "./ui/Popup.jsx";
 import ProductionRate from "./ProductionRate.jsx";
 
 const Planet = ({system, planet, model, updateModel, onShowProductionChain, showProductionRates}) => {

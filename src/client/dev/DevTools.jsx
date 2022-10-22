@@ -1,5 +1,5 @@
 import {useState} from "react";
-import Popup from "../Popup.jsx";
+import Popup from "../ui/Popup.jsx";
 import Purge from "./Purge.jsx";
 import RawImport from "./RawImport.jsx";
 import ShowModel from "./ShowModel.jsx";

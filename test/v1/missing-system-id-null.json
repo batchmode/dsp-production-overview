@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "systems": [
+    {
+      "id": null,
+      "name": "Mabsuthat",
+      "planets": [
+        {
+          "id": "Mabsuthat I",
+          "name": "Mabsuthat I",
+          "imports": [
+            "iron-ingot",
+            "hydrogen",
+            "titanium-alloy",
+            "electromagnetic-turbine",
+            "high-purity-silicon"
+          ],
+          "exports": [
+            "stone",
+            "super-magnetic-ring",
+            "steel",
+            "processor",
+            "titanium-ingot",
+            "deuteron-fuel-rod"
+          ],
+          "enabledRecipes": [
+            "casimir-crystal",
+            "casimir-crystal-lv2",
+            "graphite"
+          ]
+        },
+        {
+          "id": "Mabsuthat II",
+          "name": "Mabsuthat II",
+          "imports": [
+            "graphene",
+            "stone",
+            "crystal-silicon",
+            "iron-ingot",
+            "electromagnetic-matrix",
+            "graviton-lens",
+            "antimatter-fuel-rod"
+          ],
+          "exports": [
+            "solar-sail",
+            "hydrogen",
+            "glass",
+            "copper-ingot",
+            "antimatter"
+          ],
+          "enabledRecipes": [
+            "photon-formula",
+            "photo-shifter"
+          ]
+        }
+      ]
+    }
+  ]
+}

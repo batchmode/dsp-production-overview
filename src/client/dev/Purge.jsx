@@ -1,4 +1,4 @@
-import storageClient from "../storageClient.js";
+import storageClient from "../io/storageClient.js";
 
 const Purge = () => {
     const purge = () => {

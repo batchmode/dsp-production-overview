@@ -1,6 +1,6 @@
 import ProductionChain from "./ProductionChain.jsx";
 import {useState} from "react";
-import Popup from "./Popup.jsx";
+import Popup from "./ui/Popup.jsx";
 import ConfigureRecipes from "./ConfigureRecipes.jsx";
 import useProductionChains from "./useProductionChains.jsx";
 import ProductionRate from "./ProductionRate.jsx";

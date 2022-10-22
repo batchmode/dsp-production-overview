@@ -1,4 +1,4 @@
-import storageClient from "./storageClient.js";
+import storageClient from "./io/storageClient.js";
 import {useState} from "react";
 import {useFileExport, useFileImport} from "./io/useFile.js";
 

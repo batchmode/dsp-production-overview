@@ -1,6 +1,6 @@
 import {useState} from "react";
-import Overlay from "../Overlay.jsx";
-import storageClient from "../storageClient.js";
+import Overlay from "../ui/Overlay.jsx";
+import storageClient from "../io/storageClient.js";
 
 const ShowModel = () => {
     const [showData, setShowData] = useState(false)
