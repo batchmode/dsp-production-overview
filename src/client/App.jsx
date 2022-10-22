@@ -14,6 +14,7 @@ import Version from "./Version.jsx";
 import Attributions from "./Attributions.jsx";
 import Readme from "./Readme.jsx";
 import DevTools from "./dev/DevTools.jsx";
+import Toggle from "./ui/Toggle.jsx";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     const [planetFilter, setPlanetFilter] = useState("")
     const [productFilter, setProductFilter] = useState("")
     const [recipeFilter, setRecipeFilter] = useState("")
+    const [showProductionRates, setShowProductionRates] = useState(true)
 
     const planetsToolbar = (
         <div className="flex flex-row gap-2">
@@ -33,6 +35,7 @@ function App() {
 
     const toolbar = (
         <div className="flex gap-4 items-center">
+            <Toggle label="Show Production Rates" checked={showProductionRates} onChange={setShowProductionRates}/>
             <DevTools/>
             <Readme/>
             <ImportExport updateModel={updateModel}/>
@@ -44,7 +47,8 @@ function App() {
             <div className="min-h-0 flex flex-col mb-[1.5em]">
                 <TabPane toolbar={toolbar}>
                     <Tab label="Overview" toolbar={planetsToolbar}>
-                        <Planets model={model} updateModel={updateModel} filter={planetFilter}/>
+                        <Planets model={model} updateModel={updateModel} filter={planetFilter}
+                                 showProductionRates={showProductionRates}/>
                     </Tab>
                     <Tab label="Products" toolbar={productsToolbar}><Products model={model}
                                                                               filter={productFilter}/></Tab>

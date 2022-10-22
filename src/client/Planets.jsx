@@ -5,7 +5,7 @@ import {useEffect, useMemo, useState} from "react";
 import ProductionOverview from "./ProductionOverview.jsx";
 import Overlay from "./Overlay.jsx";
 
-const Planets = ({model, updateModel, filter}) => {
+const Planets = ({model, updateModel, filter, showProductionRates}) => {
 
     const [showChainForPlanet, setShowChainForPlanet] = useState(null)
 
@@ -74,13 +74,16 @@ const Planets = ({model, updateModel, filter}) => {
     const items = filterableSystems.filter(filteredSystem).map(fS => {
         const s = fS.system
         const planetItems = s.planets.filter(p => filteredPlanet(fS, p)).map(p => (
-            <Planet key={p.id} system={s} planet={p} model={model} updateModel={updateModel} onShowProductionChain={_ => setShowChainForPlanet({system: s, planet: p})}/>
+            <Planet key={p.id} system={s} planet={p} model={model} updateModel={updateModel}
+                    showProductionRates={showProductionRates}
+                    onShowProductionChain={_ => setShowChainForPlanet({system: s, planet: p})}/>
         ))
 
         return (<li key={s.id} className="p-1 flex gap-2 text-sm flex flex-col border border-1 border-gray-200 rounded">
             <div className="bg-gray-50 pl-2 rounded border-b-2 flex gap-2 items-center group">
                 <div className="hover:text-blue-400 transition duration-75 ease-in-out">{s.name} System</div>
-                <div className="invisible group-hover:visible"><DeleteSystem system={s} updateModel={updateModel}/></div>
+                <div className="invisible group-hover:visible"><DeleteSystem system={s} updateModel={updateModel}/>
+                </div>
                 <div className="invisible group-hover:visible"><AddPlanet system={s} updateModel={updateModel}/></div>
             </div>
             <div className="mb-2 flex flex-col gap-3">{planetItems}</div>
@@ -90,7 +93,8 @@ const Planets = ({model, updateModel, filter}) => {
     const overlayItem = showChainForPlanet
         ? (
             <Overlay>
-                <ProductionOverview system={showChainForPlanet.system} planet={showChainForPlanet.planet} model={model} updateModel={updateModel} onClose={_ => setShowChainForPlanet(null)}/>
+                <ProductionOverview system={showChainForPlanet.system} planet={showChainForPlanet.planet} model={model}
+                                    updateModel={updateModel} onClose={_ => setShowChainForPlanet(null)}/>
             </Overlay>
         )
         : (<></>)
