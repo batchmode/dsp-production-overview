@@ -5,7 +5,7 @@ import SelectProducts from "./SelectProducts.jsx";
 import Popup from "./Popup.jsx";
 import ProductionRate from "./ProductionRate.jsx";
 
-const Planet = ({system, planet, model, updateModel, onShowProductionChain}) => {
+const Planet = ({system, planet, model, updateModel, onShowProductionChain, showProductionRates}) => {
 
     const [showImportSelection, setShowImportSelection] = useState(false)
     const [showExportSelection, setShowExportSelection] = useState(false)
@@ -56,6 +56,8 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain}) => 
     }
 
     const productionRateFor = id => {
+        if(!showProductionRates) return ""
+
         const rate = planet.productionRates.find(r => r.product === id);
         return rate ? rate.rate : ""
     }
