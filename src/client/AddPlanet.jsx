@@ -1,5 +1,6 @@
 import {useState} from "react";
 import romanNumeral from 'roman-numeral'
+import Button from "./ui/Button.jsx";
 
 const AddPlanet = ({system, updateModel}) => {
 
@@ -28,16 +29,13 @@ const AddPlanet = ({system, updateModel}) => {
         content = (<label className="flex gap-1 text-sm">
             <input type="text" className="border border-1 border-gray-400 focus:outline-none focus:border-2 placeholder:italic placeholder:text-xs pl-2 placeholder-blue-400"
                    value={name} onChange={e => setName(e.target.value)} placeholder="NAME"/>
-            <button className="capitalize text-xs text-blue-400 border border-1 border-gray-400 rounded p-1 hover:bg-gray-200"
-                    onClick={handleAdd}>add
-            </button>
-            <button className="capitalize text-xs text-blue-400 border border-1 border-gray-400 rounded p-1 hover:bg-gray-200"
-                    onClick={handleCancel}>cancel
-            </button>
+            <Button label="add" onClick={handleAdd}/>
+            <Button label="cancel" onClick={handleCancel}/>
         </label>)
     } else {
-        content = (<button className="capitalize text-xs text-blue-400 p-1 border border-1 border-gray-400 rounded hover:bg-gray-200"
-                           onClick={_ => setAdding(true)}>add planet</button>)
+        content = (
+            <Button label="add planet" onClick={_ => setAdding(true)}/>
+        )
     }
 
 

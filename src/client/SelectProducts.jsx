@@ -2,6 +2,7 @@ import Product from "./Product.jsx";
 import {Tab, TabPane} from "./ui/TabPane.jsx";
 import {useState} from "react";
 import Search from "./Search.jsx";
+import Button from "./ui/Button.jsx";
 
 const SelectProducts = ({planet, title, products, allProducts, onSave, onCancel}) => {
 
@@ -63,14 +64,8 @@ const SelectProducts = ({planet, title, products, allProducts, onSave, onCancel}
     const searchBar = (
         <div className="flex gap-2">
             <Search value={filter} onChange={setFilter} focus/>
-            <button
-                className="capitalize text-xs text-blue-400 border border-1 border-gray-400 rounded p-1 hover:bg-gray-200"
-                onClick={handleClickSave}>save
-            </button>
-            <button
-                className="capitalize text-xs text-blue-400 border border-1 border-gray-400 rounded p-1 hover:bg-gray-200"
-                onClick={handleClickCancel}>cancel
-            </button>
+            <Button label="save" onClick={handleClickSave}/>
+            <Button label="cancel" onClick={handleClickCancel}/>
         </div>
     )
 

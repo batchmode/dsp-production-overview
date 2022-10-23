@@ -4,6 +4,7 @@ import Popup from "./ui/Popup.jsx";
 import ConfigureRecipes from "./ConfigureRecipes.jsx";
 import useProductionChains from "./useProductionChains.jsx";
 import ProductionRate from "./ProductionRate.jsx";
+import Button from "./ui/Button.jsx";
 
 const ProductionOverview = ({system, planet, model, updateModel, onClose}) => {
 
@@ -70,11 +71,7 @@ const ProductionOverview = ({system, planet, model, updateModel, onClose}) => {
                     <div>{planet.name}</div>
                     {warningIcon}
                 </div>
-                <button
-                    className="capitalize text-xs text-blue-400 border border-1 border-gray-400 rounded p-1 bg-white hover:bg-gray-200"
-                    onClick={_ => setShowConfigureRecipes({show: true, filter: ""})}>
-                    Configure Recipes
-                </button>
+                <Button label="configure recipes" onClick={_ => setShowConfigureRecipes({show: true, filter: ""})}/>
             </div>
             <div className="overflow-auto">
                 <div className="p-2 flex flex-col gap-1 divide-y-2 divide-gray-100 items-center">

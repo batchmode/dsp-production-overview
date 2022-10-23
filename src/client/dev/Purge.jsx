@@ -1,4 +1,5 @@
 import storageClient from "../io/storageClient.js";
+import Button from "../ui/Button.jsx";
 
 const Purge = () => {
     const purge = () => {
@@ -6,7 +7,9 @@ const Purge = () => {
         window.location.reload()
     }
 
-    return (<button className="text-xs text-red-500" onClick={purge}>PURGE</button>)
+    return (
+        <Button label="purge" onClick={purge} warning/>
+    )
 }
 
 export default Purge

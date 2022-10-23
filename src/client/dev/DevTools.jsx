@@ -3,6 +3,7 @@ import Popup from "../ui/Popup.jsx";
 import Purge from "./Purge.jsx";
 import RawImport from "./RawImport.jsx";
 import ShowModel from "./ShowModel.jsx";
+import Button from "../ui/Button.jsx";
 
 const DevTools = () => {
     const [showDevTools, setShowDevTools] = useState(false)
@@ -13,11 +14,11 @@ const DevTools = () => {
 
     const popup = showDevTools
         ? (<Popup>
-            <div className="bg-white p-2 gap-2 flex flex-col border-2 rounded-md">
+            <div className="bg-white p-2 gap-2 flex flex-col border-2 border-gray-500 shadow-md rounded-md">
                 <Purge/>
                 <RawImport/>
                 <ShowModel/>
-                <button className="text-xs cursor-pointer" onClick={_ => setShowDevTools(false)}>close</button>
+                <Button label="close" onClick={_ => setShowDevTools(false)}/>
             </div>
         </Popup>)
         : (<></>)

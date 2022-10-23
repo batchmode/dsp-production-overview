@@ -1,6 +1,7 @@
 import {useMemo, useState} from "react";
 import Recipe from "./Recipe.jsx";
 import Search from "./Search.jsx";
+import Button from "./ui/Button.jsx";
 
 const ConfigureRecipes = ({system, planet, model, updateModel, onClose, initialFilter}) => {
 
@@ -99,16 +100,8 @@ const ConfigureRecipes = ({system, planet, model, updateModel, onClose, initialF
                     <Search value={filter} onChange={setFilter} focus/>
                 </div>
                 <div className="p-2 gap-2 border-gray-200 border-t-2 w-full flex justify-end">
-                    <button
-                        className="capitalize text-xs text-blue-400 border border-1 border-gray-400 rounded p-1 bg-white hover:bg-gray-200"
-                        onClick={_ => handleSave()}>
-                        Save
-                    </button>
-                    <button
-                        className="capitalize text-xs text-blue-400 border border-1 border-gray-400 rounded p-1 bg-white hover:bg-gray-200"
-                        onClick={_ => handleCancel()}>
-                        Cancel
-                    </button>
+                    <Button label="save" onClick={handleSave}/>
+                    <Button label="cancel" onClick={handleCancel}/>
                 </div>
             </div>
         </div>

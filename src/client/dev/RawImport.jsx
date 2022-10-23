@@ -1,19 +1,22 @@
 import {useFileImport} from "../io/useFile.js";
 import storageClient from "../io/storageClient.js";
 import {useState} from "react";
+import Button from "../ui/Button.jsx";
 
 const RawImport = () => {
 
     const [error, setError] = useState(null)
 
-    if(error) throw error
+    if (error) throw error
 
     const handleRawImport = useFileImport(
         file => storageClient.rawImport(file),
         error => setError(error))
 
 
-    return (<div className="text-xs cursor-pointer" onClick={handleRawImport}>raw import</div>)
+    return (
+        <Button label="raw import" onClick={handleRawImport}/>
+    )
 }
 
 export default RawImport

@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import Input from "./Input.jsx";
 import Product from "./Product.jsx";
+import Button from "./ui/Button.jsx";
 
 const ProductionRate = ({system, planet, product, onClose, updateModel}) => {
     const [rate, setRate] = useState("")
@@ -38,15 +39,9 @@ const ProductionRate = ({system, planet, product, onClose, updateModel}) => {
             <div className="flex gap-2">
                 <Product product={product}/>
                 <Input value={rate} onChange={setRate} placeholder="production rate" focus/>
-                <button className="capitalize text-xs text-blue-400 border border-1 border-gray-400 rounded p-1 hover:bg-gray-200"
-                        onClick={handleSet}>set
-                </button>
-                <button className="capitalize text-xs text-blue-400 border border-1 border-gray-400 rounded p-1 hover:bg-gray-200"
-                        onClick={handleClear}>clear
-                </button>
-                <button className="capitalize text-xs text-blue-400 border border-1 border-gray-400 rounded p-1 hover:bg-gray-200"
-                        onClick={handleCancel}>cancel
-                </button>
+                <Button label="set" onClick={handleSet}/>
+                <Button label="clear" onClick={handleClear}/>
+                <Button label="cancel" onClick={handleCancel}/>
             </div>
         </div>
     )

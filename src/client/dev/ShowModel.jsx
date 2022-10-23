@@ -1,6 +1,7 @@
 import {useState} from "react";
 import Overlay from "../ui/Overlay.jsx";
 import storageClient from "../io/storageClient.js";
+import Button from "../ui/Button.jsx";
 
 const ShowModel = () => {
     const [showData, setShowData] = useState(false)
@@ -32,7 +33,7 @@ const ShowModel = () => {
 
 
     return (<>
-        <div className="text-xs cursor-pointer" onClick={_ => setShowData(true)}>show data</div>
+        <Button label="show data" onClick={_ => setShowData(true)}/>
         {overlay}
     </>)
 }
