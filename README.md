@@ -28,6 +28,18 @@ For this you can enable the recipes for each planet to use in the case that ther
 If there are more recipes available for a product you have to enable at least one of them.
 If not, a little warning icon with an exclamation mark will be displayed.
 
+### Production Rates
+
+![production_rates](doc/images/show_production_rates.png?raw=true "Production Rates")
+
+![edit_production_rates](doc/images/edit_production_rate.png?raw=true "Edit Production Rates")
+
+You can set production rates for your export products by clicking on a product icon.
+
+![toggle_production_rates](doc/images/toggle_production_rates.png?raw=true "Toggle Production Rates")
+
+Toggle the production rates to hide them.
+
 ## Where is my Data?
 
 Your configuration will be stored locally in the `localstorage` of your browser.
