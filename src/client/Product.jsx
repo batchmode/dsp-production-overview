@@ -1,6 +1,6 @@
 import Icon from "./Icon.jsx";
 
-const Product = ({product, name, tooltip, productionRate}) => {
+const Product = ({product, name, tooltip, productionRate, size}) => {
 
     const showName = name ? (<div>{product.name}</div>) : (<></>)
     const showTooltip = tooltip ? (<div
@@ -56,7 +56,7 @@ const Product = ({product, name, tooltip, productionRate}) => {
 
     return (
         <div className={"flex items-center text-center group relative " + width}>
-            <Icon x={product.iconPosition[0]} y={product.iconPosition[1]}/>
+            <Icon x={product.iconPosition[0]} y={product.iconPosition[1]} size={size}/>
             {badgeItem}
             {showName}
             {showTooltip}
