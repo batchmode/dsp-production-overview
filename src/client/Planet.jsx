@@ -9,16 +9,34 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
 
     const [showImportSelection, setShowImportSelection] = useState(false)
     const [showExportSelection, setShowExportSelection] = useState(false)
+    const [showResourceSelection, setShowResourceSelection] = useState(false)
     const [editProductionRateFor, setShowEditProductionRateFor] = useState(null)
 
+    //temporary
+    const [resources, setResources] = useState([])
+
+    const handleClickResourceSelection = _ => {
+        setShowResourceSelection(true)
+        setShowImportSelection(false)
+        setShowExportSelection(false)
+    }
+
     const handleClickImportSelection = _ => {
+        setShowResourceSelection(false)
         setShowImportSelection(true)
         setShowExportSelection(false)
     }
 
     const handleClickExportSelection = _ => {
+        setShowResourceSelection(false)
         setShowImportSelection(false)
         setShowExportSelection(true)
+    }
+
+    const onResourcesSave = products => {
+        console.log(products)
+        setResources(products)
+        setShowResourceSelection(false)
     }
 
     const onImportSave = (products) => {
@@ -47,6 +65,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
 
 
     const onCancel = _ => {
+        setShowResourceSelection(false)
         setShowImportSelection(false)
         setShowExportSelection(false)
     }
@@ -62,6 +81,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
         return rate ? rate.rate : ""
     }
 
+    const resourceItems = resources.map((r, i) => (<div key={i}><Product product={r} size="small"/></div>))
     const importItems = planet.imports.map(i => (<div key={i}><Product product={productById(i)} tooltip/></div>))
     const exportItems = planet.exports.map(e => (
         <div key={e} onClick={_ => setShowEditProductionRateFor(productById(e))}>
@@ -69,7 +89,12 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
         </div>
     ))
 
-    let importSelection = (<></>)
+    const resourceSelectionConfig = [
+        {
+            title: 'Resources',
+            filter: p => p.category === 'resource'
+        }
+    ]
 
     const selectionConfig = [
         {
@@ -80,6 +105,19 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
             filter: p => p.category === 'building'
         }
     ]
+
+    let resourceSelection = (<></>)
+
+    if (showResourceSelection) {
+        resourceSelection = (
+            <Popup>
+                <SelectProducts planet={planet} title="Resources" products={resources} allProducts={model.products}
+                                config={resourceSelectionConfig} onSave={onResourcesSave} onCancel={onCancel}/>
+            </Popup>
+        )
+    }
+
+    let importSelection = (<></>)
 
     if (showImportSelection) {
         importSelection = (
@@ -103,7 +141,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
         )
     }
 
-    const productionratePopup = editProductionRateFor != null
+    const productionRatePopup = editProductionRateFor != null
         ? (
             <Popup>
                 <ProductionRate product={editProductionRateFor} planet={planet} system={system}
@@ -112,19 +150,41 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
         )
         : (<></>)
 
+    const resourcesButton = resources.length > 0
+        ? (
+            <div>
+                <button
+                    className="hover:bg-gray-200 rounded p-1 font-bold text-xs cursor-pointer text-gray-500 inline-block"
+                    onClick={handleClickResourceSelection}>resources:
+                </button>
+                {resourceSelection}
+            </div>
+        )
+        : (
+            <div className="invisible group-hover:visible">
+                <button
+                    className="hover:bg-gray-200 rounded pt-1 pb-1 pl-2 pr-2 font-bold text-xs cursor-pointer text-gray-500 inline-block"
+                    onClick={handleClickResourceSelection}>resources
+                </button>
+                {resourceSelection}
+            </div>
+        )
+
     return (<div className="flex flex-col gap-1">
         <div key={planet.id}
-             className="ml-2 mt-1 mb-2 flex items-center gap-2 group">
+             className="ml-2 mt-1 mb-2 flex items-center gap-2 group border-b-[1px]">
             <div className="cursor-pointer hover:text-blue-400 transition duration-75 ease-in-out"
                  onClick={_ => onShowProductionChain()}>{planet.name}</div>
             <div className="invisible group-hover:visible">
                 <DeletePlanet system={system} planet={planet} updateModel={updateModel}/>
             </div>
+            {resourcesButton}
+            <div className="flex flex-wrap min-h-[32px] items-center">{resourceItems}</div>
         </div>
         <div className="flex flex-col gap-2 items-stretch">
             <div className="flex gap-2 justify-start">
                 <button
-                    className="ml-2 bg-gray-200 rounded pt-1 pb-1 pl-2 pr-2 hover:text-blue-400 hover:bg-gray-100 transition duration-75 ease-in-out cursor-pointer text-gray-500 inline-block"
+                    className="ml-2 bg-gray-200 rounded pt-1 pb-1 pl-2 pr-2 hover:text-blue-400 hover:bg-gray-100 transition duration-75 ease-in-out text-gray-500 inline-block"
                     onClick={handleClickImportSelection}>imports
                 </button>
                 <div className="flex flex-wrap min-h-[32px] cursor-pointer">{importItems}</div>
@@ -139,7 +199,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
                 {exportSelection}
             </div>
         </div>
-        {productionratePopup}
+        {productionRatePopup}
     </div>)
 }
 
