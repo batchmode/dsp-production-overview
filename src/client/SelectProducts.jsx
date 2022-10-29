@@ -4,7 +4,7 @@ import {useState} from "react";
 import Search from "./Search.jsx";
 import Button from "./ui/Button.jsx";
 
-const SelectProducts = ({planet, title, products, allProducts, onSave, onCancel}) => {
+const SelectProducts = ({planet, title, products, allProducts, config, onSave, onCancel}) => {
 
     const [selectedProducts, setSelectedProducts] = useState(products)
     const [filter, setFilter] = useState("")
@@ -50,17 +50,6 @@ const SelectProducts = ({planet, title, products, allProducts, onSave, onCancel}
         return item.name.toLowerCase().includes(filter.toLowerCase())
     }
 
-    const productItems = allProducts.filter(p => p.category !== 'building').filter(filtered).map(p => (
-        <div key={p.id} className="hover:bg-blue-200 rounded-md" onClick={e => handleClickAdd(e, p)}>
-            <Product key={p.id} product={p}/>
-        </div>
-    ))
-    const buildingItems = allProducts.filter(p => p.category === 'building').filter(filtered).map(p => (
-        <div key={p.id} className="hover:bg-blue-200 rounded-nd" onClick={e => handleClickAdd(e, p)}>
-            <Product key={p.id} product={p}/>
-        </div>
-    ))
-
     const searchBar = (
         <div className="flex gap-2">
             <Search value={filter} onChange={setFilter} focus/>
@@ -68,6 +57,19 @@ const SelectProducts = ({planet, title, products, allProducts, onSave, onCancel}
             <Button label="cancel" onClick={handleClickCancel}/>
         </div>
     )
+
+    const tabs = config.map(c => {
+        const productItems = allProducts.filter(c.filter).filter(filtered).map(p => (
+            <div key={p.id} className="hover:bg-blue-200 rounded-md" onClick={e => handleClickAdd(e, p)}>
+                <Product key={p.id} product={p}/>
+            </div>
+        ))
+
+        return (<Tab key={c.title} label={c.title}>
+            <div className="flex flex-wrap gap-1">{productItems}</div>
+        </Tab>)
+
+    })
 
 
     return (
@@ -86,12 +88,7 @@ const SelectProducts = ({planet, title, products, allProducts, onSave, onCancel}
                 {selectedProductItems}
             </div>
             <TabPane toolbar={searchBar}>
-                <Tab label="Products">
-                    <div className="flex flex-wrap gap-1">{productItems}</div>
-                </Tab>
-                <Tab label="Buildings">
-                    <div className="flex flex-wrap gap-1">{buildingItems}</div>
-                </Tab>
+                {tabs}
             </TabPane>
         </div>
     )

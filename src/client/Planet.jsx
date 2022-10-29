@@ -56,7 +56,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
     }
 
     const productionRateFor = id => {
-        if(!showProductionRates) return ""
+        if (!showProductionRates) return ""
 
         const rate = planet.productionRates.find(r => r.product === id);
         return rate ? rate.rate : ""
@@ -71,10 +71,21 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
 
     let importSelection = (<></>)
 
+    const selectionConfig = [
+        {
+            title: 'Products',
+            filter: p => p.category !== 'building'
+        }, {
+            title: 'Buildings',
+            filter: p => p.category === 'building'
+        }
+    ]
+
     if (showImportSelection) {
         importSelection = (
             <Popup>
-                <SelectProducts planet={planet} title="Imports" products={planet.imports.map(productById)} allProducts={model.products} onSave={onImportSave}
+                <SelectProducts planet={planet} title="Imports" products={planet.imports.map(productById)}
+                                allProducts={model.products} config={selectionConfig} onSave={onImportSave}
                                 onCancel={onCancel}/>
             </Popup>
         )
@@ -85,7 +96,8 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
     if (showExportSelection) {
         exportSelection = (
             <Popup>
-                <SelectProducts planet={planet} title="Exports" products={planet.exports.map(productById)} allProducts={model.products} onSave={onExportSave}
+                <SelectProducts planet={planet} title="Exports" products={planet.exports.map(productById)}
+                                allProducts={model.products} config={selectionConfig} onSave={onExportSave}
                                 onCancel={onCancel}/>
             </Popup>
         )
@@ -94,7 +106,8 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
     const productionratePopup = editProductionRateFor != null
         ? (
             <Popup>
-                <ProductionRate product={editProductionRateFor} planet={planet} system={system} updateModel={updateModel} onClose={_ => setShowEditProductionRateFor(null)}/>
+                <ProductionRate product={editProductionRateFor} planet={planet} system={system}
+                                updateModel={updateModel} onClose={_ => setShowEditProductionRateFor(null)}/>
             </Popup>
         )
         : (<></>)
@@ -102,7 +115,8 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
     return (<div className="flex flex-col gap-1">
         <div key={planet.id}
              className="ml-2 mt-1 mb-2 flex items-center gap-2 group">
-            <div className="cursor-pointer hover:text-blue-400 transition duration-75 ease-in-out" onClick={_ => onShowProductionChain()}>{planet.name}</div>
+            <div className="cursor-pointer hover:text-blue-400 transition duration-75 ease-in-out"
+                 onClick={_ => onShowProductionChain()}>{planet.name}</div>
             <div className="invisible group-hover:visible">
                 <DeletePlanet system={system} planet={planet} updateModel={updateModel}/>
             </div>
