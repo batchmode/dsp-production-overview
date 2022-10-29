@@ -2,1163 +2,1163 @@ const products = [
     {
         "id": "proliferator-mk-i",
         "name": "Proliferator mk. I",
-        "isBuilding": false,
         "iconPosition": [
             0,
             0
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "proliferator-mk-ii",
         "name": "Proliferator mk. II",
-        "isBuilding": false,
         "iconPosition": [
             1,
             0
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "proliferator-mk-iii",
         "name": "Proliferator mk. III",
-        "isBuilding": false,
         "iconPosition": [
             2,
             0
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "magnet",
         "name": "Magnet",
-        "isBuilding": false,
         "iconPosition": [
             9,
             5
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "sulfuric-acid",
         "name": "Sulfuric acid",
-        "isBuilding": false,
         "iconPosition": [
             10,
             9
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "assembling-machine-mk-i",
         "name": "Assembling machine mk. I",
-        "isBuilding": true,
         "iconPosition": [
             7,
             0
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "assembling-machine-mk-ii",
         "name": "Assembling machine mk. II",
-        "isBuilding": true,
         "iconPosition": [
             8,
             0
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "assembling-machine-mk-iii",
         "name": "Assembling machine mk. III",
-        "isBuilding": true,
         "iconPosition": [
             9,
             0
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "conveyor-belt-mk-i",
         "name": "Conveyor belt mk. I",
-        "isBuilding": true,
         "iconPosition": [
             11,
             0
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "conveyor-belt-mk-ii",
         "name": "Conveyor belt mk. II",
-        "isBuilding": true,
         "iconPosition": [
             12,
             0
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "conveyor-belt-mk-iii",
         "name": "Conveyor belt mk. III",
-        "isBuilding": true,
         "iconPosition": [
             0,
             1
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "solar-sail",
         "name": "Solar sail",
-        "isBuilding": false,
         "iconPosition": [
             10,
             8
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "gravity-matrix",
         "name": "Gravity matrix",
-        "isBuilding": false,
         "iconPosition": [
             8,
             3
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "accumulator",
         "name": "Accumulator",
-        "isBuilding": true,
         "iconPosition": [
             4,
             0
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "accumulator-(full)",
         "name": "Accumulator (full)",
-        "isBuilding": true,
         "iconPosition": [
             3,
             0
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "electromagnetic-matrix",
         "name": "Electromagnetic matrix",
-        "isBuilding": false,
         "iconPosition": [
             11,
             9
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "gear",
         "name": "Gear",
-        "isBuilding": false,
         "iconPosition": [
             10,
             3
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "structure-matrix",
         "name": "Structure matrix",
-        "isBuilding": false,
         "iconPosition": [
             1,
             1
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "deuteron-fuel-rod",
         "name": "Deuteron fuel rod",
-        "isBuilding": false,
         "iconPosition": [
             2,
             2
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "antimatter-fuel-rod",
         "name": "Antimatter fuel rod",
-        "isBuilding": false,
         "iconPosition": [
             6,
             0
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "spray-coater",
         "name": "Spray coater",
-        "isBuilding": true,
         "iconPosition": [
             2,
             9
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "titanium-alloy",
         "name": "Titanium alloy",
-        "isBuilding": false,
         "iconPosition": [
             3,
             10
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "copper-ore",
         "name": "Copper ore",
-        "isBuilding": false,
         "iconPosition": [
             9,
             1
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "iron-ore",
         "name": "Iron ore",
-        "isBuilding": false,
         "iconPosition": [
             2,
             5
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "energetic-graphite",
         "name": "Energetic graphite",
-        "isBuilding": false,
         "iconPosition": [
             2,
             4
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "coal",
         "name": "Coal",
-        "isBuilding": false,
         "iconPosition": [
             8,
             1
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "sorter-mk-i",
         "name": "Sorter mk. I",
-        "isBuilding": true,
         "iconPosition": [
             10,
             4
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "sorter-mk-ii",
         "name": "Sorter mk. II",
-        "isBuilding": true,
         "iconPosition": [
             11,
             4
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "sorter-mk-iii",
         "name": "Sorter mk. III",
-        "isBuilding": true,
         "iconPosition": [
             12,
             4
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "space-warper",
         "name": "Space warper",
-        "isBuilding": false,
         "iconPosition": [
             0,
             9
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "information-matrix",
         "name": "Information matrix",
-        "isBuilding": false,
         "iconPosition": [
             9,
             4
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "artificial-star",
         "name": "Artificial star",
-        "isBuilding": true,
         "iconPosition": [
             7,
             3
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "graviton-lens",
         "name": "Graviton lens",
-        "isBuilding": false,
         "iconPosition": [
             4,
             4
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "quantum-chip",
         "name": "Quantum chip",
-        "isBuilding": false,
         "iconPosition": [
             12,
             7
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "processor",
         "name": "Processor",
-        "isBuilding": false,
         "iconPosition": [
             11,
             7
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "deuterium",
         "name": "Deuterium",
-        "isBuilding": false,
         "iconPosition": [
             4,
             2
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "organic-crystal",
         "name": "Organic crystal",
-        "isBuilding": false,
         "iconPosition": [
             12,
             1
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "strange-matter",
         "name": "Strange matter",
-        "isBuilding": false,
         "iconPosition": [
             9,
             9
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "plasma-exciter",
         "name": "Plasma exciter",
-        "isBuilding": false,
         "iconPosition": [
             7,
             7
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "crude-oil",
         "name": "Crude oil",
-        "isBuilding": false,
         "iconPosition": [
             7,
             6
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "antimatter",
         "name": "Antimatter",
-        "isBuilding": false,
         "iconPosition": [
             5,
             0
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "casimir-crystal",
         "name": "Casimir crystal",
-        "isBuilding": false,
         "iconPosition": [
             3,
             1
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "particle-broadband",
         "name": "Particle broadband",
-        "isBuilding": false,
         "iconPosition": [
             12,
             6
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "copper-ingot",
         "name": "Copper ingot",
-        "isBuilding": false,
         "iconPosition": [
             10,
             1
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "high-purity-silicon",
         "name": "High-purity silicon",
-        "isBuilding": false,
         "iconPosition": [
             7,
             8
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "plane-filter",
         "name": "Plane filter",
-        "isBuilding": false,
         "iconPosition": [
             5,
             7
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "hydrogen",
         "name": "Hydrogen",
-        "isBuilding": false,
         "iconPosition": [
             7,
             4
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "spiniform-stalagmite-crystal",
         "name": "Spiniform stalagmite crystal",
-        "isBuilding": false,
         "iconPosition": [
             10,
             0
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "energy-matrix",
         "name": "Energy matrix",
-        "isBuilding": false,
         "iconPosition": [
             9,
             2
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "photon-combiner",
         "name": "Photon combiner",
-        "isBuilding": false,
         "iconPosition": [
             1,
             7
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "water",
         "name": "Water",
-        "isBuilding": false,
         "iconPosition": [
             9,
             10
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "titanium-ore",
         "name": "Titanium ore",
-        "isBuilding": false,
         "iconPosition": [
             4,
             10
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "silicon-ore",
         "name": "Silicon ore",
-        "isBuilding": false,
         "iconPosition": [
             6,
             8
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "titanium-ingot",
         "name": "Titanium ingot",
-        "isBuilding": false,
         "iconPosition": [
             5,
             10
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "iron-ingot",
         "name": "Iron ingot",
-        "isBuilding": false,
         "iconPosition": [
             3,
             5
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "refined-oil",
         "name": "Refined oil",
-        "isBuilding": false,
         "iconPosition": [
             1,
             8
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "hydrogen-fuel-rod",
         "name": "Hydrogen fuel rod",
-        "isBuilding": false,
         "iconPosition": [
             6,
             4
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "wireless-power-tower",
         "name": "Wireless power tower",
-        "isBuilding": true,
         "iconPosition": [
             4,
             1
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "critical-photon",
         "name": "Critical photon",
-        "isBuilding": false,
         "iconPosition": [
             2,
             7
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "magnetic-coil",
         "name": "Magnetic coil",
-        "isBuilding": false,
         "iconPosition": [
             10,
             5
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "glass",
         "name": "Glass",
-        "isBuilding": false,
         "iconPosition": [
             12,
             3
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "super-magnetic-ring",
         "name": "Super-magnetic ring",
-        "isBuilding": false,
         "iconPosition": [
             8,
             4
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "annihilation-constraint-sphere",
         "name": "Annihilation constraint sphere",
-        "isBuilding": false,
         "iconPosition": [
             5,
             3
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "fractal-silicon",
         "name": "Fractal silicon",
-        "isBuilding": false,
         "iconPosition": [
             0,
             3
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "crystal-silicon",
         "name": "Crystal silicon",
-        "isBuilding": false,
         "iconPosition": [
             5,
             8
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "planetary-logistics-station",
         "name": "Planetary logistics station",
-        "isBuilding": true,
         "iconPosition": [
             6,
             5
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "interstellar-logistics-station",
         "name": "Interstellar logistics station",
-        "isBuilding": true,
         "iconPosition": [
             0,
             5
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "orbital-collector",
         "name": "Orbital collector",
-        "isBuilding": true,
         "iconPosition": [
             8,
             6
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "stone-brick",
         "name": "Stone brick",
-        "isBuilding": false,
         "iconPosition": [
             4,
             9
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "fire-ice",
         "name": "Fire ice",
-        "isBuilding": false,
         "iconPosition": [
             9,
             3
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "titanium-crystal",
         "name": "Titanium crystal",
-        "isBuilding": false,
         "iconPosition": [
             1,
             10
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "graphene",
         "name": "Graphene",
-        "isBuilding": false,
         "iconPosition": [
             1,
             4
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "foundation",
         "name": "Foundation",
-        "isBuilding": false,
         "iconPosition": [
             12,
             9
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "small-carrier-rocket",
         "name": "Small carrier rocket",
-        "isBuilding": false,
         "iconPosition": [
             3,
             8
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "ray-receiver",
         "name": "Ray receiver",
-        "isBuilding": true,
         "iconPosition": [
             0,
             8
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "thruster",
         "name": "Thruster",
-        "isBuilding": false,
         "iconPosition": [
             4,
             3
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "thermal-power-plant",
         "name": "Thermal power plant",
-        "isBuilding": true,
         "iconPosition": [
             3,
             3
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "mini-fusion-power-plant",
         "name": "Mini fusion power plant",
-        "isBuilding": true,
         "iconPosition": [
             6,
             3
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "frame-material",
         "name": "Frame material",
-        "isBuilding": false,
         "iconPosition": [
             2,
             3
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "steel",
         "name": "Steel",
-        "isBuilding": false,
         "iconPosition": [
             3,
             9
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "stone",
         "name": "Stone",
-        "isBuilding": false,
         "iconPosition": [
             5,
             9
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "storage-mk-i",
         "name": "Storage mk. I",
-        "isBuilding": true,
         "iconPosition": [
             6,
             9
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "storage-mk-ii",
         "name": "Storage mk. II",
-        "isBuilding": true,
         "iconPosition": [
             7,
             9
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "traffic-monitor",
         "name": "Traffic monitor",
-        "isBuilding": true,
         "iconPosition": [
             1,
             6
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "circuit-board",
         "name": "Circuit board",
-        "isBuilding": false,
         "iconPosition": [
             7,
             1
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "electric-motor",
         "name": "Electric motor",
-        "isBuilding": false,
         "iconPosition": [
             10,
             2
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "particle-container",
         "name": "Particle container",
-        "isBuilding": false,
         "iconPosition": [
             11,
             6
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "carbon-nanotube",
         "name": "Carbon nanotube",
-        "isBuilding": false,
         "iconPosition": [
             4,
             6
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "optical-grating-crystal",
         "name": "Optical grating crystal",
-        "isBuilding": false,
         "iconPosition": [
             3,
             4
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "microcrystalline-component",
         "name": "Microcrystalline component",
-        "isBuilding": false,
         "iconPosition": [
             11,
             5
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "plastic",
         "name": "Plastic",
-        "isBuilding": false,
         "iconPosition": [
             9,
             7
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "diamond",
         "name": "Diamond",
-        "isBuilding": false,
         "iconPosition": [
             7,
             2
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "kimberlite-ore",
         "name": "Kimberlite ore",
-        "isBuilding": false,
         "iconPosition": [
             6,
             2
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "electromagnetic-turbine",
         "name": "Electromagnetic turbine",
-        "isBuilding": false,
         "iconPosition": [
             8,
             5
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "logistics-drone",
         "name": "Logistics drone",
-        "isBuilding": false,
         "iconPosition": [
             5,
             5
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "unipolar-magnet",
         "name": "Unipolar magnet",
-        "isBuilding": false,
         "iconPosition": [
             2,
             6
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "universe-matrix",
         "name": "Universe matrix",
-        "isBuilding": false,
         "iconPosition": [
             6,
             10
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "log",
         "name": "Log",
-        "isBuilding": false,
         "iconPosition": [
             11,
             10
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "plant-fuel",
         "name": "Plant fuel",
-        "isBuilding": false,
         "iconPosition": [
             6,
             7
-        ]
+        ],
+        "category": "resource"
     },
     {
         "id": "titanium-glass",
         "name": "Titanium glass",
-        "isBuilding": false,
         "iconPosition": [
             2,
             10
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "dyson-sphere-component",
         "name": "Dyson sphere component",
-        "isBuilding": false,
         "iconPosition": [
             8,
             2
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "wind-turbine",
         "name": "Wind turbine",
-        "isBuilding": true,
         "iconPosition": [
             10,
             10
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "satellite-substation",
         "name": "Satellite substation",
-        "isBuilding": true,
         "iconPosition": [
             9,
             6
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "tesla-tower",
         "name": "Tesla tower",
-        "isBuilding": true,
         "iconPosition": [
             0,
             10
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "prism",
         "name": "Prism",
-        "isBuilding": false,
         "iconPosition": [
             10,
             7
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "reinforced-thruster",
         "name": "Reinforced thruster",
-        "isBuilding": false,
         "iconPosition": [
             1,
             5
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "logistics-vessel",
         "name": "Logistics vessel",
-        "isBuilding": false,
         "iconPosition": [
             7,
             5
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "storage-tank",
         "name": "Storage tank",
-        "isBuilding": true,
         "iconPosition": [
             8,
             9
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "splitter",
         "name": "Splitter",
-        "isBuilding": true,
         "iconPosition": [
             1,
             9
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "automatic-piler",
         "name": "Automatic piler",
-        "isBuilding": true,
         "iconPosition": [
             4,
             7
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "em-rail-ejector",
         "name": "EM-Rail ejector",
-        "isBuilding": true,
         "iconPosition": [
             11,
             2
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "chemical-plant",
         "name": "Chemical plant",
-        "isBuilding": true,
         "iconPosition": [
             6,
             1
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "solar-panel",
         "name": "Solar panel",
-        "isBuilding": true,
         "iconPosition": [
             11,
             8
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "energy-exchanger",
         "name": "Energy exchanger",
-        "isBuilding": true,
         "iconPosition": [
             12,
             2
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "advanced-mining-machine",
         "name": "Advanced mining machine",
-        "isBuilding": true,
         "iconPosition": [
             12,
             5
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "water-pump",
         "name": "Water pump",
-        "isBuilding": true,
         "iconPosition": [
             8,
             10
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "vertical-launching-silo",
         "name": "Vertical launching silo",
-        "isBuilding": true,
         "iconPosition": [
             7,
             10
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "oil-extractor",
         "name": "Oil extractor",
-        "isBuilding": true,
         "iconPosition": [
             5,
             6
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "matrix-lab",
         "name": "Matrix lab",
-        "isBuilding": true,
         "iconPosition": [
             4,
             5
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "mining-machine",
         "name": "Mining machine",
-        "isBuilding": true,
         "iconPosition": [
             0,
             6
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "miniature-particle-collider",
         "name": "Miniature particle collider",
-        "isBuilding": true,
         "iconPosition": [
             5,
             4
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "fractionator",
         "name": "Fractionator",
-        "isBuilding": true,
         "iconPosition": [
             1,
             3
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "geothermal-power-station",
         "name": "Geothermal power station",
-        "isBuilding": true,
         "iconPosition": [
             11,
             3
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "oil-refinery",
         "name": "Oil refinery",
-        "isBuilding": true,
         "iconPosition": [
             6,
             6
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "arc-smelter",
         "name": "Arc Smelter",
-        "isBuilding": true,
         "iconPosition": [
             9,
             8
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "plane-smelter",
         "name": "Plane Smelter",
-        "isBuilding": true,
         "iconPosition": [
             8,
             8
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "logistic-bots",
         "name": "Logistic Bots",
-        "isBuilding": false,
         "iconPosition": [
             0,
             2
-        ]
+        ],
+        "category": "product"
     },
     {
         "id": "logistic-distributor",
         "name": "Logistic Distributor",
-        "isBuilding": true,
         "iconPosition": [
             1,
             2
-        ]
+        ],
+        "category": "building"
     },
     {
         "id": "chemical-plant-v2",
         "name": "Quantum Chemical Plant",
-        "isBuilding": true,
         "iconPosition": [
             5,
             1
-        ]
+        ],
+        "category": "building"
     }
 ]
 

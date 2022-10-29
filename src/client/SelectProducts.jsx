@@ -50,12 +50,12 @@ const SelectProducts = ({planet, title, products, allProducts, onSave, onCancel}
         return item.name.toLowerCase().includes(filter.toLowerCase())
     }
 
-    const productItems = allProducts.filter(p => !p.isBuilding).filter(filtered).map(p => (
+    const productItems = allProducts.filter(p => p.category !== 'building').filter(filtered).map(p => (
         <div key={p.id} className="hover:bg-blue-200 rounded-md" onClick={e => handleClickAdd(e, p)}>
             <Product key={p.id} product={p}/>
         </div>
     ))
-    const buildingItems = allProducts.filter(p => p.isBuilding).filter(filtered).map(p => (
+    const buildingItems = allProducts.filter(p => p.category === 'building').filter(filtered).map(p => (
         <div key={p.id} className="hover:bg-blue-200 rounded-nd" onClick={e => handleClickAdd(e, p)}>
             <Product key={p.id} product={p}/>
         </div>
@@ -86,7 +86,7 @@ const SelectProducts = ({planet, title, products, allProducts, onSave, onCancel}
                 {selectedProductItems}
             </div>
             <TabPane toolbar={searchBar}>
-                <Tab label="Resources">
+                <Tab label="Products">
                     <div className="flex flex-wrap gap-1">{productItems}</div>
                 </Tab>
                 <Tab label="Buildings">
