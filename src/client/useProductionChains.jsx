@@ -12,6 +12,7 @@ const useProductionChains = (planet, model) => {
         const productById = id => model.products.find(p => p.id === id)
 
         const availableProducts = planet.imports.map(productById)
+        planet.resources.map(productById).forEach(r => availableProducts.push(r))
         const enabledRecipes = planet.enabledRecipes
 
         const emptyRecipe = (product, id) => {
