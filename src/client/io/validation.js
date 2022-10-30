@@ -68,5 +68,37 @@ const validateV2 = json => {
     return json.systems
 }
 
+const validateV3 = json => {
+    const model = {
+        version: 'number',
+        systems: [
+            {
+                id: 'string',
+                name: 'string',
+                planets: [
+                    {
+                        id: 'string',
+                        name: 'string',
+                        resources: ['string'],
+                        imports: ['string'],
+                        exports: ['string'],
+                        enabledRecipes: ['string'],
+                        productionRates: [
+                            {
+                                product: 'string',
+                                rate: 'string'
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 
-export {versionOf, validateV1, validateV2}
+    validator.validate(model, json)
+    return json.systems
+}
+
+
+
+export {versionOf, validateV1, validateV2, validateV3}
