@@ -53,6 +53,7 @@ const StorageClient = class {
         system.planets.push({
             id: name,
             name: name,
+            resources: [],
             imports: [],
             exports: [],
             enabledRecipes: [],

@@ -12,9 +12,6 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
     const [showResourceSelection, setShowResourceSelection] = useState(false)
     const [editProductionRateFor, setShowEditProductionRateFor] = useState(null)
 
-    //temporary
-    const [resources, setResources] = useState([])
-
     const handleClickResourceSelection = _ => {
         setShowResourceSelection(true)
         setShowImportSelection(false)
@@ -35,7 +32,13 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
 
     const onResourcesSave = products => {
         console.log(products)
-        setResources(products)
+        updateModel({
+            type: 'updatePlanetResources', payload: {
+                id: planet.id,
+                systemId: system.id,
+                resourceIds: products.map(p => p.id)
+            }
+        })
         setShowResourceSelection(false)
     }
 
@@ -81,7 +84,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
         return rate ? rate.rate : ""
     }
 
-    const resourceItems = resources.map((r, i) => (<div key={i}><Product product={r} size="small"/></div>))
+    const resourceItems = planet.resources.map(r => (<div key={r}><Product product={productById(r)} size="small"/></div>))
     const importItems = planet.imports.map(i => (<div key={i}><Product product={productById(i)} tooltip/></div>))
     const exportItems = planet.exports.map(e => (
         <div key={e} onClick={_ => setShowEditProductionRateFor(productById(e))}>
@@ -111,7 +114,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
     if (showResourceSelection) {
         resourceSelection = (
             <Popup>
-                <SelectProducts planet={planet} title="Resources" products={resources} allProducts={model.products}
+                <SelectProducts planet={planet} title="Resources" products={planet.resources.map(productById)} allProducts={model.products}
                                 config={resourceSelectionConfig} onSave={onResourcesSave} onCancel={onCancel}/>
             </Popup>
         )
@@ -150,7 +153,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
         )
         : (<></>)
 
-    const resourcesButton = resources.length > 0
+    const resourcesButton = planet.resources.length > 0
         ? (
             <div>
                 <button
