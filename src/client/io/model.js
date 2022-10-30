@@ -39,6 +39,14 @@ const updatePlanet = (model, systemId, planetId, importIds, exportIds) => {
     return {systems: storage.systems(), products, recipes}
 }
 
+const updatePlanetResources = (model, systemId, planetId, resourceIds) => {
+    const system = model.systems.find(s => s.id === systemId)
+    const planet = system.planets.find(p => p.id  === planetId)
+    planet.resources = resourceIds
+    storage.updatePlanet(system.id, planet)
+    return {systems: storage.systems(), products, recipes}
+}
+
 const updatePlanetRecipes = (model, systemId, planet, recipes) => {
     const system = model.systems.find(s => s.id === systemId)
     const planetToUpdate = system.planets.find(p => p.id === planet.id)
@@ -84,39 +92,44 @@ const useModel = () => {
     const asyncDispatch = useCallback(async (action) => {
         if (!action) return
 
+        const payload = action.payload
         switch (action.type) {
             case 'addSystem': {
-                const newModel = addSystem(model, action.payload.name)
+                const newModel = addSystem(model, payload.name)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'deleteSystem': {
-                const newModel = deleteSystem(model, action.payload.id)
+                const newModel = deleteSystem(model, payload.id)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'addPlanet': {
-                const newModel = addPlanet(model, action.payload.name, action.payload.systemId)
+                const newModel = addPlanet(model, payload.name, payload.systemId)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'deletePlanet': {
-                const newModel = deletePlanet(model, action.payload.systemId, action.payload.id)
+                const newModel = deletePlanet(model, payload.systemId, payload.id)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'updatePlanet': {
-                const newModel = updatePlanet(model, action.payload.systemId, action.payload.id, action.payload.importIds, action.payload.exportIds)
+                const newModel = updatePlanet(model, payload.systemId, payload.id, payload.importIds, payload.exportIds)
+                dispatch({type: 'load', payload: newModel})
+                break
+            }
+            case 'updatePlanetResources': {
+                const newModel = updatePlanetResources(model, payload.systemId, payload.id, payload.resourceIds)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'updatePlanetRecipes': {
-                const newModel = updatePlanetRecipes(model, action.payload.systemId, action.payload.planet, action.payload.recipes)
+                const newModel = updatePlanetRecipes(model, payload.systemId, payload.planet, payload.recipes)
                 dispatch({type: 'load', payload: newModel})
                 break
             }
             case 'updateProductionRate': {
-                const payload = action.payload
                 const newModel = updateProductionRate(model, payload.systemId, payload.planetId, payload.productId, payload.rate)
                 dispatch({type: 'load', payload: newModel})
                 break
