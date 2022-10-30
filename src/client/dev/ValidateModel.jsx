@@ -26,7 +26,7 @@ const ValidateModel = () => {
                 parse(json)
                 setMessage("Version: " + version + " valid")
             } catch (error) {
-                setMessage("Version: " + version + " invalid - Error: " + error)
+                setMessage("Version: " + version + " invalid - " + error)
             }
 
         } catch (error) {

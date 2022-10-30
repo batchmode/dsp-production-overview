@@ -94,9 +94,9 @@ test('parse v1 system missing elements', () => {
         ]
     }
 
-    expect(() => parse(missingId)).toThrowError(/bad input, missing element: id in/)
-    expect(() => parse(missingName)).toThrowError(/bad input, missing element: name in/)
-    expect(() => parse(missingPlanets)).toThrowError(/bad input, missing element: planets in/)
+    expect(() => parse(missingId)).toThrowError(/schema validation error at: \["systems",0,"id"]/)
+    expect(() => parse(missingName)).toThrowError(/schema validation error at: \["systems",0,"name"]/)
+    expect(() => parse(missingPlanets)).toThrowError(/schema validation error at: \["systems",0,"planets"]/)
 })
 
 test('parse v1 planets missing elements', () => {
@@ -175,11 +175,11 @@ test('parse v1 planets missing elements', () => {
         ]
     }
 
-    expect(() => parse(missingId)).toThrowError(/bad input, missing element: id in/)
-    expect(() => parse(missingName)).toThrowError(/bad input, missing element: name in/)
-    expect(() => parse(missingExports)).toThrowError(/bad input, missing element: exports in/)
-    expect(() => parse(missingImports)).toThrowError(/bad input, missing element: imports in/)
-    expect(() => parse(missingEnabledRecipes)).toThrowError(/bad input, missing element: enabledRecipes in/)
+    expect(() => parse(missingId)).toThrowError(/schema validation error at: \["systems",0,"planets",0,"id"]/)
+    expect(() => parse(missingName)).toThrowError(/schema validation error at: \["systems",0,"planets",0,"name"/)
+    expect(() => parse(missingExports)).toThrowError(/schema validation error at: \["systems",0,"planets",0,"exports"/)
+    expect(() => parse(missingImports)).toThrowError(/schema validation error at: \["systems",0,"planets",0,"imports"/)
+    expect(() => parse(missingEnabledRecipes)).toThrowError(/schema validation error at: \["systems",0,"planets",0,"enabledRecipes"/)
 })
 
 test('parse v1 migrate to v2', () => {
@@ -354,12 +354,12 @@ test('parse v2 planets missing elements', () => {
         ]
     }
 
-    expect(() => parse(missingId)).toThrowError(/bad input, missing element: id in/)
-    expect(() => parse(missingName)).toThrowError(/bad input, missing element: name in/)
-    expect(() => parse(missingExports)).toThrowError(/bad input, missing element: exports in/)
-    expect(() => parse(missingImports)).toThrowError(/bad input, missing element: imports in/)
-    expect(() => parse(missingEnabledRecipes)).toThrowError(/bad input, missing element: enabledRecipes in/)
-    expect(() => parse(missingProductionRates)).toThrowError(/bad input, missing element: productionRates in/)
+    expect(() => parse(missingId)).toThrowError(/schema validation error at: \["systems",0,"planets",0,"id"]/)
+    expect(() => parse(missingName)).toThrowError(/schema validation error at: \["systems",0,"planets",0,"name"]/)
+    expect(() => parse(missingExports)).toThrowError(/schema validation error at: \["systems",0,"planets",0,"exports"]/)
+    expect(() => parse(missingImports)).toThrowError(/schema validation error at: \["systems",0,"planets",0,"imports"]/)
+    expect(() => parse(missingEnabledRecipes)).toThrowError(/schema validation error at: \["systems",0,"planets",0,"enabledRecipes"]/)
+    expect(() => parse(missingProductionRates)).toThrowError(/schema validation error at: \["systems",0,"planets",0,"productionRates"]/)
 })
 
 test("dump", () => {
