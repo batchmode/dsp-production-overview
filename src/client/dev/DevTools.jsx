@@ -4,6 +4,7 @@ import Purge from "./Purge.jsx";
 import RawImport from "./RawImport.jsx";
 import ShowModel from "./ShowModel.jsx";
 import Button from "../ui/Button.jsx";
+import ValidateModel from "./ValidateModel.jsx";
 
 const DevTools = () => {
     const [showDevTools, setShowDevTools] = useState(false)
@@ -18,6 +19,7 @@ const DevTools = () => {
                 <Purge/>
                 <RawImport/>
                 <ShowModel/>
+                <ValidateModel/>
                 <Button label="close" onClick={_ => setShowDevTools(false)}/>
             </div>
         </Popup>)
