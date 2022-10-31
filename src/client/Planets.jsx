@@ -32,9 +32,13 @@ const Planets = ({model, updateModel, filter, showProductionRates}) => {
                 system: s,
                 filterBy: s.name.toLowerCase() + " " + s.planets.map(p => p.name.toLowerCase()).join(" "),
                 planetsFilterBy: s.planets.map(p => {
+                    const nameToLowerCase = r => r.name.toLowerCase()
                     return {
                         id: p.id,
-                        filterBy: p.name.toLowerCase() + "" + p.imports.map(productById).flatMap(i => i.name.toLowerCase()).join(" ") + " " + p.exports.map(productById).flatMap(e => e.name.toLowerCase()).join(" ")
+                        filterBy: p.name.toLowerCase() + " "
+                            + p.imports.map(productById).flatMap(nameToLowerCase).join(" ") + " "
+                            + p.exports.map(productById).flatMap(nameToLowerCase).join(" ") + " "
+                            + p.resources.map(productById).flatMap(nameToLowerCase).join(" ")
                     }
                 })
             }
