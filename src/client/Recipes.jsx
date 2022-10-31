@@ -36,8 +36,8 @@ const Recipes = ({model, filter}) => {
             return true
         }
 
-        if (filter.startsWith("i:")) return r.filterInputsString.includes(filter.substring(2).toLowerCase())
-        if (filter.startsWith("o:")) return r.filterOutputsString.includes(filter.substring(2).toLowerCase())
+        if (filter.startsWith("in:")) return r.filterInputsString.includes(filter.substring(3).toLowerCase())
+        if (filter.startsWith("out:")) return r.filterOutputsString.includes(filter.substring(4).toLowerCase())
 
         return r.filterString.includes(filter.toLowerCase())
     }
