@@ -40,6 +40,12 @@ You can set production rates for your export products by clicking on a product i
 
 Toggle the production rates to hide them.
 
+### Resources
+
+![resources](doc/images/resources.png?raw=true "Planet Resources")
+
+Add resources to your planets to keep track of them. They will be considered when searching for products. 
+
 ## Where is my Data?
 
 Your configuration will be stored locally in the `localstorage` of your browser.
