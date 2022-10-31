@@ -13,9 +13,9 @@ const TabPane = ({children, toolbar}) => {
 
     const buttons = labels.map((l, i) => {
         if (i === selected) {
-            return (<button key={i} className="text-base text-blue-500 bg-white p-1 hover:text-blue-400 transition duration-75 ease-in-out" onClick={_ => setSelected(i)}>{l}</button>)
+            return (<button key={i} className="text-base text-blue-500 bg-white p-1 hover:text-blue-400 hover:bg-gray-100 rounded-md  transition duration-75 ease-in-out" onClick={_ => setSelected(i)}>{l}</button>)
         } else {
-            return (<button key={i} className="text-sm text-gray-600 bg-white p-1 hover:text-blue-400 transition duration-75 ease-in-out" onClick={_ => setSelected(i)}>{l}</button>)
+            return (<button key={i} className="text-sm text-gray-600 bg-white p-1 hover:text-blue-400 hover:bg-gray-100 rounded-md transition duration-75 ease-in-out" onClick={_ => setSelected(i)}>{l}</button>)
         }
     })
     const selectedPane = childComponents[selected]

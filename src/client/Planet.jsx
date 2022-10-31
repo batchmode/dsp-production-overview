@@ -157,7 +157,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
         ? (
             <div>
                 <button
-                    className="hover:bg-gray-200 rounded p-1 font-bold text-xs cursor-pointer text-gray-500 inline-block"
+                    className="hover:bg-gray-100 rounded p-1 font-bold text-xs cursor-pointer text-gray-500 inline-block"
                     onClick={handleClickResourceSelection}>resources:
                 </button>
                 {resourceSelection}
@@ -166,7 +166,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
         : (
             <div className="invisible group-hover:visible">
                 <button
-                    className="hover:bg-gray-200 rounded pt-1 pb-1 pl-2 pr-2 font-bold text-xs cursor-pointer text-gray-500 inline-block"
+                    className="hover:bg-gray-100 rounded pt-1 pb-1 pl-2 pr-2 font-bold text-xs cursor-pointer text-gray-500 inline-block"
                     onClick={handleClickResourceSelection}>resources
                 </button>
                 {resourceSelection}
@@ -176,7 +176,7 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
     return (<div className="flex flex-col gap-1">
         <div key={planet.id}
              className="ml-2 mt-1 mb-2 flex items-center gap-2 group border-b-[1px]">
-            <div className="cursor-pointer hover:text-blue-400 transition duration-75 ease-in-out"
+            <div className="cursor-pointer hover:text-blue-400 p-1 rounded-md hover:bg-gray-100 transition duration-75 ease-in-out"
                  onClick={_ => onShowProductionChain()}>{planet.name}</div>
             <div className="invisible group-hover:visible">
                 <DeletePlanet system={system} planet={planet} updateModel={updateModel}/>
