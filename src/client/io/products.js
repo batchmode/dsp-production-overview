@@ -1276,6 +1276,213 @@ const products = [
             10
         ],
         "category": "recipe"
+    },
+    {
+        "id": "combustible-unit",
+        "name": "Combustible Unit",
+        "iconPosition": [
+            4,
+            4
+        ],
+        "category": "product"
+    },
+    {
+        "id": "explosive-unit",
+        "name": "Explosive Unit",
+        "iconPosition": [
+            3,
+            6
+        ],
+        "category": "product"
+    },
+    {
+        "id": "magnum-ammo-box",
+        "name": "Magnum Ammo Box",
+        "iconPosition": [
+            6,
+            1
+        ],
+        "category": "product"
+    },
+    {
+        "id": "titanium-ammo-box",
+        "name": "Titanium Ammo Box",
+        "iconPosition": [
+            5,
+            1
+        ],
+        "category": "product"
+    },
+    {
+        "id": "superalloy-ammo-box",
+        "name": "Superalloy Ammo Box",
+        "iconPosition": [
+            4,
+            1
+        ],
+        "category": "product"
+    },
+    {
+        "id": "missile-set",
+        "name": "Missile Set",
+        "iconPosition": [
+            4,
+            8
+        ],
+        "category": "product"
+    },
+    {
+        "id": "supersonic-missile-set",
+        "name": "Supersonic Missile Set",
+        "iconPosition": [
+            5,
+            8
+        ],
+        "category": "product"
+    },
+    {
+        "id": "plasma-capsule",
+        "name": "Plasma Capsule",
+        "iconPosition": [
+            1,
+            2
+        ],
+        "category": "product"
+    },
+    {
+        "id": "shell-set",
+        "name": "Shell Set",
+        "iconPosition": [
+            10,
+            1
+        ],
+        "category": "product"
+    },
+    {
+        "id": "high-explosive-shell-set",
+        "name": "High Explosive Shell Set",
+        "iconPosition": [
+            9,
+            1
+        ],
+        "category": "product"
+    },
+    {
+        "id": "crystal-shell-set",
+        "name": "Crystal Shell Set",
+        "iconPosition": [
+            8,
+            1
+        ],
+        "category": "product"
+    },
+    {
+        "id": "engine",
+        "name": "Engine",
+        "iconPosition": [
+            3,
+            4
+        ],
+        "category": "product"
+    },
+    {
+        "id": "prototype",
+        "name": "Prototype",
+        "iconPosition": [
+            7,
+            4
+        ],
+        "category": "product"
+    },
+    {
+        "id": "precision-drone",
+        "name": "Precision Drone",
+        "iconPosition": [
+            6,
+            4
+        ],
+        "category": "product"
+    },
+    {
+        "id": "attack-drone",
+        "name": "Attack Drone",
+        "iconPosition": [
+            5,
+            4
+        ],
+        "category": "product"
+    },
+    {
+        "id": "corvette",
+        "name": "Corvette",
+        "iconPosition": [
+            10,
+            14
+        ],
+        "category": "product"
+    },
+    {
+        "id": "missile-turret",
+        "name": "Missile Turret",
+        "iconPosition": [
+            1,
+            14
+        ],
+        "category": "building"
+    },
+    {
+        "id": "implosion-cannon",
+        "name": "Implosion Cannon",
+        "iconPosition": [
+            9,
+            13
+        ],
+        "category": "building"
+    },
+    {
+        "id": "laser-turret",
+        "name": "Laser Turret",
+        "iconPosition": [
+            0,
+            14
+        ],
+        "category": "building"
+    },
+    {
+        "id": "plasma-turret",
+        "name": "Plasma Turret",
+        "iconPosition": [
+            2,
+            14
+        ],
+        "category": "building"
+    },
+    {
+        "id": "battlefield-analysis-base",
+        "name": "Battlefield Analysis Base",
+        "iconPosition": [
+            0,
+            1
+        ],
+        "category": "building"
+    },
+    {
+        "id": "signal-tower",
+        "name": "Signal Tower",
+        "iconPosition": [
+            4,
+            14
+        ],
+        "category": "building"
+    },
+    {
+        "id": "planetary-shield-generator",
+        "name": "Planetary Shield Generator",
+        "iconPosition": [
+            3,
+            14
+        ],
+        "category": "building"
     }
 ]
 
