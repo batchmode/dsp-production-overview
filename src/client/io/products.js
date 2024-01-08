@@ -1159,6 +1159,123 @@ const products = [
             2
         ],
         "category": "building"
+    },
+    {
+        "id": "reforming-refine",
+        "name": "Reforming Refine",
+        "iconPosition": [
+            0,
+            11
+        ],
+        "category": "recipe"
+    },
+    {
+        "id": "particle-container-advanced",
+        "name": "Particle Container (advanced)",
+        "iconPosition": [
+            4,
+            9
+        ],
+        "category": "recipe"
+    },
+    {
+        "id": "mass-energy-storage",
+        "name": "Mass Energy Storage",
+        "iconPosition": [
+            11,
+            9
+        ],
+        "category": "recipe"
+    },
+    {
+        "id": "photon-combiner-advanced",
+        "name": "Photon combiner (advanced)",
+        "iconPosition": [
+            8,
+            9
+        ],
+        "category": "recipe"
+    },
+    {
+        "id": "space-warper-advanced",
+        "name": "Space warper (advanced)",
+        "iconPosition": [
+            1,
+            12
+        ],
+        "category": "recipe"
+    },
+    {
+        "id": "organic-crystal-original",
+        "name": "Organic crystal (original)",
+        "iconPosition": [
+            11,
+            2
+        ],
+        "category": "recipe"
+    },
+    {
+        "id": "crystal-silicon-advanced",
+        "name": "Crystal silicon (advanced)",
+        "iconPosition": [
+            2,
+            11
+        ],
+        "category": "recipe"
+    },
+    {
+        "id": "x-ray-cracking",
+        "name": "X-Ray Cracking",
+        "iconPosition": [
+            4,
+            15
+        ],
+        "category": "recipe"
+    },
+    {
+        "id": "diamond-advanced",
+        "name": "Diamond (advanced)",
+        "iconPosition": [
+            6,
+            3
+        ],
+        "category": "product"
+    },
+    {
+        "id": "carbon-nanotube-advanced",
+        "name": "Carbon nanotube (advanced)",
+        "iconPosition": [
+            8,
+            8
+        ],
+        "category": "recipe"
+    },
+    {
+        "id": "graphene-advanced",
+        "name": "Graphene (advanced)",
+        "iconPosition": [
+            9,
+            5
+        ],
+        "category": "product"
+    },
+    {
+        "id": "casimir-crystal-advanced",
+        "name": "Casimir crystal (advanced)",
+        "iconPosition": [
+            2,
+            2
+        ],
+        "category": "recipe"
+    },
+    {
+        "id": "plasma-refining",
+        "name": "Plasma  Refining",
+        "iconPosition": [
+            4,
+            10
+        ],
+        "category": "recipe"
     }
 ]
 

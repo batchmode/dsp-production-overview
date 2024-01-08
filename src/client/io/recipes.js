@@ -8,10 +8,7 @@ const recipes = [
         "outputs": [
             "iron-ingot"
         ],
-        "iconPosition": [
-            3,
-            5
-        ]
+        "icon": "iron-ingot"
     },
     {
         "id": "magnet",
@@ -22,10 +19,7 @@ const recipes = [
         "outputs": [
             "magnet"
         ],
-        "iconPosition": [
-            9,
-            5
-        ]
+        "icon": "magnet"
     },
     {
         "id": "copper-plate",
@@ -36,10 +30,7 @@ const recipes = [
         "outputs": [
             "copper-ingot"
         ],
-        "iconPosition": [
-            10,
-            1
-        ]
+        "icon": "copper-ingot"
     },
     {
         "id": "reforming-refine",
@@ -52,10 +43,7 @@ const recipes = [
         "outputs": [
             "refined-oil"
         ],
-        "iconPosition": [
-            2,
-            8
-        ]
+        "icon": "reforming-refine"
     },
     {
         "id": "automatic-piler",
@@ -69,10 +57,7 @@ const recipes = [
         "outputs": [
             "automatic-piler"
         ],
-        "iconPosition": [
-            4,
-            7
-        ]
+        "icon": "automatic-piler"
     },
     {
         "id": "stone-brick",
@@ -83,10 +68,7 @@ const recipes = [
         "outputs": [
             "stone-brick"
         ],
-        "iconPosition": [
-            4,
-            9
-        ]
+        "icon": "stone-brick"
     },
     {
         "id": "fire-ice-collecting",
@@ -95,10 +77,7 @@ const recipes = [
         "outputs": [
             "fire-ice"
         ],
-        "iconPosition": [
-            9,
-            3
-        ]
+        "icon": "fire-ice"
     },
     {
         "id": "spray-coater",
@@ -112,10 +91,7 @@ const recipes = [
         "outputs": [
             "spray-coater"
         ],
-        "iconPosition": [
-            2,
-            9
-        ]
+        "icon": "spray-coater"
     },
     {
         "id": "proliferator-3",
@@ -127,10 +103,7 @@ const recipes = [
         "outputs": [
             "proliferator-mk-iii"
         ],
-        "iconPosition": [
-            2,
-            0
-        ]
+        "icon": "proliferator-mk-iii"
     },
     {
         "id": "proliferator-1",
@@ -141,10 +114,7 @@ const recipes = [
         "outputs": [
             "proliferator-mk-i"
         ],
-        "iconPosition": [
-            0,
-            0
-        ]
+        "icon": "proliferator-mk-i"
     },
     {
         "id": "proliferator-2",
@@ -156,10 +126,7 @@ const recipes = [
         "outputs": [
             "proliferator-mk-ii"
         ],
-        "iconPosition": [
-            1,
-            0
-        ]
+        "icon": "proliferator-mk-ii"
     },
     {
         "id": "accumulator-full",
@@ -170,10 +137,7 @@ const recipes = [
         "outputs": [
             "accumulator-(full)"
         ],
-        "iconPosition": [
-            3,
-            0
-        ]
+        "icon": "accumulator-(full)"
     },
     {
         "id": "traffic-monitor",
@@ -187,10 +151,7 @@ const recipes = [
         "outputs": [
             "traffic-monitor"
         ],
-        "iconPosition": [
-            1,
-            6
-        ]
+        "icon": "traffic-monitor"
     },
     {
         "id": "advanced-mining-drill",
@@ -205,10 +166,7 @@ const recipes = [
         "outputs": [
             "advanced-mining-machine"
         ],
-        "iconPosition": [
-            12,
-            5
-        ]
+        "icon": "advanced-mining-machine"
     },
     {
         "id": "geothermal-power-station",
@@ -222,10 +180,7 @@ const recipes = [
         "outputs": [
             "geothermal-power-station"
         ],
-        "iconPosition": [
-            11,
-            3
-        ]
+        "icon": "geothermal-power-station"
     },
     {
         "id": "deuterium-collecting",
@@ -234,10 +189,7 @@ const recipes = [
         "outputs": [
             "deuterium"
         ],
-        "iconPosition": [
-            4,
-            2
-        ]
+        "icon": "deuterium"
     },
     {
         "id": "hydrogen-collecting",
@@ -246,10 +198,7 @@ const recipes = [
         "outputs": [
             "hydrogen"
         ],
-        "iconPosition": [
-            7,
-            4
-        ]
+        "icon": "hydrogen"
     },
     {
         "id": "oil-vein",
@@ -258,10 +207,7 @@ const recipes = [
         "outputs": [
             "crude-oil"
         ],
-        "iconPosition": [
-            7,
-            6
-        ]
+        "icon": "crude-oil"
     },
     {
         "id": "sulphuric-acid-vein",
@@ -270,10 +216,7 @@ const recipes = [
         "outputs": [
             "sulfuric-acid"
         ],
-        "iconPosition": [
-            10,
-            9
-        ]
+        "icon": "sulfuric-acid"
     },
     {
         "id": "mag-vein",
@@ -282,10 +225,7 @@ const recipes = [
         "outputs": [
             "unipolar-magnet"
         ],
-        "iconPosition": [
-            2,
-            6
-        ]
+        "icon": "unipolar-magnet"
     },
     {
         "id": "water-vein",
@@ -294,10 +234,7 @@ const recipes = [
         "outputs": [
             "water"
         ],
-        "iconPosition": [
-            9,
-            10
-        ]
+        "icon": "water"
     },
     {
         "id": "orbital-collector",
@@ -311,10 +248,7 @@ const recipes = [
         "outputs": [
             "orbital-collector"
         ],
-        "iconPosition": [
-            8,
-            6
-        ]
+        "icon": "orbital-collector"
     },
     {
         "id": "coal-vein",
@@ -323,10 +257,7 @@ const recipes = [
         "outputs": [
             "coal"
         ],
-        "iconPosition": [
-            8,
-            1
-        ]
+        "icon": "coal"
     },
     {
         "id": "mag-turbine",
@@ -338,10 +269,7 @@ const recipes = [
         "outputs": [
             "electromagnetic-turbine"
         ],
-        "iconPosition": [
-            8,
-            5
-        ]
+        "icon": "electromagnetic-turbine"
     },
     {
         "id": "deuterium-formula",
@@ -352,10 +280,7 @@ const recipes = [
         "outputs": [
             "deuterium"
         ],
-        "iconPosition": [
-            3,
-            2
-        ]
+        "icon": "deuterium"
     },
     {
         "id": "crysrub-vein",
@@ -364,10 +289,7 @@ const recipes = [
         "outputs": [
             "organic-crystal"
         ],
-        "iconPosition": [
-            12,
-            1
-        ]
+        "icon": "organic-crystal"
     },
     {
         "id": "copper-vein",
@@ -376,10 +298,7 @@ const recipes = [
         "outputs": [
             "copper-ore"
         ],
-        "iconPosition": [
-            9,
-            1
-        ]
+        "icon": "copper-ore"
     },
     {
         "id": "hyper-magnetism-ring",
@@ -392,10 +311,7 @@ const recipes = [
         "outputs": [
             "super-magnetic-ring"
         ],
-        "iconPosition": [
-            8,
-            4
-        ]
+        "icon": "super-magnetic-ring"
     },
     {
         "id": "diamond-vein",
@@ -404,10 +320,7 @@ const recipes = [
         "outputs": [
             "kimberlite-ore"
         ],
-        "iconPosition": [
-            6,
-            2
-        ]
+        "icon": "kimberlite-ore"
     },
     {
         "id": "titanium-vein",
@@ -416,10 +329,7 @@ const recipes = [
         "outputs": [
             "titanium-ore"
         ],
-        "iconPosition": [
-            4,
-            10
-        ]
+        "icon": "titanium-ore"
     },
     {
         "id": "terrain-tool",
@@ -431,10 +341,7 @@ const recipes = [
         "outputs": [
             "foundation"
         ],
-        "iconPosition": [
-            12,
-            9
-        ]
+        "icon": "foundation"
     },
     {
         "id": "logistic-drone",
@@ -447,10 +354,7 @@ const recipes = [
         "outputs": [
             "logistics-drone"
         ],
-        "iconPosition": [
-            5,
-            5
-        ]
+        "icon": "logistics-drone"
     },
     {
         "id": "fractal-vein",
@@ -459,10 +363,7 @@ const recipes = [
         "outputs": [
             "fractal-silicon"
         ],
-        "iconPosition": [
-            0,
-            3
-        ]
+        "icon": "fractal-silicon"
     },
     {
         "id": "photon-capacitor-full",
@@ -471,10 +372,7 @@ const recipes = [
         "outputs": [
             "critical-photon"
         ],
-        "iconPosition": [
-            2,
-            7
-        ]
+        "icon": "critical-photon"
     },
     {
         "id": "storage-tank",
@@ -487,10 +385,7 @@ const recipes = [
         "outputs": [
             "storage-tank"
         ],
-        "iconPosition": [
-            8,
-            9
-        ]
+        "icon": "storage-tank"
     },
     {
         "id": "grat-vein",
@@ -499,10 +394,7 @@ const recipes = [
         "outputs": [
             "optical-grating-crystal"
         ],
-        "iconPosition": [
-            3,
-            4
-        ]
+        "icon": "optical-grating-crystal"
     },
     {
         "id": "fractionator",
@@ -516,10 +408,7 @@ const recipes = [
         "outputs": [
             "fractionator"
         ],
-        "iconPosition": [
-            1,
-            3
-        ]
+        "icon": "fractionator"
     },
     {
         "id": "g-matrix",
@@ -531,10 +420,7 @@ const recipes = [
         "outputs": [
             "gravity-matrix"
         ],
-        "iconPosition": [
-            8,
-            3
-        ]
+        "icon": "gravity-matrix"
     },
     {
         "id": "splitter-4dir",
@@ -547,10 +433,7 @@ const recipes = [
         "outputs": [
             "splitter"
         ],
-        "iconPosition": [
-            1,
-            9
-        ]
+        "icon": "splitter"
     },
     {
         "id": "storage-2",
@@ -562,10 +445,7 @@ const recipes = [
         "outputs": [
             "storage-mk-ii"
         ],
-        "iconPosition": [
-            7,
-            9
-        ]
+        "icon": "storage-mk-ii"
     },
     {
         "id": "strange-matter-generator",
@@ -578,10 +458,7 @@ const recipes = [
         "outputs": [
             "strange-matter"
         ],
-        "iconPosition": [
-            9,
-            9
-        ]
+        "icon": "strange-matter"
     },
     {
         "id": "gravity-lens",
@@ -593,10 +470,7 @@ const recipes = [
         "outputs": [
             "graviton-lens"
         ],
-        "iconPosition": [
-            4,
-            4
-        ]
+        "icon": "graviton-lens"
     },
     {
         "id": "logistic-station",
@@ -610,10 +484,7 @@ const recipes = [
         "outputs": [
             "planetary-logistics-station"
         ],
-        "iconPosition": [
-            6,
-            5
-        ]
+        "icon": "planetary-logistics-station"
     },
     {
         "id": "partical-capacitor",
@@ -626,10 +497,7 @@ const recipes = [
         "outputs": [
             "particle-container"
         ],
-        "iconPosition": [
-            11,
-            6
-        ]
+        "icon": "particle-container"
     },
     {
         "id": "partical-capacitor-lv2",
@@ -641,10 +509,7 @@ const recipes = [
         "outputs": [
             "particle-container"
         ],
-        "iconPosition": [
-            10,
-            6
-        ]
+        "icon": "particle-container-advanced"
     },
     {
         "id": "interstellar-logistic-station",
@@ -657,10 +522,7 @@ const recipes = [
         "outputs": [
             "interstellar-logistics-station"
         ],
-        "iconPosition": [
-            0,
-            5
-        ]
+        "icon": "interstellar-logistics-station"
     },
     {
         "id": "electric-motor",
@@ -673,10 +535,7 @@ const recipes = [
         "outputs": [
             "electric-motor"
         ],
-        "iconPosition": [
-            10,
-            2
-        ]
+        "icon": "electric-motor"
     },
     {
         "id": "vertical-launching-silo",
@@ -690,10 +549,7 @@ const recipes = [
         "outputs": [
             "vertical-launching-silo"
         ],
-        "iconPosition": [
-            7,
-            10
-        ]
+        "icon": "vertical-launching-silo"
     },
     {
         "id": "accumulator",
@@ -706,10 +562,7 @@ const recipes = [
         "outputs": [
             "accumulator"
         ],
-        "iconPosition": [
-            4,
-            0
-        ]
+        "icon": "accumulator"
     },
     {
         "id": "photon-formula",
@@ -721,10 +574,7 @@ const recipes = [
             "antimatter",
             "hydrogen"
         ],
-        "iconPosition": [
-            3,
-            7
-        ]
+        "icon": "mass-energy-storage"
     },
     {
         "id": "em-rail-ejector",
@@ -738,10 +588,7 @@ const recipes = [
         "outputs": [
             "em-rail-ejector"
         ],
-        "iconPosition": [
-            11,
-            2
-        ]
+        "icon": "em-rail-ejector"
     },
     {
         "id": "frame-material",
@@ -754,10 +601,7 @@ const recipes = [
         "outputs": [
             "frame-material"
         ],
-        "iconPosition": [
-            2,
-            3
-        ]
+        "icon": "frame-material"
     },
     {
         "id": "photo-shifter",
@@ -769,10 +613,7 @@ const recipes = [
         "outputs": [
             "photon-combiner"
         ],
-        "iconPosition": [
-            1,
-            7
-        ]
+        "icon": "photon-combiner"
     },
     {
         "id": "photo-shifter-lv2",
@@ -784,10 +625,7 @@ const recipes = [
         "outputs": [
             "photon-combiner"
         ],
-        "iconPosition": [
-            0,
-            7
-        ]
+        "icon": "photon-combiner-advanced"
     },
     {
         "id": "space-warper-lv2",
@@ -798,10 +636,7 @@ const recipes = [
         "outputs": [
             "space-warper"
         ],
-        "iconPosition": [
-            12,
-            8
-        ]
+        "icon": "space-warper-advanced"
     },
     {
         "id": "fuel-plant",
@@ -815,10 +650,7 @@ const recipes = [
         "outputs": [
             "thermal-power-plant"
         ],
-        "iconPosition": [
-            3,
-            3
-        ]
+        "icon": "thermal-power-plant"
     },
     {
         "id": "rocket",
@@ -831,10 +663,7 @@ const recipes = [
         "outputs": [
             "small-carrier-rocket"
         ],
-        "iconPosition": [
-            3,
-            8
-        ]
+        "icon": "small-carrier-rocket"
     },
     {
         "id": "u-matrix",
@@ -850,10 +679,7 @@ const recipes = [
         "outputs": [
             "universe-matrix"
         ],
-        "iconPosition": [
-            6,
-            10
-        ]
+        "icon": "universe-matrix"
     },
     {
         "id": "silicium-single-crystal",
@@ -864,10 +690,7 @@ const recipes = [
         "outputs": [
             "high-purity-silicon"
         ],
-        "iconPosition": [
-            7,
-            8
-        ]
+        "icon": "high-purity-silicon"
     },
     {
         "id": "plane-smelter",
@@ -881,10 +704,7 @@ const recipes = [
         "outputs": [
             "plane-smelter"
         ],
-        "iconPosition": [
-            8,
-            8
-        ]
+        "icon": "plane-smelter"
     },
     {
         "id": "diamond",
@@ -895,10 +715,7 @@ const recipes = [
         "outputs": [
             "diamond"
         ],
-        "iconPosition": [
-            7,
-            2
-        ]
+        "icon": "diamond"
     },
     {
         "id": "i-matrix",
@@ -910,10 +727,7 @@ const recipes = [
         "outputs": [
             "information-matrix"
         ],
-        "iconPosition": [
-            9,
-            4
-        ]
+        "icon": "information-matrix"
     },
     {
         "id": "space-warper",
@@ -924,10 +738,7 @@ const recipes = [
         "outputs": [
             "space-warper"
         ],
-        "iconPosition": [
-            0,
-            9
-        ]
+        "icon": "space-warper"
     },
     {
         "id": "solar-panel",
@@ -940,10 +751,7 @@ const recipes = [
         "outputs": [
             "solar-panel"
         ],
-        "iconPosition": [
-            11,
-            8
-        ]
+        "icon": "solar-panel"
     },
     {
         "id": "belt-1",
@@ -955,10 +763,7 @@ const recipes = [
         "outputs": [
             "conveyor-belt-mk-i"
         ],
-        "iconPosition": [
-            11,
-            0
-        ]
+        "icon": "conveyor-belt-mk-i"
     },
     {
         "id": "belt-2",
@@ -970,10 +775,7 @@ const recipes = [
         "outputs": [
             "conveyor-belt-mk-ii"
         ],
-        "iconPosition": [
-            12,
-            0
-        ]
+        "icon": "conveyor-belt-mk-ii"
     },
     {
         "id": "belt-3",
@@ -986,10 +788,7 @@ const recipes = [
         "outputs": [
             "conveyor-belt-mk-iii"
         ],
-        "iconPosition": [
-            0,
-            1
-        ]
+        "icon": "conveyor-belt-mk-iii"
     },
     {
         "id": "water-pump",
@@ -1003,10 +802,7 @@ const recipes = [
         "outputs": [
             "water-pump"
         ],
-        "iconPosition": [
-            8,
-            10
-        ]
+        "icon": "water-pump"
     },
     {
         "id": "ray-receiver",
@@ -1021,10 +817,7 @@ const recipes = [
         "outputs": [
             "ray-receiver"
         ],
-        "iconPosition": [
-            0,
-            8
-        ]
+        "icon": "ray-receiver"
     },
     {
         "id": "titanium-plate",
@@ -1035,10 +828,7 @@ const recipes = [
         "outputs": [
             "titanium-ingot"
         ],
-        "iconPosition": [
-            5,
-            10
-        ]
+        "icon": "titanium-ingot"
     },
     {
         "id": "processor",
@@ -1050,10 +840,7 @@ const recipes = [
         "outputs": [
             "processor"
         ],
-        "iconPosition": [
-            11,
-            7
-        ]
+        "icon": "processor"
     },
     {
         "id": "quantum-processor",
@@ -1065,10 +852,7 @@ const recipes = [
         "outputs": [
             "quantum-chip"
         ],
-        "iconPosition": [
-            12,
-            7
-        ]
+        "icon": "quantum-chip"
     },
     {
         "id": "storage-1",
@@ -1080,10 +864,7 @@ const recipes = [
         "outputs": [
             "storage-mk-i"
         ],
-        "iconPosition": [
-            6,
-            9
-        ]
+        "icon": "storage-mk-i"
     },
     {
         "id": "smelter",
@@ -1097,10 +878,7 @@ const recipes = [
         "outputs": [
             "arc-smelter"
         ],
-        "iconPosition": [
-            9,
-            8
-        ]
+        "icon": "arc-smelter"
     },
     {
         "id": "assembler-1",
@@ -1113,10 +891,7 @@ const recipes = [
         "outputs": [
             "assembling-machine-mk-i"
         ],
-        "iconPosition": [
-            7,
-            0
-        ]
+        "icon": "assembling-machine-mk-i"
     },
     {
         "id": "assembler-2",
@@ -1129,10 +904,7 @@ const recipes = [
         "outputs": [
             "assembling-machine-mk-ii"
         ],
-        "iconPosition": [
-            8,
-            0
-        ]
+        "icon": "assembling-machine-mk-ii"
     },
     {
         "id": "assembler-3",
@@ -1145,10 +917,7 @@ const recipes = [
         "outputs": [
             "assembling-machine-mk-iii"
         ],
-        "iconPosition": [
-            9,
-            0
-        ]
+        "icon": "assembling-machine-mk-iii"
     },
     {
         "id": "circuit-board",
@@ -1160,10 +929,7 @@ const recipes = [
         "outputs": [
             "circuit-board"
         ],
-        "iconPosition": [
-            7,
-            1
-        ]
+        "icon": "circuit-board"
     },
     {
         "id": "fusion-reactor",
@@ -1177,10 +943,7 @@ const recipes = [
         "outputs": [
             "artificial-star"
         ],
-        "iconPosition": [
-            7,
-            3
-        ]
+        "icon": "artificial-star"
     },
     {
         "id": "solar-collector",
@@ -1192,10 +955,7 @@ const recipes = [
         "outputs": [
             "solar-sail"
         ],
-        "iconPosition": [
-            10,
-            8
-        ]
+        "icon": "solar-sail"
     },
     {
         "id": "plane-filter",
@@ -1207,10 +967,7 @@ const recipes = [
         "outputs": [
             "plane-filter"
         ],
-        "iconPosition": [
-            5,
-            7
-        ]
+        "icon": "plane-filter"
     },
     {
         "id": "deuterium-energy-fuel",
@@ -1223,10 +980,7 @@ const recipes = [
         "outputs": [
             "deuteron-fuel-rod"
         ],
-        "iconPosition": [
-            2,
-            2
-        ]
+        "icon": "deuteron-fuel-rod"
     },
     {
         "id": "antimatter-energy-fuel",
@@ -1240,10 +994,7 @@ const recipes = [
         "outputs": [
             "antimatter-fuel-rod"
         ],
-        "iconPosition": [
-            6,
-            0
-        ]
+        "icon": "antimatter-fuel-rod"
     },
     {
         "id": "crystal-rubber-lv0",
@@ -1256,10 +1007,7 @@ const recipes = [
         "outputs": [
             "organic-crystal"
         ],
-        "iconPosition": [
-            11,
-            1
-        ]
+        "icon": "organic-crystal-original"
     },
     {
         "id": "particle-wide-band",
@@ -1272,10 +1020,7 @@ const recipes = [
         "outputs": [
             "particle-broadband"
         ],
-        "iconPosition": [
-            12,
-            6
-        ]
+        "icon": "particle-broadband"
     },
     {
         "id": "bamboo-vein",
@@ -1284,10 +1029,7 @@ const recipes = [
         "outputs": [
             "spiniform-stalagmite-crystal"
         ],
-        "iconPosition": [
-            10,
-            0
-        ]
+        "icon": "spiniform-stalagmite-crystal"
     },
     {
         "id": "iron-vein",
@@ -1296,10 +1038,7 @@ const recipes = [
         "outputs": [
             "iron-ore"
         ],
-        "iconPosition": [
-            2,
-            5
-        ]
+        "icon": "iron-ore"
     },
     {
         "id": "silicium-vein",
@@ -1308,10 +1047,7 @@ const recipes = [
         "outputs": [
             "silicon-ore"
         ],
-        "iconPosition": [
-            6,
-            8
-        ]
+        "icon": "silicon-ore"
     },
     {
         "id": "stone-vein",
@@ -1320,10 +1056,7 @@ const recipes = [
         "outputs": [
             "stone"
         ],
-        "iconPosition": [
-            5,
-            9
-        ]
+        "icon": "stone"
     },
     {
         "id": "logistic-vessel",
@@ -1336,10 +1069,7 @@ const recipes = [
         "outputs": [
             "logistics-vessel"
         ],
-        "iconPosition": [
-            7,
-            5
-        ]
+        "icon": "logistics-vessel"
     },
     {
         "id": "fusion-power-station",
@@ -1353,10 +1083,7 @@ const recipes = [
         "outputs": [
             "mini-fusion-power-plant"
         ],
-        "iconPosition": [
-            6,
-            3
-        ]
+        "icon": "mini-fusion-power-plant"
     },
     {
         "id": "inserter-1",
@@ -1368,10 +1095,7 @@ const recipes = [
         "outputs": [
             "sorter-mk-i"
         ],
-        "iconPosition": [
-            10,
-            4
-        ]
+        "icon": "sorter-mk-i"
     },
     {
         "id": "inserter-2",
@@ -1383,10 +1107,7 @@ const recipes = [
         "outputs": [
             "sorter-mk-ii"
         ],
-        "iconPosition": [
-            11,
-            4
-        ]
+        "icon": "sorter-mk-ii"
     },
     {
         "id": "inserter-3",
@@ -1398,10 +1119,7 @@ const recipes = [
         "outputs": [
             "sorter-mk-iii"
         ],
-        "iconPosition": [
-            12,
-            4
-        ]
+        "icon": "sorter-mk-iii"
     },
     {
         "id": "dyson-sphere-component",
@@ -1414,10 +1132,7 @@ const recipes = [
         "outputs": [
             "dyson-sphere-component"
         ],
-        "iconPosition": [
-            8,
-            2
-        ]
+        "icon": "dyson-sphere-component"
     },
     {
         "id": "orbital-substation",
@@ -1430,10 +1145,7 @@ const recipes = [
         "outputs": [
             "satellite-substation"
         ],
-        "iconPosition": [
-            9,
-            6
-        ]
+        "icon": "satellite-substation"
     },
     {
         "id": "energy-exchanger",
@@ -1447,10 +1159,7 @@ const recipes = [
         "outputs": [
             "energy-exchanger"
         ],
-        "iconPosition": [
-            12,
-            2
-        ]
+        "icon": "energy-exchanger"
     },
     {
         "id": "silicium-high-purity-lv2",
@@ -1461,10 +1170,7 @@ const recipes = [
         "outputs": [
             "crystal-silicon"
         ],
-        "iconPosition": [
-            4,
-            8
-        ]
+        "icon": "crystal-silicon-advanced"
     },
     {
         "id": "titanium-alloy",
@@ -1477,10 +1183,7 @@ const recipes = [
         "outputs": [
             "titanium-alloy"
         ],
-        "iconPosition": [
-            3,
-            10
-        ]
+        "icon": "titanium-alloy"
     },
     {
         "id": "x-ray",
@@ -1493,10 +1196,7 @@ const recipes = [
             "hydrogen",
             "energetic-graphite"
         ],
-        "iconPosition": [
-            12,
-            10
-        ]
+        "icon": "x-ray-cracking"
     },
     {
         "id": "steel-plate",
@@ -1507,10 +1207,7 @@ const recipes = [
         "outputs": [
             "steel"
         ],
-        "iconPosition": [
-            3,
-            9
-        ]
+        "icon": "steel"
     },
     {
         "id": "diamond-lv2",
@@ -1521,10 +1218,7 @@ const recipes = [
         "outputs": [
             "diamond"
         ],
-        "iconPosition": [
-            5,
-            2
-        ]
+        "icon": "diamond-advanced"
     },
     {
         "id": "fusion-capacitor",
@@ -1536,10 +1230,7 @@ const recipes = [
         "outputs": [
             "annihilation-constraint-sphere"
         ],
-        "iconPosition": [
-            5,
-            3
-        ]
+        "icon": "annihilation-constraint-sphere"
     },
     {
         "id": "micro-component",
@@ -1551,10 +1242,7 @@ const recipes = [
         "outputs": [
             "microcrystalline-component"
         ],
-        "iconPosition": [
-            11,
-            5
-        ]
+        "icon": "microcrystalline-component"
     },
     {
         "id": "glass",
@@ -1565,10 +1253,7 @@ const recipes = [
         "outputs": [
             "glass"
         ],
-        "iconPosition": [
-            12,
-            3
-        ]
+        "icon": "glass"
     },
     {
         "id": "mining-drill",
@@ -1582,10 +1267,7 @@ const recipes = [
         "outputs": [
             "mining-machine"
         ],
-        "iconPosition": [
-            0,
-            6
-        ]
+        "icon": "mining-machine"
     },
     {
         "id": "hadron-collider",
@@ -1600,10 +1282,7 @@ const recipes = [
         "outputs": [
             "miniature-particle-collider"
         ],
-        "iconPosition": [
-            5,
-            4
-        ]
+        "icon": "miniature-particle-collider"
     },
     {
         "id": "nanotube-lv2",
@@ -1614,10 +1293,7 @@ const recipes = [
         "outputs": [
             "carbon-nanotube"
         ],
-        "iconPosition": [
-            3,
-            6
-        ]
+        "icon": "carbon-nanotube-advanced"
     },
     {
         "id": "silicium-high-purity",
@@ -1628,10 +1304,7 @@ const recipes = [
         "outputs": [
             "crystal-silicon"
         ],
-        "iconPosition": [
-            5,
-            8
-        ]
+        "icon": "crystal-silicon"
     },
     {
         "id": "graphene-lv2",
@@ -1643,10 +1316,7 @@ const recipes = [
             "graphene",
             "hydrogen"
         ],
-        "iconPosition": [
-            0,
-            4
-        ]
+        "icon": "graphene-advanced"
     },
     {
         "id": "graphene",
@@ -1658,10 +1328,7 @@ const recipes = [
         "outputs": [
             "graphene"
         ],
-        "iconPosition": [
-            1,
-            4
-        ]
+        "icon": "graphene"
     },
     {
         "id": "titan-glass",
@@ -1674,10 +1341,7 @@ const recipes = [
         "outputs": [
             "titanium-glass"
         ],
-        "iconPosition": [
-            2,
-            10
-        ]
+        "icon": "titanium-glass"
     },
     {
         "id": "casimir-crystal",
@@ -1690,10 +1354,7 @@ const recipes = [
         "outputs": [
             "casimir-crystal"
         ],
-        "iconPosition": [
-            3,
-            1
-        ]
+        "icon": "casimir-crystal"
     },
     {
         "id": "c-matrix",
@@ -1705,10 +1366,7 @@ const recipes = [
         "outputs": [
             "structure-matrix"
         ],
-        "iconPosition": [
-            1,
-            1
-        ]
+        "icon": "structure-matrix"
     },
     {
         "id": "nanotube",
@@ -1720,10 +1378,7 @@ const recipes = [
         "outputs": [
             "carbon-nanotube"
         ],
-        "iconPosition": [
-            4,
-            6
-        ]
+        "icon": "carbon-nanotube"
     },
     {
         "id": "titan-crystal",
@@ -1735,10 +1390,7 @@ const recipes = [
         "outputs": [
             "titanium-crystal"
         ],
-        "iconPosition": [
-            1,
-            10
-        ]
+        "icon": "titanium-crystal"
     },
     {
         "id": "casimir-crystal-lv2",
@@ -1751,10 +1403,7 @@ const recipes = [
         "outputs": [
             "casimir-crystal"
         ],
-        "iconPosition": [
-            2,
-            1
-        ]
+        "icon": "casimir-crystal-advanced"
     },
     {
         "id": "chemical-plant",
@@ -1768,10 +1417,7 @@ const recipes = [
         "outputs": [
             "chemical-plant"
         ],
-        "iconPosition": [
-            6,
-            1
-        ]
+        "icon": "chemical-plant"
     },
     {
         "id": "fuel-thruster",
@@ -1783,10 +1429,7 @@ const recipes = [
         "outputs": [
             "thruster"
         ],
-        "iconPosition": [
-            4,
-            3
-        ]
+        "icon": "thruster"
     },
     {
         "id": "graphite",
@@ -1797,10 +1440,7 @@ const recipes = [
         "outputs": [
             "energetic-graphite"
         ],
-        "iconPosition": [
-            2,
-            4
-        ]
+        "icon": "energetic-graphite"
     },
     {
         "id": "oil-refinery",
@@ -1814,10 +1454,7 @@ const recipes = [
         "outputs": [
             "oil-refinery"
         ],
-        "iconPosition": [
-            6,
-            6
-        ]
+        "icon": "oil-refinery"
     },
     {
         "id": "plasma-generator",
@@ -1829,10 +1466,7 @@ const recipes = [
         "outputs": [
             "plasma-exciter"
         ],
-        "iconPosition": [
-            7,
-            7
-        ]
+        "icon": "plasma-exciter"
     },
     {
         "id": "plasma-refining",
@@ -1844,10 +1478,7 @@ const recipes = [
             "hydrogen",
             "refined-oil"
         ],
-        "iconPosition": [
-            8,
-            7
-        ]
+        "icon": "plasma-refining"
     },
     {
         "id": "oil-extractor",
@@ -1861,10 +1492,7 @@ const recipes = [
         "outputs": [
             "oil-extractor"
         ],
-        "iconPosition": [
-            5,
-            6
-        ]
+        "icon": "oil-extractor"
     },
     {
         "id": "hydrogen-energy-fuel",
@@ -1876,10 +1504,7 @@ const recipes = [
         "outputs": [
             "hydrogen-fuel-rod"
         ],
-        "iconPosition": [
-            6,
-            4
-        ]
+        "icon": "hydrogen-fuel-rod"
     },
     {
         "id": "e-matrix",
@@ -1891,10 +1516,7 @@ const recipes = [
         "outputs": [
             "energy-matrix"
         ],
-        "iconPosition": [
-            9,
-            2
-        ]
+        "icon": "energy-matrix"
     },
     {
         "id": "prism",
@@ -1905,10 +1527,7 @@ const recipes = [
         "outputs": [
             "prism"
         ],
-        "iconPosition": [
-            10,
-            7
-        ]
+        "icon": "prism"
     },
     {
         "id": "ion-thruster",
@@ -1920,10 +1539,7 @@ const recipes = [
         "outputs": [
             "reinforced-thruster"
         ],
-        "iconPosition": [
-            1,
-            5
-        ]
+        "icon": "reinforced-thruster"
     },
     {
         "id": "t-matrix",
@@ -1935,10 +1551,7 @@ const recipes = [
         "outputs": [
             "electromagnetic-matrix"
         ],
-        "iconPosition": [
-            11,
-            9
-        ]
+        "icon": "electromagnetic-matrix"
     },
     {
         "id": "magnetism-wire",
@@ -1950,10 +1563,7 @@ const recipes = [
         "outputs": [
             "magnetic-coil"
         ],
-        "iconPosition": [
-            10,
-            5
-        ]
+        "icon": "magnetic-coil"
     },
     {
         "id": "gear-wheel",
@@ -1964,10 +1574,7 @@ const recipes = [
         "outputs": [
             "gear"
         ],
-        "iconPosition": [
-            10,
-            3
-        ]
+        "icon": "gear"
     },
     {
         "id": "tesla-coil",
@@ -1979,10 +1586,7 @@ const recipes = [
         "outputs": [
             "tesla-tower"
         ],
-        "iconPosition": [
-            0,
-            10
-        ]
+        "icon": "tesla-tower"
     },
     {
         "id": "lab",
@@ -1996,10 +1600,7 @@ const recipes = [
         "outputs": [
             "matrix-lab"
         ],
-        "iconPosition": [
-            4,
-            5
-        ]
+        "icon": "matrix-lab"
     },
     {
         "id": "charging-pole",
@@ -2011,10 +1612,7 @@ const recipes = [
         "outputs": [
             "wireless-power-tower"
         ],
-        "iconPosition": [
-            4,
-            1
-        ]
+        "icon": "wireless-power-tower"
     },
     {
         "id": "plastic",
@@ -2026,10 +1624,7 @@ const recipes = [
         "outputs": [
             "plastic"
         ],
-        "iconPosition": [
-            9,
-            7
-        ]
+        "icon": "plastic"
     },
     {
         "id": "wind-turbine",
@@ -2042,10 +1637,7 @@ const recipes = [
         "outputs": [
             "wind-turbine"
         ],
-        "iconPosition": [
-            10,
-            10
-        ]
+        "icon": "wind-turbine"
     },
     {
         "id": "sulphuric-acid",
@@ -2058,10 +1650,7 @@ const recipes = [
         "outputs": [
             "sulfuric-acid"
         ],
-        "iconPosition": [
-            10,
-            9
-        ]
+        "icon": "sulfuric-acid"
     },
     {
         "id": "silicium-ore",
@@ -2072,10 +1661,7 @@ const recipes = [
         "outputs": [
             "silicon-ore"
         ],
-        "iconPosition": [
-            6,
-            8
-        ]
+        "icon": "silicon-ore"
     },
     {
         "id": "deuterium",
@@ -2086,10 +1672,7 @@ const recipes = [
         "outputs": [
             "deuterium"
         ],
-        "iconPosition": [
-            4,
-            2
-        ]
+        "icon": "deuterium"
     },
     {
         "id": "fireice-vein",
@@ -2098,10 +1681,7 @@ const recipes = [
         "outputs": [
             "fire-ice"
         ],
-        "iconPosition": [
-            9,
-            3
-        ]
+        "icon": "fire-ice"
     },
     {
         "id": "crystal-rubber",
@@ -2114,10 +1694,7 @@ const recipes = [
         "outputs": [
             "organic-crystal"
         ],
-        "iconPosition": [
-            12,
-            1
-        ]
+        "icon": "organic-crystal"
     },
     {
         "id": "logistic-bots",
@@ -2130,10 +1707,7 @@ const recipes = [
         "outputs": [
             "logistic-bots"
         ],
-        "iconPosition": [
-            0,
-            2
-        ]
+        "icon": "logistic-bots"
     },
     {
         "id": "logistic-distributor",
@@ -2146,10 +1720,7 @@ const recipes = [
         "outputs": [
             "logistic-distributor"
         ],
-        "iconPosition": [
-            1,
-            2
-        ]
+        "icon": "logistic-distributor"
     },
     {
         "id": "chemical-plant-v2",
@@ -2163,10 +1734,7 @@ const recipes = [
         "outputs": [
             "chemical-plant-v2"
         ],
-        "iconPosition": [
-            5,
-            1
-        ]
+        "icon": "chemical-plant-v2"
     }
 ]
 
