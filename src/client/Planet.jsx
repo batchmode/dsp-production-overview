@@ -102,10 +102,10 @@ const Planet = ({system, planet, model, updateModel, onShowProductionChain, show
     const selectionConfig = [
         {
             title: 'Products',
-            filter: p => p.category !== 'building'
+            filter: p => p.category !== 'building' && p.category !== 'recipe'
         }, {
             title: 'Buildings',
-            filter: p => p.category === 'building'
+            filter: p => p.category === 'building' && p.category !== 'recipe'
         }
     ]
 
