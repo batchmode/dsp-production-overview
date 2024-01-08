@@ -1,9 +1,9 @@
 import icons from "../assets/icons.png";
 
-const Icon = ({x, y, size="normal"}) => {
+const Icon = ({x, y, size = "normal"}) => {
 
-    const left = 4 + (x * (80 + 4))
-    const top = 4 + (y * (80 + 4))
+    const left = x * 80
+    const top = y * 80
 
     const objectPosition = "-" + left + "px -" + top + "px"
 

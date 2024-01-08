@@ -31,7 +31,7 @@ const products = [
         "name": "Magnet",
         "iconPosition": [
             9,
-            5
+            7
         ],
         "category": "product"
     },
@@ -39,8 +39,8 @@ const products = [
         "id": "sulfuric-acid",
         "name": "Sulfuric acid",
         "iconPosition": [
-            10,
-            9
+            0,
+            13
         ],
         "category": "resource"
     },
@@ -75,8 +75,8 @@ const products = [
         "id": "conveyor-belt-mk-i",
         "name": "Conveyor belt mk. I",
         "iconPosition": [
-            11,
-            0
+            1,
+            1
         ],
         "category": "building"
     },
@@ -84,8 +84,8 @@ const products = [
         "id": "conveyor-belt-mk-ii",
         "name": "Conveyor belt mk. II",
         "iconPosition": [
-            12,
-            0
+            2,
+            1
         ],
         "category": "building"
     },
@@ -93,7 +93,7 @@ const products = [
         "id": "conveyor-belt-mk-iii",
         "name": "Conveyor belt mk. III",
         "iconPosition": [
-            0,
+            3,
             1
         ],
         "category": "building"
@@ -102,8 +102,8 @@ const products = [
         "id": "solar-sail",
         "name": "Solar sail",
         "iconPosition": [
-            10,
-            8
+            11,
+            11
         ],
         "category": "product"
     },
@@ -111,8 +111,8 @@ const products = [
         "id": "gravity-matrix",
         "name": "Gravity matrix",
         "iconPosition": [
-            8,
-            3
+            4,
+            5
         ],
         "category": "product"
     },
@@ -138,8 +138,8 @@ const products = [
         "id": "electromagnetic-matrix",
         "name": "Electromagnetic matrix",
         "iconPosition": [
-            11,
-            9
+            1,
+            13
         ],
         "category": "product"
     },
@@ -147,8 +147,8 @@ const products = [
         "id": "gear",
         "name": "Gear",
         "iconPosition": [
-            10,
-            3
+            6,
+            5
         ],
         "category": "product"
     },
@@ -156,7 +156,7 @@ const products = [
         "id": "structure-matrix",
         "name": "Structure matrix",
         "iconPosition": [
-            1,
+            7,
             1
         ],
         "category": "product"
@@ -165,8 +165,8 @@ const products = [
         "id": "deuteron-fuel-rod",
         "name": "Deuteron fuel rod",
         "iconPosition": [
-            2,
-            2
+            3,
+            3
         ],
         "category": "product"
     },
@@ -183,8 +183,8 @@ const products = [
         "id": "spray-coater",
         "name": "Spray coater",
         "iconPosition": [
-            2,
-            9
+            4,
+            12
         ],
         "category": "building"
     },
@@ -192,8 +192,8 @@ const products = [
         "id": "titanium-alloy",
         "name": "Titanium alloy",
         "iconPosition": [
-            3,
-            10
+            6,
+            13
         ],
         "category": "product"
     },
@@ -202,7 +202,7 @@ const products = [
         "name": "Copper ore",
         "iconPosition": [
             9,
-            1
+            2
         ],
         "category": "resource"
     },
@@ -210,8 +210,8 @@ const products = [
         "id": "iron-ore",
         "name": "Iron ore",
         "iconPosition": [
-            2,
-            5
+            1,
+            7
         ],
         "category": "resource"
     },
@@ -219,8 +219,8 @@ const products = [
         "id": "energetic-graphite",
         "name": "Energetic graphite",
         "iconPosition": [
-            2,
-            4
+            11,
+            5
         ],
         "category": "product"
     },
@@ -229,7 +229,7 @@ const products = [
         "name": "Coal",
         "iconPosition": [
             8,
-            1
+            2
         ],
         "category": "resource"
     },
@@ -237,8 +237,8 @@ const products = [
         "id": "sorter-mk-i",
         "name": "Sorter mk. I",
         "iconPosition": [
-            10,
-            4
+            8,
+            6
         ],
         "category": "building"
     },
@@ -246,8 +246,8 @@ const products = [
         "id": "sorter-mk-ii",
         "name": "Sorter mk. II",
         "iconPosition": [
-            11,
-            4
+            9,
+            6
         ],
         "category": "building"
     },
@@ -255,8 +255,8 @@ const products = [
         "id": "sorter-mk-iii",
         "name": "Sorter mk. III",
         "iconPosition": [
-            12,
-            4
+            10,
+            6
         ],
         "category": "building"
     },
@@ -264,8 +264,8 @@ const products = [
         "id": "space-warper",
         "name": "Space warper",
         "iconPosition": [
-            0,
-            9
+            2,
+            12
         ],
         "category": "product"
     },
@@ -273,8 +273,8 @@ const products = [
         "id": "information-matrix",
         "name": "Information matrix",
         "iconPosition": [
-            9,
-            4
+            7,
+            6
         ],
         "category": "product"
     },
@@ -282,8 +282,8 @@ const products = [
         "id": "artificial-star",
         "name": "Artificial star",
         "iconPosition": [
-            7,
-            3
+            3,
+            5
         ],
         "category": "building"
     },
@@ -291,8 +291,8 @@ const products = [
         "id": "graviton-lens",
         "name": "Graviton lens",
         "iconPosition": [
-            4,
-            4
+            1,
+            6
         ],
         "category": "product"
     },
@@ -300,8 +300,8 @@ const products = [
         "id": "quantum-chip",
         "name": "Quantum chip",
         "iconPosition": [
-            12,
-            7
+            8,
+            10
         ],
         "category": "product"
     },
@@ -309,8 +309,8 @@ const products = [
         "id": "processor",
         "name": "Processor",
         "iconPosition": [
-            11,
-            7
+            7,
+            10
         ],
         "category": "product"
     },
@@ -318,8 +318,8 @@ const products = [
         "id": "deuterium",
         "name": "Deuterium",
         "iconPosition": [
-            4,
-            2
+            5,
+            3
         ],
         "category": "resource"
     },
@@ -327,8 +327,8 @@ const products = [
         "id": "organic-crystal",
         "name": "Organic crystal",
         "iconPosition": [
-            12,
-            1
+            0,
+            3
         ],
         "category": "resource"
     },
@@ -336,8 +336,8 @@ const products = [
         "id": "strange-matter",
         "name": "Strange matter",
         "iconPosition": [
-            9,
-            9
+            11,
+            12
         ],
         "category": "product"
     },
@@ -345,8 +345,8 @@ const products = [
         "id": "plasma-exciter",
         "name": "Plasma exciter",
         "iconPosition": [
-            7,
-            7
+            3,
+            10
         ],
         "category": "product"
     },
@@ -354,8 +354,8 @@ const products = [
         "id": "crude-oil",
         "name": "Crude oil",
         "iconPosition": [
-            7,
-            6
+            1,
+            9
         ],
         "category": "resource"
     },
@@ -373,7 +373,7 @@ const products = [
         "name": "Casimir crystal",
         "iconPosition": [
             3,
-            1
+            2
         ],
         "category": "resource"
     },
@@ -381,8 +381,8 @@ const products = [
         "id": "particle-broadband",
         "name": "Particle broadband",
         "iconPosition": [
-            12,
-            6
+            7,
+            9
         ],
         "category": "product"
     },
@@ -391,7 +391,7 @@ const products = [
         "name": "Copper ingot",
         "iconPosition": [
             10,
-            1
+            2
         ],
         "category": "product"
     },
@@ -399,8 +399,8 @@ const products = [
         "id": "high-purity-silicon",
         "name": "High-purity silicon",
         "iconPosition": [
-            7,
-            8
+            5,
+            11
         ],
         "category": "product"
     },
@@ -408,8 +408,8 @@ const products = [
         "id": "plane-filter",
         "name": "Plane filter",
         "iconPosition": [
-            5,
-            7
+            1,
+            10
         ],
         "category": "product"
     },
@@ -417,8 +417,8 @@ const products = [
         "id": "hydrogen",
         "name": "Hydrogen",
         "iconPosition": [
-            7,
-            4
+            5,
+            6
         ],
         "category": "resource"
     },
@@ -426,7 +426,7 @@ const products = [
         "id": "spiniform-stalagmite-crystal",
         "name": "Spiniform stalagmite crystal",
         "iconPosition": [
-            10,
+            11,
             0
         ],
         "category": "resource"
@@ -435,8 +435,8 @@ const products = [
         "id": "energy-matrix",
         "name": "Energy matrix",
         "iconPosition": [
-            9,
-            2
+            10,
+            3
         ],
         "category": "product"
     },
@@ -444,8 +444,8 @@ const products = [
         "id": "photon-combiner",
         "name": "Photon combiner",
         "iconPosition": [
-            1,
-            7
+            9,
+            9
         ],
         "category": "product"
     },
@@ -453,8 +453,8 @@ const products = [
         "id": "water",
         "name": "Water",
         "iconPosition": [
-            9,
-            10
+            1,
+            15
         ],
         "category": "resource"
     },
@@ -462,8 +462,8 @@ const products = [
         "id": "titanium-ore",
         "name": "Titanium ore",
         "iconPosition": [
-            4,
-            10
+            7,
+            13
         ],
         "category": "resource"
     },
@@ -471,8 +471,8 @@ const products = [
         "id": "silicon-ore",
         "name": "Silicon ore",
         "iconPosition": [
-            6,
-            8
+            4,
+            11
         ],
         "category": "resource"
     },
@@ -480,8 +480,8 @@ const products = [
         "id": "titanium-ingot",
         "name": "Titanium ingot",
         "iconPosition": [
-            5,
-            10
+            8,
+            13
         ],
         "category": "product"
     },
@@ -489,8 +489,8 @@ const products = [
         "id": "iron-ingot",
         "name": "Iron ingot",
         "iconPosition": [
-            3,
-            5
+            2,
+            7
         ],
         "category": "product"
     },
@@ -498,8 +498,8 @@ const products = [
         "id": "refined-oil",
         "name": "Refined oil",
         "iconPosition": [
-            1,
-            8
+            11,
+            10
         ],
         "category": "product"
     },
@@ -507,8 +507,8 @@ const products = [
         "id": "hydrogen-fuel-rod",
         "name": "Hydrogen fuel rod",
         "iconPosition": [
-            6,
-            4
+            4,
+            6
         ],
         "category": "product"
     },
@@ -517,7 +517,7 @@ const products = [
         "name": "Wireless power tower",
         "iconPosition": [
             4,
-            1
+            2
         ],
         "category": "building"
     },
@@ -525,8 +525,8 @@ const products = [
         "id": "critical-photon",
         "name": "Critical photon",
         "iconPosition": [
-            2,
-            7
+            10,
+            9
         ],
         "category": "product"
     },
@@ -535,7 +535,7 @@ const products = [
         "name": "Magnetic coil",
         "iconPosition": [
             10,
-            5
+            7
         ],
         "category": "product"
     },
@@ -543,8 +543,8 @@ const products = [
         "id": "glass",
         "name": "Glass",
         "iconPosition": [
-            12,
-            3
+            8,
+            5
         ],
         "category": "product"
     },
@@ -552,8 +552,8 @@ const products = [
         "id": "super-magnetic-ring",
         "name": "Super-magnetic ring",
         "iconPosition": [
-            8,
-            4
+            6,
+            6
         ],
         "category": "product"
     },
@@ -561,8 +561,8 @@ const products = [
         "id": "annihilation-constraint-sphere",
         "name": "Annihilation constraint sphere",
         "iconPosition": [
-            5,
-            3
+            1,
+            5
         ],
         "category": "product"
     },
@@ -570,8 +570,8 @@ const products = [
         "id": "fractal-silicon",
         "name": "Fractal silicon",
         "iconPosition": [
-            0,
-            3
+            8,
+            4
         ],
         "category": "resource"
     },
@@ -579,8 +579,8 @@ const products = [
         "id": "crystal-silicon",
         "name": "Crystal silicon",
         "iconPosition": [
-            5,
-            8
+            3,
+            11
         ],
         "category": "product"
     },
@@ -589,7 +589,7 @@ const products = [
         "name": "Planetary logistics station",
         "iconPosition": [
             6,
-            5
+            7
         ],
         "category": "building"
     },
@@ -597,8 +597,8 @@ const products = [
         "id": "interstellar-logistics-station",
         "name": "Interstellar logistics station",
         "iconPosition": [
-            0,
-            5
+            11,
+            6
         ],
         "category": "building"
     },
@@ -606,8 +606,8 @@ const products = [
         "id": "orbital-collector",
         "name": "Orbital collector",
         "iconPosition": [
-            8,
-            6
+            2,
+            9
         ],
         "category": "building"
     },
@@ -615,8 +615,8 @@ const products = [
         "id": "stone-brick",
         "name": "Stone brick",
         "iconPosition": [
-            4,
-            9
+            6,
+            12
         ],
         "category": "product"
     },
@@ -624,8 +624,8 @@ const products = [
         "id": "fire-ice",
         "name": "Fire ice",
         "iconPosition": [
-            9,
-            3
+            5,
+            5
         ],
         "category": "resource"
     },
@@ -633,8 +633,8 @@ const products = [
         "id": "titanium-crystal",
         "name": "Titanium crystal",
         "iconPosition": [
-            1,
-            10
+            4,
+            13
         ],
         "category": "product"
     },
@@ -642,8 +642,8 @@ const products = [
         "id": "graphene",
         "name": "Graphene",
         "iconPosition": [
-            1,
-            4
+            10,
+            5
         ],
         "category": "product"
     },
@@ -651,8 +651,8 @@ const products = [
         "id": "foundation",
         "name": "Foundation",
         "iconPosition": [
-            12,
-            9
+            2,
+            13
         ],
         "category": "product"
     },
@@ -660,8 +660,8 @@ const products = [
         "id": "small-carrier-rocket",
         "name": "Small carrier rocket",
         "iconPosition": [
-            3,
-            8
+            1,
+            11
         ],
         "category": "product"
     },
@@ -669,8 +669,8 @@ const products = [
         "id": "ray-receiver",
         "name": "Ray receiver",
         "iconPosition": [
-            0,
-            8
+            9,
+            10
         ],
         "category": "building"
     },
@@ -678,8 +678,8 @@ const products = [
         "id": "thruster",
         "name": "Thruster",
         "iconPosition": [
-            4,
-            3
+            0,
+            5
         ],
         "category": "product"
     },
@@ -687,8 +687,8 @@ const products = [
         "id": "thermal-power-plant",
         "name": "Thermal power plant",
         "iconPosition": [
-            3,
-            3
+            11,
+            4
         ],
         "category": "building"
     },
@@ -696,8 +696,8 @@ const products = [
         "id": "mini-fusion-power-plant",
         "name": "Mini fusion power plant",
         "iconPosition": [
-            6,
-            3
+            2,
+            5
         ],
         "category": "building"
     },
@@ -705,8 +705,8 @@ const products = [
         "id": "frame-material",
         "name": "Frame material",
         "iconPosition": [
-            2,
-            3
+            10,
+            4
         ],
         "category": "product"
     },
@@ -714,8 +714,8 @@ const products = [
         "id": "steel",
         "name": "Steel",
         "iconPosition": [
-            3,
-            9
+            5,
+            12
         ],
         "category": "product"
     },
@@ -723,8 +723,8 @@ const products = [
         "id": "stone",
         "name": "Stone",
         "iconPosition": [
-            5,
-            9
+            7,
+            12
         ],
         "category": "resource"
     },
@@ -732,8 +732,8 @@ const products = [
         "id": "storage-mk-i",
         "name": "Storage mk. I",
         "iconPosition": [
-            6,
-            9
+            8,
+            12
         ],
         "category": "building"
     },
@@ -741,8 +741,8 @@ const products = [
         "id": "storage-mk-ii",
         "name": "Storage mk. II",
         "iconPosition": [
-            7,
-            9
+            9,
+            12
         ],
         "category": "building"
     },
@@ -750,8 +750,8 @@ const products = [
         "id": "traffic-monitor",
         "name": "Traffic monitor",
         "iconPosition": [
-            1,
-            6
+            6,
+            8
         ],
         "category": "building"
     },
@@ -760,7 +760,7 @@ const products = [
         "name": "Circuit board",
         "iconPosition": [
             7,
-            1
+            2
         ],
         "category": "product"
     },
@@ -768,8 +768,8 @@ const products = [
         "id": "electric-motor",
         "name": "Electric motor",
         "iconPosition": [
-            10,
-            2
+            11,
+            3
         ],
         "category": "product"
     },
@@ -777,8 +777,8 @@ const products = [
         "id": "particle-container",
         "name": "Particle container",
         "iconPosition": [
-            11,
-            6
+            5,
+            9
         ],
         "category": "product"
     },
@@ -786,8 +786,8 @@ const products = [
         "id": "carbon-nanotube",
         "name": "Carbon nanotube",
         "iconPosition": [
-            4,
-            6
+            9,
+            8
         ],
         "category": "product"
     },
@@ -795,8 +795,8 @@ const products = [
         "id": "optical-grating-crystal",
         "name": "Optical grating crystal",
         "iconPosition": [
-            3,
-            4
+            0,
+            6
         ],
         "category": "resource"
     },
@@ -804,8 +804,8 @@ const products = [
         "id": "microcrystalline-component",
         "name": "Microcrystalline component",
         "iconPosition": [
-            11,
-            5
+            0,
+            8
         ],
         "category": "product"
     },
@@ -813,8 +813,8 @@ const products = [
         "id": "plastic",
         "name": "Plastic",
         "iconPosition": [
-            9,
-            7
+            5,
+            10
         ],
         "category": "product"
     },
@@ -822,8 +822,8 @@ const products = [
         "id": "diamond",
         "name": "Diamond",
         "iconPosition": [
-            7,
-            2
+            8,
+            3
         ],
         "category": "product"
     },
@@ -831,8 +831,8 @@ const products = [
         "id": "kimberlite-ore",
         "name": "Kimberlite ore",
         "iconPosition": [
-            6,
-            2
+            7,
+            3
         ],
         "category": "resource"
     },
@@ -841,7 +841,7 @@ const products = [
         "name": "Electromagnetic turbine",
         "iconPosition": [
             8,
-            5
+            7
         ],
         "category": "product"
     },
@@ -850,7 +850,7 @@ const products = [
         "name": "Logistics drone",
         "iconPosition": [
             5,
-            5
+            7
         ],
         "category": "product"
     },
@@ -858,8 +858,8 @@ const products = [
         "id": "unipolar-magnet",
         "name": "Unipolar magnet",
         "iconPosition": [
-            2,
-            6
+            7,
+            8
         ],
         "category": "resource"
     },
@@ -867,8 +867,8 @@ const products = [
         "id": "universe-matrix",
         "name": "Universe matrix",
         "iconPosition": [
-            6,
-            10
+            5,
+            14
         ],
         "category": "product"
     },
@@ -876,8 +876,8 @@ const products = [
         "id": "log",
         "name": "Log",
         "iconPosition": [
-            11,
-            10
+            3,
+            15
         ],
         "category": "resource"
     },
@@ -885,8 +885,8 @@ const products = [
         "id": "plant-fuel",
         "name": "Plant fuel",
         "iconPosition": [
-            6,
-            7
+            2,
+            10
         ],
         "category": "resource"
     },
@@ -894,8 +894,8 @@ const products = [
         "id": "titanium-glass",
         "name": "Titanium glass",
         "iconPosition": [
-            2,
-            10
+            5,
+            13
         ],
         "category": "product"
     },
@@ -903,8 +903,8 @@ const products = [
         "id": "dyson-sphere-component",
         "name": "Dyson sphere component",
         "iconPosition": [
-            8,
-            2
+            9,
+            3
         ],
         "category": "product"
     },
@@ -912,8 +912,8 @@ const products = [
         "id": "wind-turbine",
         "name": "Wind turbine",
         "iconPosition": [
-            10,
-            10
+            2,
+            15
         ],
         "category": "building"
     },
@@ -921,8 +921,8 @@ const products = [
         "id": "satellite-substation",
         "name": "Satellite substation",
         "iconPosition": [
-            9,
-            6
+            3,
+            9
         ],
         "category": "building"
     },
@@ -930,8 +930,8 @@ const products = [
         "id": "tesla-tower",
         "name": "Tesla tower",
         "iconPosition": [
-            0,
-            10
+            3,
+            13
         ],
         "category": "building"
     },
@@ -939,8 +939,8 @@ const products = [
         "id": "prism",
         "name": "Prism",
         "iconPosition": [
-            10,
-            7
+            6,
+            10
         ],
         "category": "product"
     },
@@ -948,8 +948,8 @@ const products = [
         "id": "reinforced-thruster",
         "name": "Reinforced thruster",
         "iconPosition": [
-            1,
-            5
+            0,
+            7
         ],
         "category": "product"
     },
@@ -958,7 +958,7 @@ const products = [
         "name": "Logistics vessel",
         "iconPosition": [
             7,
-            5
+            7
         ],
         "category": "product"
     },
@@ -966,8 +966,8 @@ const products = [
         "id": "storage-tank",
         "name": "Storage tank",
         "iconPosition": [
-            8,
-            9
+            10,
+            12
         ],
         "category": "building"
     },
@@ -975,8 +975,8 @@ const products = [
         "id": "splitter",
         "name": "Splitter",
         "iconPosition": [
-            1,
-            9
+            3,
+            12
         ],
         "category": "building"
     },
@@ -984,8 +984,8 @@ const products = [
         "id": "automatic-piler",
         "name": "Automatic piler",
         "iconPosition": [
-            4,
-            7
+            0,
+            10
         ],
         "category": "building"
     },
@@ -993,8 +993,8 @@ const products = [
         "id": "em-rail-ejector",
         "name": "EM-Rail ejector",
         "iconPosition": [
-            11,
-            2
+            0,
+            4
         ],
         "category": "building"
     },
@@ -1003,7 +1003,7 @@ const products = [
         "name": "Chemical plant",
         "iconPosition": [
             6,
-            1
+            2
         ],
         "category": "building"
     },
@@ -1011,8 +1011,8 @@ const products = [
         "id": "solar-panel",
         "name": "Solar panel",
         "iconPosition": [
-            11,
-            8
+            0,
+            12
         ],
         "category": "building"
     },
@@ -1020,8 +1020,8 @@ const products = [
         "id": "energy-exchanger",
         "name": "Energy exchanger",
         "iconPosition": [
-            12,
-            2
+            1,
+            4
         ],
         "category": "building"
     },
@@ -1029,8 +1029,8 @@ const products = [
         "id": "advanced-mining-machine",
         "name": "Advanced mining machine",
         "iconPosition": [
-            12,
-            5
+            1,
+            8
         ],
         "category": "building"
     },
@@ -1038,8 +1038,8 @@ const products = [
         "id": "water-pump",
         "name": "Water pump",
         "iconPosition": [
-            8,
-            10
+            0,
+            15
         ],
         "category": "building"
     },
@@ -1047,8 +1047,8 @@ const products = [
         "id": "vertical-launching-silo",
         "name": "Vertical launching silo",
         "iconPosition": [
-            7,
-            10
+            6,
+            14
         ],
         "category": "building"
     },
@@ -1056,8 +1056,8 @@ const products = [
         "id": "oil-extractor",
         "name": "Oil extractor",
         "iconPosition": [
-            5,
-            6
+            11,
+            8
         ],
         "category": "building"
     },
@@ -1066,7 +1066,7 @@ const products = [
         "name": "Matrix lab",
         "iconPosition": [
             4,
-            5
+            7
         ],
         "category": "building"
     },
@@ -1074,8 +1074,8 @@ const products = [
         "id": "mining-machine",
         "name": "Mining machine",
         "iconPosition": [
-            0,
-            6
+            2,
+            8
         ],
         "category": "building"
     },
@@ -1083,8 +1083,8 @@ const products = [
         "id": "miniature-particle-collider",
         "name": "Miniature particle collider",
         "iconPosition": [
-            5,
-            4
+            2,
+            6
         ],
         "category": "building"
     },
@@ -1092,8 +1092,8 @@ const products = [
         "id": "fractionator",
         "name": "Fractionator",
         "iconPosition": [
-            1,
-            3
+            9,
+            4
         ],
         "category": "building"
     },
@@ -1101,8 +1101,8 @@ const products = [
         "id": "geothermal-power-station",
         "name": "Geothermal power station",
         "iconPosition": [
-            11,
-            3
+            7,
+            5
         ],
         "category": "building"
     },
@@ -1110,8 +1110,8 @@ const products = [
         "id": "oil-refinery",
         "name": "Oil refinery",
         "iconPosition": [
-            6,
-            6
+            0,
+            9
         ],
         "category": "building"
     },
@@ -1120,7 +1120,7 @@ const products = [
         "name": "Arc Smelter",
         "iconPosition": [
             9,
-            8
+            11
         ],
         "category": "building"
     },
@@ -1128,8 +1128,8 @@ const products = [
         "id": "plane-smelter",
         "name": "Plane Smelter",
         "iconPosition": [
-            8,
-            8
+            7,
+            11
         ],
         "category": "building"
     },
@@ -1137,8 +1137,8 @@ const products = [
         "id": "logistic-bots",
         "name": "Logistic Bots",
         "iconPosition": [
-            0,
-            2
+            1,
+            3
         ],
         "category": "product"
     },
@@ -1146,8 +1146,8 @@ const products = [
         "id": "logistic-distributor",
         "name": "Logistic Distributor",
         "iconPosition": [
-            1,
-            2
+            2,
+            3
         ],
         "category": "building"
     },
@@ -1156,7 +1156,7 @@ const products = [
         "name": "Quantum Chemical Plant",
         "iconPosition": [
             5,
-            1
+            2
         ],
         "category": "building"
     }
