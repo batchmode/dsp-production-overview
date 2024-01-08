@@ -47,8 +47,8 @@ const Chart = ({root, onClickProduct}) => {
             return position[0] + "_" + position[1]
         }
 
-        const x = d => d.data.product.iconPosition[0] * 84
-        const y = d => d.data.product.iconPosition[1] * 84
+        const x = d => d.data.product.iconPosition[0] * 80
+        const y = d => d.data.product.iconPosition[1] * 80
 
         svg.append("defs")
             .selectAll("clipPath")
