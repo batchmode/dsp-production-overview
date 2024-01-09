@@ -165,7 +165,7 @@ export const CreateRecipe = ({model}) => {
                             <div className="relative flex-1 border-[1px]">
                                     <textarea id="w3review" name="w3review"
                                               className="w-full h-full"
-                                              value={recipeJson} onChange={e => setValue(e.target.value)}/>
+                                              value={recipeJson}/>
                             </div>
                         </div>
                     </div>

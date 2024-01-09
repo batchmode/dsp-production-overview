@@ -6,6 +6,7 @@ import ShowModel from "./ShowModel.jsx";
 import Button from "../ui/Button.jsx";
 import ValidateModel from "./ValidateModel.jsx";
 import {CreateRecipe} from "./CreateRecipe.jsx";
+import {CreateProduct} from "./CreateProduct.jsx";
 
 const DevTools = ({model}) => {
     const [showDevTools, setShowDevTools] = useState(false)
@@ -22,6 +23,7 @@ const DevTools = ({model}) => {
                 <ShowModel/>
                 <ValidateModel/>
                 <CreateRecipe model={model}/>
+                <CreateProduct/>
                 <Button label="close" onClick={_ => setShowDevTools(false)}/>
             </div>
         </Popup>)
