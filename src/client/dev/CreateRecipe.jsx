@@ -55,6 +55,14 @@ export const CreateRecipe = ({model}) => {
         }
     }
 
+    const onClear = () => {
+        setIdValue("")
+        setNameValue("")
+        setInputs([])
+        setOutputs([])
+        setIcon([])
+    }
+
     const productSelectionConfig = [
         {
             title: 'Products',
@@ -152,6 +160,7 @@ export const CreateRecipe = ({model}) => {
                                 {inputSelection}
                                 {outputSelection}
                                 {iconSelection}
+                                <Button label={"Clear"} onClick={onClear}/>
                             </div>
                             <div className="relative flex-1 border-[1px]">
                                     <textarea id="w3review" name="w3review"
