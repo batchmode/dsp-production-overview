@@ -5,9 +5,7 @@ import rawRecipes from "./recipes.js";
 
 function setIconPositions(recipes, products) {
     return recipes.map(r => {
-        const iconPosition = products.find(p => p.id === r.icon)?.iconPosition || [0, 0]
-        console.log(r.icon, "=>", iconPosition)
-        r.iconPosition = iconPosition
+        r.iconPosition = products.find(p => p.id === r.icon)?.iconPosition || [0, 0]
         return r
     })
 }
