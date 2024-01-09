@@ -1326,7 +1326,7 @@ const products = [
         "id": "missile-set",
         "name": "Missile Set",
         "iconPosition": [
-            4,
+            5,
             8
         ],
         "category": "product"
@@ -1335,7 +1335,7 @@ const products = [
         "id": "supersonic-missile-set",
         "name": "Supersonic Missile Set",
         "iconPosition": [
-            5,
+            4,
             8
         ],
         "category": "product"
@@ -1422,6 +1422,15 @@ const products = [
         "category": "product"
     },
     {
+        "id": "gauss-turret",
+        "name": "Gauss Turret",
+        "iconPosition": [
+            10,
+            13
+        ],
+        "category": "building"
+    },
+    {
         "id": "missile-turret",
         "name": "Missile Turret",
         "iconPosition": [
@@ -1501,7 +1510,17 @@ const products = [
             9
         ],
         "category": "product"
+    },
+    {
+        "id": "gravity-missile-set",
+        "name": "Gravity Missile Set",
+        "iconPosition": [
+            3,
+            8
+        ],
+        "category": "product"
     }
+
 ]
 
 export default products

@@ -1735,6 +1735,364 @@ const recipes = [
             "chemical-plant-v2"
         ],
         "icon": "chemical-plant-v2"
+    },
+    {
+        "id": "combustible-unit",
+        "name": "Combustible Unit",
+        "inputs": [
+            "coal"
+        ],
+        "outputs": [
+            "combustible-unit"
+        ],
+        "icon": "combustible-unit"
+    },
+    {
+        "id": "explosive-unit",
+        "name": "Explosive Unit",
+        "inputs": [
+            "combustible-unit",
+            "plastic",
+            "sulfuric-acid"
+        ],
+        "outputs": [
+            "explosive-unit"
+        ],
+        "icon": "explosive-unit"
+    },
+    {
+        "id": "crystal-explosive-unit",
+        "name": "Crystal Explosive Unit",
+        "inputs": [
+            "explosive-unit",
+            "casimir-crystal",
+            "crystal-silicon"
+        ],
+        "outputs": [
+            "crystal-explosive-unit"
+        ],
+        "icon": "crystal-explosive-unit"
+    },
+    {
+        "id": "magnum-ammo-box",
+        "name": "Magnum Ammo Box",
+        "inputs": [
+            "copper-ingot"
+        ],
+        "outputs": [
+            "magnum-ammo-box"
+        ],
+        "icon": "magnum-ammo-box"
+    },
+    {
+        "id": "titanium-ammo-box",
+        "name": "Titanium Ammo Box",
+        "inputs": [
+            "magnum-ammo-box",
+            "titanium-ingot"
+        ],
+        "outputs": [
+            "titanium-ammo-box"
+        ],
+        "icon": "titanium-ammo-box"
+    },
+    {
+        "id": "superalloy-ammo-box",
+        "name": "Superalloy Ammo Box",
+        "inputs": [
+            "titanium-ammo-box",
+            "titanium-alloy"
+        ],
+        "outputs": [
+            "superalloy-ammo-box"
+        ],
+        "icon": "superalloy-ammo-box"
+    },
+    {
+        "id": "plasma-capsule",
+        "name": "Plasma Capsule",
+        "inputs": [
+            "graphene",
+            "magnet",
+            "deuterium"
+        ],
+        "outputs": [
+            "plasma-capsule"
+        ],
+        "icon": "plasma-capsule"
+    },
+    {
+        "id": "missile-set",
+        "name": "Missile Set",
+        "inputs": [
+            "copper-ingot",
+            "circuit-board",
+            "combustible-unit",
+            "engine"
+        ],
+        "outputs": [
+            "missile-set"
+        ],
+        "icon": "missile-set"
+    },
+    {
+        "id": "supersonic-missile-set",
+        "name": "Supersonic Missile Set",
+        "inputs": [
+            "missile-set",
+            "processor",
+            "explosive-unit",
+            "thruster"
+        ],
+        "outputs": [
+            "supersonic-missile-set"
+        ],
+        "icon": "supersonic-missile-set"
+    },
+    {
+        "id": "gravity-missile-set",
+        "name": "Gravity Missile Set",
+        "inputs": [
+            "supersonic-missile-set",
+            "crystal-explosive-unit",
+            "strange-matter"
+        ],
+        "outputs": [
+            "gravity-missile-set"
+        ],
+        "icon": "gravity-missile-set"
+    },
+    {
+        "id": "shell-set",
+        "name": "Shell Set",
+        "inputs": [
+            "copper-ingot",
+            "combustible-unit"
+        ],
+        "outputs": [
+            "shell-set"
+        ],
+        "icon": "shell-set"
+    },
+    {
+        "id": "high-explosive-shell-set",
+        "name": "High Explosive Shell Set",
+        "inputs": [
+            "shell-set",
+            "titanium-ingot",
+            "explosive-unit"
+        ],
+        "outputs": [
+            "high-explosive-shell-set"
+        ],
+        "icon": "high-explosive-shell-set"
+    },
+    {
+        "id": "crystal-shell-set",
+        "name": "Crystal Shell Set",
+        "inputs": [
+            "high-explosive-shell-set",
+            "titanium-alloy",
+            "crystal-explosive-unit"
+        ],
+        "outputs": [
+            "crystal-shell-set"
+        ],
+        "icon": "crystal-shell-set"
+    },
+    {
+        "id": "prototype",
+        "name": "Prototype",
+        "inputs": [
+            "iron-ingot",
+            "engine",
+            "circuit-board",
+            "plasma-exciter"
+        ],
+        "outputs": [
+            "prototype"
+        ],
+        "icon": "prototype"
+    },
+    {
+        "id": "precision-drone",
+        "name": "Precision Drone",
+        "inputs": [
+            "prototype",
+            "electromagnetic-turbine",
+            "circuit-board",
+            "photon-combiner"
+        ],
+        "outputs": [
+            "precision-drone"
+        ],
+        "icon": "precision-drone"
+    },
+    {
+        "id": "attack-drone",
+        "name": "Attack Drone",
+        "inputs": [
+            "prototype",
+            "electromagnetic-turbine",
+            "processor",
+            "particle-container"
+        ],
+        "outputs": [
+            "attack-drone"
+        ],
+        "icon": "attack-drone"
+    },
+    {
+        "id": "corvette",
+        "name": "Corvette",
+        "inputs": [
+            "titanium-alloy",
+            "reinforced-thruster",
+            "processor",
+            "particle-container"
+        ],
+        "outputs": [
+            "corvette"
+        ],
+        "icon": "corvette"
+    },
+    {
+        "id": "destroyer",
+        "name": "Destroyer",
+        "inputs": [
+            "frame-material",
+            "reinforced-thruster",
+            "processor",
+            "strange-matter"
+        ],
+        "outputs": [
+            "destroyer"
+        ],
+        "icon": "destroyer"
+    },
+    {
+        "id": "engine",
+        "name": "Engine",
+        "inputs": [
+            "magnetic-coil",
+            "copper-ingot"
+        ],
+        "outputs": [
+            "engine"
+        ],
+        "icon": "engine"
+    },
+    {
+        "id": "gauss-turret",
+        "name": "Gauss Turret",
+        "inputs": [
+            "iron-ingot",
+            "gear",
+            "circuit-board",
+            "magnetic-coil"
+        ],
+        "outputs": [
+            "gauss-turret"
+        ],
+        "icon": "gauss-turret"
+    },
+    {
+        "id": "missile-turret",
+        "name": "Missile Turret",
+        "inputs": [
+            "steel",
+            "electric-motor",
+            "circuit-board",
+            "engine"
+        ],
+        "outputs": [
+            "missile-turret"
+        ],
+        "icon": "missile-turret"
+    },
+    {
+        "id": "implosion-cannon",
+        "name": "Implosion Cannon",
+        "inputs": [
+            "steel",
+            "electric-motor",
+            "circuit-board",
+            "super-magnetic-ring"
+        ],
+        "outputs": [
+            "implosion-cannon"
+        ],
+        "icon": "implosion-cannon"
+    },
+    {
+        "id": "laser-turret",
+        "name": "Laser Turret",
+        "inputs": [
+            "steel",
+            "plasma-exciter",
+            "circuit-board",
+            "photon-combiner"
+        ],
+        "outputs": [
+            "laser-turret"
+        ],
+        "icon": "laser-turret"
+    },
+    {
+        "id": "plasma-turret",
+        "name": "Plasma Turret",
+        "inputs": [
+            "titanium-alloy",
+            "titanium-glass",
+            "super-magnetic-ring",
+            "plasma-exciter",
+            "processor"
+        ],
+        "outputs": [
+            "plasma-turret"
+        ],
+        "icon": "plasma-turret"
+    },
+    {
+        "id": "battlefield-analysis-base",
+        "name": "Battlefield Analysis Base",
+        "inputs": [
+            "steel",
+            "circuit-board",
+            "microcrystalline-component",
+            "engine"
+        ],
+        "outputs": [
+            "battlefield-analysis-base"
+        ],
+        "icon": "battlefield-analysis-base"
+    },
+    {
+        "id": "signal-tower",
+        "name": "Signal Tower",
+        "inputs": [
+            "wireless-power-tower",
+            "steel",
+            "crystal-silicon"
+        ],
+        "outputs": [
+            "signal-tower"
+        ],
+        "icon": "signal-tower"
+    },
+    {
+        "id": "planetary-shield-generator",
+        "name": "Planetary Shield Generator",
+        "inputs": [
+            "steel",
+            "electromagnetic-turbine",
+            "super-magnetic-ring",
+            "particle-container"
+        ],
+        "outputs": [
+            "planetary-shield-generator"
+        ],
+        "icon": "planetary-shield-generator"
     }
 ]
 
