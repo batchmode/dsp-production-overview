@@ -5,8 +5,9 @@ import RawImport from "./RawImport.jsx";
 import ShowModel from "./ShowModel.jsx";
 import Button from "../ui/Button.jsx";
 import ValidateModel from "./ValidateModel.jsx";
+import {CreateRecipe} from "./CreateRecipe.jsx";
 
-const DevTools = () => {
+const DevTools = ({model}) => {
     const [showDevTools, setShowDevTools] = useState(false)
 
     if (import.meta.env.PROD) {
@@ -20,6 +21,7 @@ const DevTools = () => {
                 <RawImport/>
                 <ShowModel/>
                 <ValidateModel/>
+                <CreateRecipe model={model}/>
                 <Button label="close" onClick={_ => setShowDevTools(false)}/>
             </div>
         </Popup>)

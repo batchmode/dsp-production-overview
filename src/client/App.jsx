@@ -36,7 +36,7 @@ function App() {
     const toolbar = (
         <div className="flex gap-4 items-center">
             <Toggle label="Show Production Rates" checked={showProductionRates} onChange={setShowProductionRates}/>
-            <DevTools/>
+            <DevTools model={model}/>
             <Readme/>
             <ImportExport updateModel={updateModel}/>
         </div>
