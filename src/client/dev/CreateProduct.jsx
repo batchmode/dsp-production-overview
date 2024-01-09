@@ -58,13 +58,12 @@ export const CreateProduct = () => {
                                 <input type="text" className="border border-1 border-gray-400 focus:outline-none focus:border-2 placeholder:italic placeholder:text-xs pl-2 placeholder-blue-400"
                                        value={categoryValue} onChange={e => setCategoryValue(e.target.value)} placeholder="CATEGORY"/>
                             </div>
-                            <div className="flex flex-col items-start gap-2">
+                            <div className="flex flex-row gap-2">
                                 <img src={icons + ""} alt="icons" className="w-[480px] border-2" onClick={onImgClick}/>
-                            </div>
-                            <div className="relative flex-1 border-[1px]">
-                                    <textarea id="w3review" name="w3review"
-                                              className="w-full h-full"
-                                              value={productJson}/>
+                                <textarea id="w3review" name="w3review"
+                                          className="w-full h-full"
+                                          value={productJson}/>
+
                             </div>
                         </div>
                     </div>
