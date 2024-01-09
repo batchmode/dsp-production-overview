@@ -26,7 +26,8 @@ export const CreateProduct = () => {
         {
             id: idValue,
             name: nameValue,
-            iconPosition
+            iconPosition,
+            category: categoryValue
         }
         , null, 2)
 

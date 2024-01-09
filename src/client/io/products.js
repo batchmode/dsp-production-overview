@@ -1483,6 +1483,24 @@ const products = [
             14
         ],
         "category": "building"
+    },
+    {
+        "id": "destroyer",
+        "name": "Destroyer",
+        "iconPosition": [
+            9,
+            14
+        ],
+        "category": "product"
+    },
+    {
+        "id": "crystal-explosive-unit",
+        "name": "Crystal Explosive Unit",
+        "iconPosition": [
+            6,
+            9
+        ],
+        "category": "product"
     }
 ]
 
