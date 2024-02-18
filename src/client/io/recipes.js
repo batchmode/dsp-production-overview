@@ -707,6 +707,20 @@ const recipes = [
         "icon": "plane-smelter"
     },
     {
+        "id": "negentropy-smelter",
+        "name": "Negentropy Smelter",
+        "inputs": [
+            "plane-smelter",
+            "negentropy-singularity",
+            "energy-shard",
+            "quantum-chip"
+        ],
+        "outputs": [
+            "negentropy-smelter"
+        ],
+        "icon": "negentropy-smelter"
+    },
+    {
         "id": "diamond",
         "name": "Diamond",
         "inputs": [
@@ -920,6 +934,20 @@ const recipes = [
         "icon": "assembling-machine-mk-iii"
     },
     {
+        "id": "re-composing-assembler",
+        "name": "Re Composing Assembler",
+        "inputs": [
+            "assembling-machine-mk-iii",
+            "matter-recombinator",
+            "energy-shard",
+            "quantum-chip"
+        ],
+        "outputs": [
+            "re-composing-assembler"
+        ],
+        "icon": "re-composing-assembler"
+    },
+    {
         "id": "circuit-board",
         "name": "Circuit board",
         "inputs": [
@@ -995,6 +1023,20 @@ const recipes = [
             "antimatter-fuel-rod"
         ],
         "icon": "antimatter-fuel-rod"
+    },
+    {
+        "id": "strange-annihilation-fuel-rod",
+        "name": "Strange Annihilation Fuel Rod",
+        "inputs": [
+            "antimatter-fuel-rod",
+            "core-element",
+            "strange-matter",
+            "frame-material"
+        ],
+        "outputs": [
+            "strange-annihilation-fuel-rod"
+        ],
+        "icon": "strange-annihilation-fuel-rod"
     },
     {
         "id": "crystal-rubber-lv0",
@@ -1603,6 +1645,20 @@ const recipes = [
         "icon": "matrix-lab"
     },
     {
+        "id": "self-evolution-lab",
+        "name": "Self Evolution Lab",
+        "inputs": [
+            "matrix-lab",
+            "silicon-based-neuron",
+            "dark-fog-matrix",
+            "quantum-chip"
+        ],
+        "outputs": [
+            "self-evolution-lab"
+        ],
+        "icon": "self-evolution-lab"
+    },
+    {
         "id": "charging-pole",
         "name": "Wireless power tower",
         "inputs": [
@@ -1820,6 +1876,46 @@ const recipes = [
             "plasma-capsule"
         ],
         "icon": "plasma-capsule"
+    },
+    {
+        "id": "antimatter-capsule",
+        "name": "Antimatter Capsule",
+        "inputs": [
+            "plasma-capsule",
+            "particle-container",
+            "hydrogen",
+            "antimatter"
+        ],
+        "outputs": [
+            "antimatter-capsule"
+        ],
+        "icon": "antimatter-capsule"
+    },
+    {
+        "id": "jamming-capsule",
+        "name": "Jamming Capsule",
+        "inputs": [
+            "electromagnetic-turbine",
+            "plasma-exciter",
+            "hydrogen"
+        ],
+        "outputs": [
+            "jamming-capsule"
+        ],
+        "icon": "jamming-capsule"
+    },
+    {
+        "id": "suppressing-capsule",
+        "name": "Suppressing Capsule",
+        "inputs": [
+            "jamming-capsule",
+            "super-magnetic-ring",
+            "titanium-glass"
+        ],
+        "outputs": [
+            "suppressing-capsule"
+        ],
+        "icon": "suppressing-capsule"
     },
     {
         "id": "missile-set",
@@ -2066,6 +2162,20 @@ const recipes = [
             "battlefield-analysis-base"
         ],
         "icon": "battlefield-analysis-base"
+    },
+    {
+        "id": "jammer-tower",
+        "name": "Jammer Tower",
+        "inputs": [
+            "copper-ingot",
+            "plasma-exciter",
+            "diamond",
+            "processor"
+        ],
+        "outputs": [
+            "jammer-tower"
+        ],
+        "icon": "jammer-tower"
     },
     {
         "id": "signal-tower",

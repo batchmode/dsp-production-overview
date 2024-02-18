@@ -72,6 +72,15 @@ const products = [
         "category": "building"
     },
     {
+        "id": "re-composing-assembler",
+        "name": "Re-composing Assembler",
+        "iconPosition": [
+            10,
+            0
+        ],
+        "category": "building"
+    },
+    {
         "id": "conveyor-belt-mk-i",
         "name": "Conveyor belt mk. I",
         "iconPosition": [
@@ -180,6 +189,15 @@ const products = [
         "category": "product"
     },
     {
+        "id": "strange-annihilation-fuel-rod",
+        "name": "Strange Annihilation Fuel Rod",
+        "iconPosition": [
+            7,
+            14
+        ],
+        "category": "product"
+    },
+    {
         "id": "spray-coater",
         "name": "Spray coater",
         "iconPosition": [
@@ -257,6 +275,15 @@ const products = [
         "iconPosition": [
             10,
             6
+        ],
+        "category": "building"
+    },
+    {
+        "id": "sorter-mk-iv",
+        "name": "Sorter mk. IV",
+        "iconPosition": [
+            7,
+            15
         ],
         "category": "building"
     },
@@ -1071,6 +1098,15 @@ const products = [
         "category": "building"
     },
     {
+        "id": "self-evolution-lab",
+        "name": "Self-evolution Lab",
+        "iconPosition": [
+            3,
+            7
+        ],
+        "category": "building"
+    },
+    {
         "id": "mining-machine",
         "name": "Mining machine",
         "iconPosition": [
@@ -1129,6 +1165,15 @@ const products = [
         "name": "Plane Smelter",
         "iconPosition": [
             7,
+            11
+        ],
+        "category": "building"
+    },
+    {
+        "id": "negentropy-smelter",
+        "name": "Negentropy Smelter",
+        "iconPosition": [
+            8,
             11
         ],
         "category": "building"
@@ -1350,6 +1395,33 @@ const products = [
         "category": "product"
     },
     {
+        "id": "antimatter-capsule",
+        "name": "Antimatter Capsule",
+        "iconPosition": [
+            11,
+            1
+        ],
+        "category": "product"
+    },
+    {
+        "id": "jamming-capsule",
+        "name": "Jamming Capsule",
+        "iconPosition": [
+            5,
+            15
+        ],
+        "category": "product"
+    },
+    {
+        "id": "suppressing-capsule",
+        "name": "Suppressing Capsule",
+        "iconPosition": [
+            6,
+            15
+        ],
+        "category": "product"
+    },
+    {
         "id": "shell-set",
         "name": "Shell Set",
         "iconPosition": [
@@ -1476,6 +1548,15 @@ const products = [
         "category": "building"
     },
     {
+        "id": "jammer-tower",
+        "name": "Jammer Tower",
+        "iconPosition": [
+            10,
+            13
+        ],
+        "category": "building"
+    },
+    {
         "id": "signal-tower",
         "name": "Signal Tower",
         "iconPosition": [
@@ -1519,8 +1600,61 @@ const products = [
             8
         ],
         "category": "product"
+    },
+    {
+        "id": "energy-shard",
+        "name": "Energy Shard",
+        "iconPosition": [
+            2,
+            4
+        ],
+        "category": "product"
+    },
+    {
+        "id": "dark-fog-matrix",
+        "name": "Dark Fog Matrix",
+        "iconPosition": [
+            11,
+            7
+        ],
+        "category": "product"
+    },
+    {
+        "id": "matter-recombinator",
+        "name": "Matter Recombinator",
+        "iconPosition": [
+            10,
+            10
+        ],
+        "category": "product"
+    },
+    {
+        "id": "silicon-based-neuron",
+        "name": "Silicon-based Neuron",
+        "iconPosition": [
+            6,
+            11
+        ],
+        "category": "product"
+    },
+    {
+        "id": "negentropy-singularity",
+        "name": "Negentropy Singularity",
+        "iconPosition": [
+            10,
+            8
+        ],
+        "category": "product"
+    },
+    {
+        "id": "core-element",
+        "name": "Core Element",
+        "iconPosition": [
+            8,
+            14
+        ],
+        "category": "product"
     }
-
 ]
 
 export default products
