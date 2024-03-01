@@ -1497,7 +1497,7 @@ const products = [
         "id": "gauss-turret",
         "name": "Gauss Turret",
         "iconPosition": [
-            10,
+            11,
             13
         ],
         "category": "building"
