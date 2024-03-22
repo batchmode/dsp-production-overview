@@ -20,7 +20,6 @@ const Recipes = ({model, filter}) => {
                 iconPosition: r.iconPosition,
                 inputs,
                 outputs,
-                filterString: r.name.toLowerCase(),
                 filterInputsString: inputs.map(i => i.name).join(" ").toLowerCase(),
                 filterOutputsString: outputs.map(o => o.name).join(" ").toLowerCase()
             }
@@ -39,7 +38,7 @@ const Recipes = ({model, filter}) => {
         if (filter.startsWith("in:")) return r.filterInputsString.includes(filter.substring(3).toLowerCase())
         if (filter.startsWith("out:")) return r.filterOutputsString.includes(filter.substring(4).toLowerCase())
 
-        return r.filterString.includes(filter.toLowerCase())
+        return r.filterInputsString.includes(filter.toLowerCase()) || r.filterOutputsString.includes(filter.toLowerCase())
     }
 
 
